@@ -1,0 +1,3 @@
+*SRC=BAV199;DI_BAV199;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc. diode
+.MODEL DI_BAV199 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
