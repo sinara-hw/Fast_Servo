@@ -1,0 +1,21 @@
+[DesignatorManager]
+LogicalDesignator0=IC?
+LogicalPartID0=1
+DocumentName0=DAC_AFE.SchDoc
+ChannelName0=U_DAC_AFE1
+UniqueID0=\JUFFZANN\GLREIUVV
+PhysicalDesignator0=IC2
+PhysicalDesignatorLocked0=1
+LogicalDesignator1=IC?
+LogicalPartID1=1
+DocumentName1=DAC_AFE.SchDoc
+ChannelName1=U_DAC_AFE2
+UniqueID1=\UNSXVSYZ\GLREIUVV
+PhysicalDesignator1=IC2
+PhysicalDesignatorLocked1=1
+
+[SheetNumberManager]
+SheetNumberOrder=Display Order
+SheetNumberMethod=Increasing
+
+
