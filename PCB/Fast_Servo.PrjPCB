@@ -73,7 +73,7 @@ DocumentUniqueId=KXQLUYJE
 
 [Document3]
 DocumentPath=SOM.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -90,7 +90,7 @@ DocumentUniqueId=WFAQIMCU
 
 [Document4]
 DocumentPath=DAC.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -107,7 +107,7 @@ DocumentUniqueId=TFQHJTXS
 
 [Document5]
 DocumentPath=DAC_AFE.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -124,7 +124,7 @@ DocumentUniqueId=AHSLSFYH
 
 [Document6]
 DocumentPath=ADC.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -141,7 +141,7 @@ DocumentUniqueId=JJLDRDAS
 
 [Document7]
 DocumentPath=ADC_AFE.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -158,7 +158,7 @@ DocumentUniqueId=WUPUOYAF
 
 [Document8]
 DocumentPath=ADC_AUX.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -175,7 +175,7 @@ DocumentUniqueId=GUBUQTNC
 
 [Document9]
 DocumentPath=DAC_AUX.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -192,7 +192,7 @@ DocumentUniqueId=CDYLDKQI
 
 [Document10]
 DocumentPath=USB.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -209,7 +209,7 @@ DocumentUniqueId=RICXMAMD
 
 [Document11]
 DocumentPath=EEM_connector.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -226,7 +226,7 @@ DocumentUniqueId=PJWOAGJC
 
 [Document12]
 DocumentPath=AUX_Analog_IO.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -277,7 +277,7 @@ DocumentUniqueId=
 
 [Document15]
 DocumentPath=PWR_P2V5A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -294,7 +294,7 @@ DocumentUniqueId=ZOEJZUEM
 
 [Document16]
 DocumentPath=AUX_CON.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -311,7 +311,7 @@ DocumentUniqueId=NFFPHOLS
 
 [Document17]
 DocumentPath=SD_CARD.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -328,7 +328,7 @@ DocumentUniqueId=QSFVTDIN
 
 [Document18]
 DocumentPath=Digital_Input.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -345,7 +345,7 @@ DocumentUniqueId=QGGHCNOY
 
 [Document19]
 DocumentPath=LEDs.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -362,7 +362,7 @@ DocumentUniqueId=CKBJTYLK
 
 [Document20]
 DocumentPath=EEPROM.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -379,7 +379,7 @@ DocumentUniqueId=RUJEEBWA
 
 [Document21]
 DocumentPath=ETH_CON.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -413,7 +413,7 @@ DocumentUniqueId=
 
 [Document23]
 DocumentPath=TOP.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -430,7 +430,7 @@ DocumentUniqueId=HAHYSKRR
 
 [Document24]
 DocumentPath=Supply_Fast_Servo.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -498,7 +498,7 @@ DocumentUniqueId=
 
 [Document28]
 DocumentPath=PWR_P12V0.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -515,7 +515,7 @@ DocumentUniqueId=RYSRHLPL
 
 [Document29]
 DocumentPath=PWR_N2V5A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -532,7 +532,7 @@ DocumentUniqueId=RKKGIXTT
 
 [Document30]
 DocumentPath=PWR_P3V3.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -549,7 +549,7 @@ DocumentUniqueId=ENNVNEMU
 
 [Document31]
 DocumentPath=PWR_P1V8.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -566,7 +566,7 @@ DocumentUniqueId=QLNPPIDJ
 
 [Document32]
 DocumentPath=SOM_JB2.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -600,7 +600,7 @@ DocumentUniqueId=
 
 [Document34]
 DocumentPath=SOM_JB1.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -617,7 +617,7 @@ DocumentUniqueId=FTFLFFUT
 
 [Document35]
 DocumentPath=SOM_JB3.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -804,7 +804,7 @@ DocumentUniqueId=
 
 [Document46]
 DocumentPath=PWR_P1V8A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -821,7 +821,7 @@ DocumentUniqueId=UMFHJXJD
 
 [Document47]
 DocumentPath=PWR_N5V0A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -838,7 +838,7 @@ DocumentUniqueId=KSFNKAFM
 
 [Document48]
 DocumentPath=PWR_N6V0.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -855,7 +855,7 @@ DocumentUniqueId=WKFVAFNQ
 
 [Document49]
 DocumentPath=PWR_P6V0.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -872,7 +872,7 @@ DocumentUniqueId=UODOOYHC
 
 [Document50]
 DocumentPath=PWR_P3V3A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -889,7 +889,7 @@ DocumentUniqueId=YJBKDDHB
 
 [Document51]
 DocumentPath=PWR_P5V0A.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
