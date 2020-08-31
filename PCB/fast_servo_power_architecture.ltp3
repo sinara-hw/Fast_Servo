@@ -1,0 +1,439 @@
+<Vers> 3.3.6
+<Tabs> 1, #FFFDF5E6, New Tab 1
+<Summ> 0, 0, 24, #FF000000, #00FFFFFF
+<BPrt> Power, 1, 10, 345, Power 1
+	Color   : #00FFFFFF
+	Width   : 80
+	Height  : 60
+	VisType : 1
+<Term> Output, 1
+<BPrt> Converter, 2, 175, 345, Converter 2
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 5.5
+	VoutMax : 7
+	IoutMax : 6
+<BPrt> Converter, 3, 175, 530, Converter 3
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : -5.5
+	VoutMin : 0
+	VoutMax : -10
+	IoutMax : 0.6
+<BPrt> Converter, 4, 175, 710, Converter 4
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : -13
+	VoutMin : -13.5
+	VoutMax : -12.5
+	IoutMax : 0.5
+<Term> Output, 2
+	Vout    : 13
+	VoutMin : 12
+	VoutMax : 14
+	IoutMax : 0.5
+<BPrt> LDO, 5, 480, 345, LDO 5
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 5
+	VoutMin : 4.5
+	VoutMax : 5.5
+	IoutMax : 0.2
+<BPrt> LDO, 6, 480, 530, LDO 6
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : -5
+	VoutMin : -5.5
+	VoutMax : -4.5
+	IoutMax : 0.2
+<BPrt> LDO, 18, 680, 235, LDO 7
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 2.5
+	VoutMin : 2.3
+	VoutMax : 2.6
+	IoutMax : 0.2
+<BPrt> Converter, 19, 480, 235, Converter 19
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 3.3
+	VoutMin : 3
+	VoutMax : 3.6
+	IoutMax : 1.5
+<BPrt> Converter, 24, 480, 35, Converter 24
+	Color   : #FFFFDAB9
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 1.8
+	VoutMin : 1.5
+	VoutMax : 2
+	IoutMax : 0.3
+<BPrt> LDO, 27, 680, 135, LDO 7
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 1.8
+	VoutMin : 1.5
+	VoutMax : 2
+	IoutMax : 0.5
+<BPrt> LDO, 32, 480, 605, LDO 6
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : -2.5
+	VoutMin : -2.7
+	VoutMax : -2.2
+	IoutMax : 0.2
+<BPrt> LDO, 36, 480, 790, LDO 6
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 12
+	VoutMin : 13
+	VoutMax : 11
+	IoutMax : 0.2
+<BPrt> LDO, 37, 480, 695, LDO 6
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : -12
+	VoutMin : -12.5
+	VoutMax : -2.2
+	IoutMax : 0.2
+<BPrt> Load, 42, 880, 135, Load 42
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.4
+	LoadType: False
+<BPrt> Load, 43, 880, 235, Load 43
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.1
+	LoadType: False
+<BPrt> Load, 44, 680, 35, Load 44
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.2
+	LoadType: False
+<BPrt> Load, 45, 680, 345, Load 45
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.1
+	LoadType: False
+<BPrt> Load, 46, 680, 530, Load 46
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : -0.1
+	LoadType: False
+<BPrt> Load, 47, 680, 605, Load 47
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : -0.1
+	LoadType: False
+<BPrt> Load, 48, 680, 695, Load 48
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : -0.1
+	LoadType: False
+<BPrt> Load, 49, 680, 790, Load 49
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.1
+	LoadType: False
+<BPrt> Load, 66, 175, 195, Load 66
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.6
+	LoadType: False
+<BPrt> LDO, 68, 480, 430, LDO 5
+	Color   : #FFBDB76B
+	Width   : 120
+	Height  : 60
+	VisType : 1
+<Term> Input, 1
+<Term> Output, 1
+	Vout    : 3.3
+	VoutMin : 3
+	VoutMax : 3.5
+	IoutMin : 0.06
+	IoutMax : 0.2
+<BPrt> Load, 70, 680, 430, Load 45
+	Color   : #FFFFB6C1
+	Width   : 80
+	Height  : 60
+	VisType : 2
+<Term> Input, 1
+	Inom    : 0.1
+	LoadType: False
+<Symb> SummaryReport, 0, 0, 0, 0,0, 0,0
+	Thicknss: 24
+<Wire> 9, 8
+	STermPID: 1
+	STermTyp: Output
+	STermNum: 1
+	SWires  : 67
+	EWires  : 16, 17
+	Points  : (90,375)(135,375)
+<Wire> 12, 10
+	STermPID: 5
+	STermTyp: Input
+	STermNum: 1
+	EWires  : 20, 21
+	Points  : (480,375)(390,375)
+<Wire> 15, 14
+	STermPID: 3
+	STermTyp: Output
+	STermNum: 1
+	EWires  : 33, 34
+	Points  : (295,560)(395,560)
+<Wire> 16, 8
+	SWires  : 9, 17
+	EWires  : 30, 31
+	Points  : (135,375)(135,560)
+<Wire> 17, 8
+	ETermPID: 2
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 16, 9
+	Points  : (135,375)(175,375)
+<Wire> 20, 10
+	SWires  : 12, 21
+	EWires  : 25, 26
+	Points  : (390,375)(390,265)
+<Wire> 21, 10
+	ETermPID: 2
+	ETermTyp: Output
+	ETermNum: 1
+	SWires  : 20, 12
+	EWires  : 69
+	Points  : (390,375)(295,375)
+<Wire> 23, 22
+	STermPID: 19
+	STermTyp: Output
+	STermNum: 1
+	EWires  : 28, 29
+	Points  : (600,265)(635,265)
+<Wire> 25, 10
+	ETermPID: 24
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 20, 26
+	Points  : (390,265)(390,65)(480,65)
+<Wire> 26, 10
+	ETermPID: 19
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 25, 20
+	Points  : (390,265)(480,265)
+<Wire> 28, 22
+	ETermPID: 27
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 23, 29
+	Points  : (635,265)(635,165)(680,165)
+<Wire> 29, 22
+	ETermPID: 18
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 28, 23
+	Points  : (635,265)(680,265)
+<Wire> 30, 8
+	ETermPID: 4
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 16, 31
+	Points  : (135,560)(135,740)(175,740)
+<Wire> 31, 8
+	ETermPID: 3
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 30, 16
+	Points  : (135,560)(175,560)
+<Wire> 33, 14
+	ETermPID: 32
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 15, 34
+	Points  : (395,560)(395,635)(480,635)
+<Wire> 34, 14
+	ETermPID: 6
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 33, 15
+	Points  : (395,560)(480,560)
+<Wire> 39, 38
+	STermPID: 4
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 37
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (295,725)(480,725)
+<Wire> 41, 40
+	STermPID: 4
+	STermTyp: Output
+	STermNum: 2
+	ETermPID: 36
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (295,755)(340,755)(340,820)(480,820)
+<Wire> 51, 50
+	STermPID: 24
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 44
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,65)(680,65)
+<Wire> 53, 52
+	STermPID: 27
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 42
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (800,165)(880,165)
+<Wire> 55, 54
+	STermPID: 18
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 43
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (800,265)(880,265)
+<Wire> 57, 56
+	STermPID: 5
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 45
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,375)(680,375)
+<Wire> 59, 58
+	STermPID: 6
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 46
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,560)(680,560)
+<Wire> 61, 60
+	STermPID: 32
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 47
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,635)(680,635)
+<Wire> 63, 62
+	STermPID: 37
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 48
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,725)(680,725)
+<Wire> 65, 64
+	STermPID: 36
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 49
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,820)(680,820)
+<Wire> 67, 8
+	STermPID: 1
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 66
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 9
+	Points  : (90,375)(135,375)(135,225)(175,225)
+<Wire> 69, 10
+	STermPID: 2
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 68
+	ETermTyp: Input
+	ETermNum: 1
+	SWires  : 21
+	Points  : (295,375)(390,375)(390,460)(480,460)
+<Wire> 72, 71
+	STermPID: 68
+	STermTyp: Output
+	STermNum: 1
+	ETermPID: 70
+	ETermTyp: Input
+	ETermNum: 1
+	Points  : (600,460)(680,460)
