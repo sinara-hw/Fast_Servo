@@ -1125,6 +1125,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document65]
+DocumentPath=PWR_P2V5.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=47
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FDFXCMKS
+
 [ProjectVariant1]
 UniqueID=6292F020-0F04-4226-9ABB-0B7DE09A91F3
 Description=Standard_DCjack
@@ -4740,10 +4757,10 @@ ComponentIsDeviceSheet146=0
 
 [NetInfos]
 Net1=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
-Net2=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
-Net3=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
-Net4=NetName=BIN|NetColor=$00FFFF6E
-Net5=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net2=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
+Net3=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net4=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net5=NetName=BIN|NetColor=$00FFFF6E
 Net6=NetName=UART_RX|NetColor=$00FFFF6E
 Net7=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
 Net8=NetName=DAC_CTRL.RESET|NetColor=$00FF6E6E
@@ -4858,8 +4875,8 @@ Net116=NetName=ADC_CH2_DATA.OUTA_P|NetColor=$00FF6E6E
 Net117=NetName=LVDS6_P|NetColor=$006EFF6E
 Net118=NetName=ADC_AFE_CH1_nSHDN|NetColor=$00FF6E6E
 Net119=NetName=ENC_P|NetColor=$006EFF6E
-Net120=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
-Net121=NetName=LVDS5_N|NetColor=$006EFF6E
+Net120=NetName=LVDS5_N|NetColor=$006EFF6E
+Net121=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
 Net122=NetName=SCLK|NetColor=$00FF6E6E
 Net123=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
 Net124=NetName=CLK2_N|NetColor=$006EFF6E
@@ -5010,7 +5027,7 @@ Net268=NetName=HRTIM_CHA1|NetColor=$00FFFF6E
 Net269=NetName=ADC_CS|NetColor=$00FF6E6E
 Net270=NetName=SD_DAT0|NetColor=$00FF6E6E
 Net271=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
-Net272=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net272=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
