@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=PDBNTPEA
+DocumentUniqueId=CEVRJCJN
 
 [Document3]
 DocumentPath=SOM.SchDoc
@@ -633,6 +633,23 @@ GenerateClassCluster=0
 DocumentUniqueId=QLNPPIDJ
 
 [Document36]
+DocumentPath=SOM_JB1.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=37
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FTFLFFUT
+
+[Document37]
 DocumentPath=SOM_JB2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -649,7 +666,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OMZOJFHB
 
-[Document37]
+[Document38]
 DocumentPath=SoM_JB2.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -665,23 +682,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
-
-[Document38]
-DocumentPath=SOM_JB1.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=37
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FTFLFFUT
 
 [Document39]
 DocumentPath=SOM_JB3.SchDoc
@@ -701,23 +701,6 @@ GenerateClassCluster=0
 DocumentUniqueId=GFFSZUFL
 
 [Document40]
-DocumentPath=SOM_JB1.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document41]
 DocumentPath=SOM_JB3.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -734,7 +717,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document42]
+[Document41]
 DocumentPath=DAC.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -751,7 +734,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document43]
+[Document42]
 DocumentPath=ADC_AUX.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -768,7 +751,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document44]
+[Document43]
 DocumentPath=DAC_AUX.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -785,7 +768,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document45]
+[Document44]
 DocumentPath=AUX_CON.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -802,7 +785,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document46]
+[Document45]
 DocumentPath=SD_CARD.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -819,7 +802,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document47]
+[Document46]
 DocumentPath=LEDs.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -836,7 +819,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document48]
+[Document47]
 DocumentPath=EEPROM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -853,7 +836,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document49]
+[Document48]
 DocumentPath=ADC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -870,7 +853,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document50]
+[Document49]
 DocumentPath=PWR_P1V8A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -887,7 +870,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UMFHJXJD
 
-[Document51]
+[Document50]
 DocumentPath=PWR_N5V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -904,7 +887,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KSFNKAFM
 
-[Document52]
+[Document51]
 DocumentPath=PWR_N5V5.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -921,7 +904,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WKFVAFNQ
 
-[Document53]
+[Document52]
 DocumentPath=PWR_P5V5.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -938,7 +921,7 @@ DItemRevisionGUID=
 GenerateClassCluster=1
 DocumentUniqueId=UODOOYHC
 
-[Document54]
+[Document53]
 DocumentPath=PWR_P3V3A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -955,7 +938,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJBKDDHB
 
-[Document55]
+[Document54]
 DocumentPath=PWR_P5V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -972,7 +955,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GCZLGLHT
 
-[Document56]
+[Document55]
 DocumentPath=OK6010_DB.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -989,7 +972,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FLUMCSBN
 
-[Document57]
+[Document56]
 DocumentPath=TE0706.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1006,7 +989,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document58]
+[Document57]
 DocumentPath=FastServo.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1023,7 +1006,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWRMRARK
 
-[Document59]
+[Document58]
 DocumentPath=ADC.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1040,7 +1023,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document60]
+[Document59]
 DocumentPath=DAC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1057,7 +1040,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document61]
+[Document60]
 DocumentPath=CLK_GEN.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1074,7 +1057,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document62]
+[Document61]
 DocumentPath=PWR_P12V0A_N12V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1091,7 +1074,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KYIVEFAP
 
-[Document63]
+[Document62]
 DocumentPath=CON_EEM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1108,7 +1091,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document64]
+[Document63]
 DocumentPath=CON_ETH.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1125,7 +1108,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document65]
+[Document64]
 DocumentPath=CON_MEZZANINE_GPIO_JTAG.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1142,7 +1125,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document66]
+[Document65]
 DocumentPath=Fast_Servo_BOM.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1159,7 +1142,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document67]
+[Document66]
 DocumentPath=CON_JTAG.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1176,7 +1159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document68]
+[Document67]
 DocumentPath=CON_JTAG_UART.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1193,8 +1176,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document69]
+[Document68]
 DocumentPath=CON_MEZZANINE_GPIO.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document69]
+DocumentPath=SOM_JB1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4830,9 +4830,9 @@ ComponentIsDeviceSheet146=0
 [NetInfos]
 Net1=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
 Net2=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
-Net3=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
-Net4=NetName=ENC.CLK_P|NetColor=$006EFF6E
-Net5=NetName=BIN|NetColor=$00FFFF6E
+Net3=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
+Net4=NetName=BIN|NetColor=$00FFFF6E
+Net5=NetName=ENC.CLK_P|NetColor=$006EFF6E
 Net6=NetName=UART_RX|NetColor=$00FFFF6E
 Net7=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
 Net8=NetName=DAC_CTRL.RESET|NetColor=$00FF6E6E
@@ -4849,7 +4849,7 @@ Net18=NetName=GPIO.SPI1_MOSI|NetColor=$00FFFF6E
 Net19=NetName=QSPI_IO2|NetColor=$00FFFF6E
 Net20=NetName=GPIO.QSPI_NCS|NetColor=$00FFFF6E
 Net21=NetName=EEM.LVDS0_N|NetColor=$006EFF6E
-Net22=NetName=TERM_IND|NetColor=$00FF6E6E
+Net22=NetName=TERM_IND|NetColor=$006EFF6E
 Net23=NetName=OUT2B_N|NetColor=$006EFF6E
 Net24=NetName=AUX_DAC_CTRL.BIN|NetColor=$00FFFF6E
 Net25=NetName=FPGA_CLK1.CLK_N|NetColor=$00FF6E6E
@@ -4945,10 +4945,10 @@ Net114=NetName=DAC_CLKIN|NetColor=$00FF6E6E
 Net115=NetName=AUX_DAC_SPI.SDO|NetColor=$00FFFF6E
 Net116=NetName=ADC_CH2_DATA.OUTA_P|NetColor=$00FF6E6E
 Net117=NetName=LVDS6_P|NetColor=$006EFF6E
-Net118=NetName=ADC_AFE_CH1_nSHDN|NetColor=$00FF6E6E
+Net118=NetName=ADC_AFE_CH1_nSHDN|NetColor=$006EFF6E
 Net119=NetName=ENC_P|NetColor=$006EFF6E
-Net120=NetName=LVDS5_N|NetColor=$006EFF6E
-Net121=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
+Net120=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
+Net121=NetName=LVDS5_N|NetColor=$006EFF6E
 Net122=NetName=SCLK|NetColor=$00FF6E6E
 Net123=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
 Net124=NetName=CLK2_N|NetColor=$006EFF6E
@@ -4969,7 +4969,7 @@ Net138=NetName=LEDs.FP_LED_3|NetColor=$006EFF6E
 Net139=NetName=FPGA_CLK2.CLK_P|NetColor=$006EFF6E
 Net140=NetName=LVDS4_P|NetColor=$006EFF6E
 Net141=NetName=AD5722_SDIN|NetColor=$00FFFF6E
-Net142=NetName=ADC_AFE_CH2_nSHDN|NetColor=$00FF6E6E
+Net142=NetName=ADC_AFE_CH2_nSHDN|NetColor=$006EFF6E
 Net143=NetName=ADC_CH2_DATA.OUTC_P|NetColor=$00FF6E6E
 Net144=NetName=A0|NetColor=$00FFFF6E
 Net145=NetName=DI0|NetColor=$00FFFF6E
@@ -4998,7 +4998,7 @@ Net167=NetName=eSD_DAT1|NetColor=$00FFFF6E
 Net168=NetName=FPGA_CLK2.CLK_N|NetColor=$006EFF6E
 Net169=NetName=LVDS0_N|NetColor=$006EFF6E
 Net170=NetName=EEM.LVDS4_N|NetColor=$006EFF6E
-Net171=NetName=TERM_STAT0|NetColor=$00FF6E6E
+Net171=NetName=TERM_STAT0|NetColor=$006EFF6E
 Net172=NetName=FP_LED_2|NetColor=$00FFFF6E
 Net173=NetName=ADC_ENC.CLK_P|NetColor=$006EFF6E
 Net174=NetName=SPI1_MISO|NetColor=$00FFFF6E
@@ -5028,7 +5028,7 @@ Net197=NetName=CH1_DATA.OUTB_P|NetColor=$00FF6E6E
 Net198=NetName=ADC_CH1_DATA.OUTA_N|NetColor=$00FF6E6E
 Net199=NetName=CH1_DATA.OUTA_N|NetColor=$00FF6E6E
 Net200=NetName=ADC_AUX.SCLK|NetColor=$00FFFF6E
-Net201=NetName=TERM_STAT1|NetColor=$00FF6E6E
+Net201=NetName=TERM_STAT1|NetColor=$006EFF6E
 Net202=NetName=ADC_SPI.ADC_SDO|NetColor=$00FF6E6E
 Net203=NetName=USB.OTG-D_N|NetColor=$00FFFF6E
 Net204=NetName=GPIO.QSPI_CLK|NetColor=$00FFFF6E
@@ -5099,7 +5099,7 @@ Net268=NetName=HRTIM_CHA1|NetColor=$00FFFF6E
 Net269=NetName=ADC_CS|NetColor=$00FF6E6E
 Net270=NetName=SD_DAT0|NetColor=$00FF6E6E
 Net271=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
-Net272=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
+Net272=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
