@@ -1,0 +1,145 @@
+tbody /* tables */
+		
+table.tablesorter 
+{
+	font-family:segoe ui;
+	background-color: #EDE7D9;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th
+{
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter tbody td {
+	color: #0;
+	padding: 4px;
+	vertical-align: top;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #DADADA;
+}
+
+table.simpletable
+	{
+	
+		background-color: #EDE7D9;
+
+		align: center;
+		border: 1px solid black;
+		cellspacing: 2;
+		cellpadding: 2;
+		text-indent: 15px;
+		text-align: left;
+		margin: auto;
+		table-layout: fixed;
+		width: 100%;
+		word-wrap: break-word;
+	}
+
+table.simpletable thead tr th {
+ background-color:#EDE7D9; word-wrap: break-word; overflow-wrap: break-word; }
+table.simpletable tbody tr {
+ word-wrap: break-word; overflow-wrap: break-word; 
+}
+
+
+table.simpletable thead .th30 {
+ background-color:#EDE7D9; word-wrap: break-word; overflow-wrap: break-word; width: 30%; }
+table.simpletable thead .th70 {
+ background-color:#EDE7D9; word-wrap: break-word; overflow-wrap: break-word; width: 70%; }
+
+button.foldButton
+{
+    background-color: #EDE7D9;
+
+    color: 0
+
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.foldButton.active
+{
+    background-color: #EDE7D9;
+}
+
+button.foldButton:hover
+{
+    background-color: #EDE7C0;
+}
+
+button.foldButton:after
+{
+    content: '\002B';
+    color:#0A0A0A;
+    float: right;
+    margin-left: 5px;
+}
+
+button.foldButton.active:after
+{
+    content: "\2212";
+}
+
+div.foldablePanel
+{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.roundborder
+{
+    background: #aaaaaa;
+    border-radius: 5px;
+	padding: 10px;
+}
+
+tr.onmouseout_odd
+{
+	background-color : #FFFFFF;
+}
+
+tr.onmouseout_even
+{ 
+	background-color : #FAFAFA;
+}
+
+tr.onmouseover_odd, tr.onmouseover_even
+{ 
+	background-color : #EEEEEE;
+} 
