@@ -18,7 +18,7 @@ RevisionNamingSchemeGUID=
 Name=Fast_Servo.OutJob
 Description=
 TargetOutputMedium=Folder Structure
-VariantName=Standard_DCjack
+VariantName=Fast_Servo_Default
 VariantScope=1
 CurrentConfigurationName=
 TargetPrinter=Microsoft Print to PDF
@@ -223,17 +223,17 @@ PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration9_Name1=ColumnNameFormat
 Configuration9_Item1=CaptionAsName
 Configuration9_Name2=General
-Configuration9_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1314|FormHeight=659|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration9_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1828|FormHeight=1005|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
 Configuration9_Name3=GroupOrder
 Configuration9_Item3=Comment=True|Footprint=True
 Configuration9_Name4=OutputConfigurationParameter1
 Configuration9_Item4=??
 Configuration9_Name5=SortOrder
-Configuration9_Item5=Comment=Up
+Configuration9_Item5=Comment=Down
 Configuration9_Name6=VisibleOrder
-Configuration9_Item6=Comment=100|Description=100|Designator=468|Footprint=100|Manufacturer=100|Manufacturer Part Number=183|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
+Configuration9_Item6=Description=157|Comment=100|Designator=468|Footprint=100|Manufacturer=100|Manufacturer Part Number=183|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
 Configuration9_Name7=VisibleOrder_Flat
-Configuration9_Item7=Comment=100|Description=100|Designator=468|Footprint=100|Manufacturer=100|Manufacturer Part Number=183|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
+Configuration9_Item7=Description=157|Comment=100|Designator=468|Footprint=100|Manufacturer=100|Manufacturer Part Number=183|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
 OutputType10=Board Stack Report
 OutputName10=Report Board Stack
 OutputCategory10=Fabrication
