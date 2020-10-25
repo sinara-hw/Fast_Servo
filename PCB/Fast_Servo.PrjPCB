@@ -37,6 +37,11 @@ IncludeDesignInRelease=0
 PrefsVaultGUID=
 PrefsRevisionGUID=
 
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
+
 [Document1]
 DocumentPath=Fast_Servo.OutJob
 AnnotationEnabled=1
@@ -82,7 +87,7 @@ AnnotateOrder=24
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -99,7 +104,7 @@ AnnotateOrder=11
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -116,7 +121,7 @@ AnnotateOrder=19
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -133,7 +138,7 @@ AnnotateOrder=15
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -150,7 +155,7 @@ AnnotateOrder=16
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -167,7 +172,7 @@ AnnotateOrder=27
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -184,7 +189,7 @@ AnnotateOrder=28
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -201,7 +206,7 @@ AnnotateOrder=7
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -252,7 +257,7 @@ AnnotateOrder=47
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -269,7 +274,7 @@ AnnotateOrder=33
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -286,7 +291,7 @@ AnnotateOrder=23
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -303,21 +308,21 @@ AnnotateOrder=20
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QGGHCNOY
 
 [Document17]
-DocumentPath=LEDs.SchDoc
+DocumentPath=LEDS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=22
-DoLibraryUpdate=0
+AnnotateOrder=-1
+DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
@@ -337,7 +342,7 @@ AnnotateOrder=29
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -354,7 +359,7 @@ AnnotateOrder=44
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -371,7 +376,7 @@ AnnotateOrder=21
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -388,7 +393,7 @@ AnnotateOrder=12
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -405,7 +410,7 @@ AnnotateOrder=48
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -422,7 +427,7 @@ AnnotateOrder=14
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -439,7 +444,7 @@ AnnotateOrder=45
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -456,7 +461,7 @@ AnnotateOrder=17
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -490,14 +495,14 @@ AnnotateOrder=26
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HAHYSKRR
 
 [Document28]
-DocumentPath=Supply_Fast_Servo.SchDoc
+DocumentPath=POWER_SUPPLY.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -507,7 +512,7 @@ AnnotateOrder=25
 DoLibraryUpdate=0
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -575,7 +580,7 @@ AnnotateOrder=36
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -592,7 +597,7 @@ AnnotateOrder=30
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -609,7 +614,7 @@ AnnotateOrder=34
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -626,7 +631,7 @@ AnnotateOrder=32
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -643,7 +648,7 @@ AnnotateOrder=37
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -660,7 +665,7 @@ AnnotateOrder=38
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -694,7 +699,7 @@ AnnotateOrder=39
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -803,23 +808,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document46]
-DocumentPath=LEDs.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document47]
 DocumentPath=EEPROM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -836,7 +824,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document48]
+[Document47]
 DocumentPath=ADC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -853,7 +841,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document49]
+[Document48]
 DocumentPath=PWR_P1V8A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -864,13 +852,13 @@ AnnotateOrder=40
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UMFHJXJD
 
-[Document50]
+[Document49]
 DocumentPath=PWR_N5V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -881,13 +869,13 @@ AnnotateOrder=41
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KSFNKAFM
 
-[Document51]
+[Document50]
 DocumentPath=PWR_N5V5.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -898,13 +886,13 @@ AnnotateOrder=31
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WKFVAFNQ
 
-[Document52]
+[Document51]
 DocumentPath=PWR_P5V5.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -921,7 +909,7 @@ DItemRevisionGUID=
 GenerateClassCluster=1
 DocumentUniqueId=UODOOYHC
 
-[Document53]
+[Document52]
 DocumentPath=PWR_P3V3A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -932,13 +920,13 @@ AnnotateOrder=42
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YJBKDDHB
 
-[Document54]
+[Document53]
 DocumentPath=PWR_P5V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -949,13 +937,13 @@ AnnotateOrder=43
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GCZLGLHT
 
-[Document55]
+[Document54]
 DocumentPath=OK6010_DB.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -972,7 +960,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FLUMCSBN
 
-[Document56]
+[Document55]
 DocumentPath=TE0706.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -989,7 +977,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document57]
+[Document56]
 DocumentPath=FastServo.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1006,7 +994,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWRMRARK
 
-[Document58]
+[Document57]
 DocumentPath=ADC.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1023,7 +1011,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document59]
+[Document58]
 DocumentPath=DAC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1040,7 +1028,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document60]
+[Document59]
 DocumentPath=CLK_GEN.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1057,7 +1045,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document61]
+[Document60]
 DocumentPath=PWR_P12V0A_N12V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1068,13 +1056,13 @@ AnnotateOrder=46
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KYIVEFAP
 
-[Document62]
+[Document61]
 DocumentPath=CON_EEM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1091,7 +1079,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document63]
+[Document62]
 DocumentPath=CON_ETH.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1108,7 +1096,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document64]
+[Document63]
 DocumentPath=CON_MEZZANINE_GPIO_JTAG.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1125,7 +1113,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document65]
+[Document64]
 DocumentPath=CON_JTAG.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1142,7 +1130,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document66]
+[Document65]
 DocumentPath=CON_JTAG_UART.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1159,7 +1147,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document67]
+[Document66]
 DocumentPath=CON_MEZZANINE_GPIO.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1176,8 +1164,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document68]
+[Document67]
 DocumentPath=SOM_JB1.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document68]
+DocumentPath=LEDs.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1216,10 +1221,6 @@ Variation14=Designator=R19|UniqueId=\EVPFTZYQ\XQPORLDN|Kind=1|AlternatePart=
 Variation15=Designator=R5|UniqueId=\RZIXQALB\PLGJPAYI|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
-[GeneratedDocument1]
-DocumentPath=BOM\Bill of Materials-Fast_Servo.xls
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -1227,18 +1228,48 @@ ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
-ContentTypeGUID=
-ConfigurationType=
+ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
+ConfigurationType=Custom
 
 [Configuration2]
-Name=Default Configuration
+Name=Sources
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
-ContentTypeGUID=
-ConfigurationType=
+ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
+ConfigurationType=Source
+
+[Configuration3]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration4]
+Name=Assembly Fast_Servo_Default
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=Fast_Servo_Default
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration5]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Generic_EDE]
 OutputDir=Project Outputs for Zotino
@@ -4830,9 +4861,9 @@ ComponentIsDeviceSheet146=0
 [NetInfos]
 Net1=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
 Net2=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
-Net3=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
-Net4=NetName=BIN|NetColor=$00FFFF6E
-Net5=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net3=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net4=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net5=NetName=BIN|NetColor=$00FFFF6E
 Net6=NetName=UART_RX|NetColor=$00FFFF6E
 Net7=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
 Net8=NetName=DAC_AUX_BIN|NetColor=$00FFFF6E
@@ -4961,8 +4992,8 @@ Net130=NetName=LVDS6_P|NetColor=$006EFF6E
 Net131=NetName=ADC_AFE_CH1_nSHDN|NetColor=$006EFF6E
 Net132=NetName=DAC_AUX_nSYNC|NetColor=$00FFFF6E
 Net133=NetName=ENC_P|NetColor=$006EFF6E
-Net134=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
-Net135=NetName=LVDS5_N|NetColor=$006EFF6E
+Net134=NetName=LVDS5_N|NetColor=$006EFF6E
+Net135=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
 Net136=NetName=SCLK|NetColor=$00FF6E6E
 Net137=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
 Net138=NetName=CLK2_N|NetColor=$006EFF6E
@@ -5137,7 +5168,7 @@ Net306=NetName=ADC_CS|NetColor=$00FF6E6E
 Net307=NetName=SD_DAT0|NetColor=$00FF6E6E
 Net308=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
 Net309=NetName=DAC_AUX_nLDAC|NetColor=$00FFFF6E
-Net310=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net310=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
