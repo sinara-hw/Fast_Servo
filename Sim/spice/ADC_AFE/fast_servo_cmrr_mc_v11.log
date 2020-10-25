@@ -1,0 +1,92 @@
+Circuit: * C:\Users\Piotr Zdunek\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\AFE\fast_servo_cmrr_mc_v11.asc
+
+WARNING: Less than two connections to node VEE.  This node is used by V3.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+Gmin = 2.62144
+vernier = 0.125
+vernier = 0.166667
+vernier = 0.0833333
+Gmin = 2.20174
+vernier = 0.0416667
+vernier = 0.0208333
+vernier = 0.0104167
+vernier = 0.00520833
+Gmin = 2.17338
+vernier = 0.00694444
+Gmin = 2.14064
+vernier = 0.00925925
+vernier = 0.0123457
+Gmin = 2.08809
+vernier = 0.0164609
+vernier = 0.0219478
+Gmin = 2.00751
+vernier = 0.0292638
+Gmin = 1.88342
+vernier = 0.0390184
+vernier = 0.0520245
+Gmin = 1.69687
+vernier = 0.0693659
+vernier = 0.0924879
+Gmin = 1.43908
+vernier = 0.123317
+Gmin = 1.10284
+vernier = 0.164423
+vernier = 0.0822114
+vernier = 0.0411057
+vernier = 0.0205529
+Gmin = 1.01194
+vernier = 0.0102764
+vernier = 0.00513821
+vernier = 0.00256911
+Gmin = 1.00805
+vernier = 0.00128455
+Gmin = 1.00417
+vernier = 0.000642277
+vernier = 0.000856369
+vernier = 0.000428184
+Gmin = 1.00326
+vernier = 0.000570912
+vernier = 0.000428184
+Gmin = 1.00236
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+.step run=1
+.step run=2
+.step run=3
+.step run=4
+.step run=5
+.step run=6
+.step run=7
+.step run=8
+.step run=9
+.step run=10
+
+Date: Fri May 29 21:18:43 2020
+Total elapsed time: 33.344 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 5244
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 300
+fillins = 668
+solver = Normal
+Matrix Compiler1:    2727 opcodes
+Matrix Compiler2: 35.47 KB object code size  8.2/10.0/[5.0]
+

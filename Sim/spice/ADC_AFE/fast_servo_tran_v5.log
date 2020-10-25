@@ -1,0 +1,78 @@
+Circuit: * C:\Users\Piotr Zdunek\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\AFE\fast_servo_tran_v5.asc
+
+WARNING: Less than two connections to node VCC2.  This node is used by V4.
+WARNING: Less than two connections to node VEE2.  This node is used by V5.
+WARNING: Less than two connections to node VEE3.  This node is used by V8.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+Gmin = 3.08405
+vernier = 0.125
+vernier = 0.166667
+Gmin = 2.33946
+vernier = 0.0833333
+vernier = 0.0416667
+vernier = 0.0208333
+Gmin = 2.12276
+vernier = 0.0104167
+vernier = 0.0138889
+Gmin = 2.07366
+vernier = 0.0185185
+vernier = 0.0246913
+Gmin = 1.98387
+vernier = 0.0329218
+Gmin = 1.84651
+vernier = 0.0438957
+vernier = 0.0585276
+Gmin = 1.6422
+vernier = 0.0780367
+vernier = 0.104049
+Gmin = 1.36459
+vernier = 0.138732
+Gmin = 1.01205
+vernier = 0.0693659
+vernier = 0.034683
+vernier = 0.0173415
+vernier = 0.00867074
+Gmin = 1.01605
+vernier = 0.00433537
+vernier = 0.00216769
+Gmin = 1.00674
+vernier = 0.00108384
+Gmin = 1.00374
+vernier = 0.00144512
+vernier = 0.000722562
+vernier = 0.000963415
+vernier = 0.000481708
+Gmin = 1.00272
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Mon Jun 15 19:14:56 2020
+Total elapsed time: 19.501 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 11688
+traniter = 6987
+tranpoints = 2013
+accept = 1761
+rejected = 252
+matrix size = 301
+fillins = 738
+solver = Normal
+Thread vector: 279.7/61.7[4] 408.8/175.1[4] 15.4/65.2[1] 4.3/2049.5[1]  2592/500
+Matrix Compiler1: 55.34 KB object code size  70.5/14.7/[10.8]
+Matrix Compiler2: 35.76 KB object code size  23.7/28.5/[6.0]
+
