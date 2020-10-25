@@ -1,0 +1,35 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -48 -88 64 88
+WINDOW 0 8 -88 Bottom 2
+WINDOW 3 8 88 Top 2
+SYMATTR Prefix X
+SYMATTR Value ADA4930
+SYMATTR ModelFile C:\Users\Piotr Zdunek\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\AFE_DAC\ada4930.cir
+PIN 64 64 LEFT 8
+PINATTR PinName OUT_FD_N
+PINATTR SpiceOrder 1
+PIN 64 -64 LEFT 8
+PINATTR PinName OUT_FD_P
+PINATTR SpiceOrder 2
+PIN -48 -48 LEFT 8
+PINATTR PinName +
+PINATTR SpiceOrder 3
+PIN -48 48 LEFT 8
+PINATTR PinName -
+PINATTR SpiceOrder 4
+PIN -48 -80 RIGHT 8
+PINATTR PinName VCC
+PINATTR SpiceOrder 5
+PIN -48 80 RIGHT 8
+PINATTR PinName VEE
+PINATTR SpiceOrder 6
+PIN 64 -16 LEFT 8
+PINATTR PinName OUT_P
+PINATTR SpiceOrder 7
+PIN 64 16 LEFT 8
+PINATTR PinName OUT_N
+PINATTR SpiceOrder 8
+PIN -48 0 RIGHT 8
+PINATTR PinName VOCM
+PINATTR SpiceOrder 9

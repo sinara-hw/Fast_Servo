@@ -1,0 +1,31 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -65 71 -65 -73
+LINE Normal 80 0 -64 72
+LINE Normal -64 -73 80 0
+WINDOW 0 0 -72 Bottom 2
+WINDOW 3 0 72 Top 2
+SYMATTR Value ADA4817
+SYMATTR Prefix X
+SYMATTR ModelFile C:\Users\piotr\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\ada4817.cir
+PIN -64 -16 LEFT 8
+PINATTR PinName +
+PINATTR SpiceOrder 1
+PIN -64 16 LEFT 8
+PINATTR PinName -
+PINATTR SpiceOrder 2
+PIN -16 -48 RIGHT 8
+PINATTR PinName +VS
+PINATTR SpiceOrder 3
+PIN -16 48 RIGHT 8
+PINATTR PinName -VS
+PINATTR SpiceOrder 4
+PIN 80 0 RIGHT 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 5
+PIN 16 -32 RIGHT 8
+PINATTR PinName FB
+PINATTR SpiceOrder 6
+PIN 16 32 RIGHT 8
+PINATTR PinName PD
+PINATTR SpiceOrder 7

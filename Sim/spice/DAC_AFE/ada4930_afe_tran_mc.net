@@ -1,0 +1,35 @@
+* C:\Users\piotr\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\DAC_AFE\ada4930_afe_tran_mc.asc
+XU1 N002 N006 N001 N005 VCC2 VEE2 N003 N004 Vocm ADA4930
+R3 N001 IN_P {mc(348,tola)}
+R4 N005 IN_N {mc(348,tola)}
+V3 VCC2 0 5
+V4 VEE2 0 -2.5
+V5 Vocm 0 0
+R5 OUT_P OUT_N {mc(50,tola)}
+R6 N002 N001 {mc(499,tola)}
+R7 N006 N005 {mc(499,tola)}
+R1 0 IN_P {mc(20,tola)}
+R2 0 IN_N {mc(20,tola)}
+I1 IN_P 0 SINE(0 20m 1MEG) AC 1
+I2 0 IN_N SINE(0 20m 1MEG) AC 1
+C1 N002 N001 {mc(33p,tolb)}
+C2 N006 N005 {mc(33p,tolb)}
+C3 IN_P IN_N {mc(330p,tolb)}
+D1 N003 VCC DI_BAV199
+D2 VEE N003 DI_BAV199
+D3 N004 VCC DI_BAV199
+D4 VEE N004 DI_BAV199
+XU2 N003 N004 OUT_N OUT_P ACM2012_361_2P_T002_s
+.model D D
+.lib C:\Users\piotr\OneDrive\Dokumenty\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 3u 0
+;ac oct 10 20n 100Meg
+.MODEL DI_BAV199 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+.step param run 1 20 1
+.param tola=0.01
+.param tolb = 0.05
+.lib C:\Users\Piotr Zdunek\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\AFE_DAC\ada4930.cir
+.lib C:\Users\piotr\Dropbox\Projects\gk\Fast_Servo\Fast_Servo\Sim\spice\cmf_commercial_signal2line_acm2012_spice_s\ACM2012_361_2P_T002_s.mod
+.backanno
+.end
