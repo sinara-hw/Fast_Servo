@@ -229,7 +229,7 @@ Configuration9_Item3=Comment=True|Footprint=True
 Configuration9_Name4=OutputConfigurationParameter1
 Configuration9_Item4=??
 Configuration9_Name5=SortOrder
-Configuration9_Item5=Comment=Down
+Configuration9_Item5=Comment=Up
 Configuration9_Name6=VisibleOrder
 Configuration9_Item6=Description=157|Comment=100|Designator=468|Footprint=100|Manufacturer=100|Manufacturer Part Number=183|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
 Configuration9_Name7=VisibleOrder_Flat
