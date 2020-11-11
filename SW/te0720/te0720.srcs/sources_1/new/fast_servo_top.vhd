@@ -64,9 +64,6 @@ entity fast_servo_top is
     PL_pin_N22 : out STD_LOGIC;
     PL_pin_P16 : in STD_LOGIC;
     PL_pin_P22 : in STD_LOGIC;
-    DAC_AUX_SDIN              : in STD_LOGIC;           
-    DAC_AUX_SCLK              : out STD_LOGIC;           
-    DAC_AUX_nSYNC             : out STD_LOGIC;          
     HRTIM_CHE1              : out STD_LOGIC;            
     HRTIM_CHA2              : out STD_LOGIC;            
     HRTIM_CHA1              : out STD_LOGIC;            
@@ -79,14 +76,14 @@ entity fast_servo_top is
     ETH_LED2                : out STD_LOGIC;            
     DI0                     : inout STD_LOGIC;           
     DI1                     : inout STD_LOGIC;           
-    SPI1_MISO               : in STD_LOGIC;           
+    SPI1_MISO               : inout STD_LOGIC;           
     SPI1_MOSI               : out STD_LOGIC;           
     SPI1_SCK                : out STD_LOGIC;           
     SPI1_NSS                : out STD_LOGIC;               
     CLK_100M                : out STD_LOGIC;               
     LPTIM2_OUT              : out STD_LOGIC;               
     QSPI_IO                 : out STD_LOGIC_VECTOR(3 downto 0);               
-    QSPI_NCS                : out STD_LOGIC;               
+    QSPI_NCS                : inout STD_LOGIC_VECTOR(0 downto 0);               
     QSPI_CLK                : out STD_LOGIC;               
     ADC_AFE_CH1_GAIN_X10    : out STD_LOGIC;               
     ADC_AFE_CH2_GAIN_X10    : out STD_LOGIC;               
@@ -97,13 +94,17 @@ entity fast_servo_top is
     LED1                    : out STD_LOGIC;          
     LED2                    : out STD_LOGIC;          
     LED3                    : out STD_LOGIC;           
-    ADC_AUX_SGL             : out STD_LOGIC;          
     DAC_AUX_nLDAC           : out STD_LOGIC;           
     DAC_AUX_BIN             : out STD_LOGIC;          
+    DAC_AUX_nCLR            : out STD_LOGIC;           
+    DAC_AUX_SDO             : inout STD_LOGIC;           
+    DAC_AUX_SDIN            : out STD_LOGIC;           
+    DAC_AUX_SCLK            : out STD_LOGIC;           
+    DAC_AUX_nSYNC           : out STD_LOGIC;          
+    ADC_AUX_SGL             : out STD_LOGIC;          
     ADC_AUX_nCS             : out STD_LOGIC;          
     ADC_AUX_SCLK            : out STD_LOGIC;          
     ADC_AUX_RANGE           : out STD_LOGIC;          
-    DAC_AUX_nCLR            : out STD_LOGIC;           
     ADC_AUX_A0	            : out STD_LOGIC;
     ADC_AUX_A1              : out STD_LOGIC;
     ADC_AUX_A2              : out STD_LOGIC;
@@ -161,7 +162,7 @@ entity fast_servo_top is
     DAC_SCLK                : out STD_LOGIC;                  
     DAC_RESET               : out STD_LOGIC;      
     DAC_nCS                 : out STD_LOGIC;        
-    DAC_SDIO                : in STD_LOGIC;      
+    DAC_SDIO                : inout STD_LOGIC;      
     DAC_DCLKIO              : out STD_LOGIC;      
     ADC_AFE_CH1_nSHDN       : out STD_LOGIC;      
     ADC_AFE_CH2_nSHDN       : out STD_LOGIC;      
@@ -196,19 +197,45 @@ architecture Behavioral of fast_servo_top is
  signal FPGA_CLK1_CLK: STD_LOGIC; 
 
  signal AXI_GPIO_tri_io : STD_LOGIC_VECTOR ( 31 downto 0 );
- signal AXI_SPI_io0_io : STD_LOGIC;
- signal AXI_SPI_io1_io : STD_LOGIC;
- signal AXI_SPI_ss_io : STD_LOGIC_VECTOR ( 3 downto 0 );
 
+ signal AXI_QSPI_io0_io :  STD_LOGIC;
+ signal AXI_QSPI_io1_io :  STD_LOGIC;
+ signal AXI_QSPI_io2_io :  STD_LOGIC;
+ signal AXI_QSPI_io3_io :  STD_LOGIC;
+ signal AXI_QSPI_sck_io :  STD_LOGIC;
+ signal AXI_QSPI_ss_io :   STD_LOGIC_VECTOR ( 0 to 0 );
 
+ signal SPI0_io0_io : STD_LOGIC;
+ signal SPI0_io1_io : STD_LOGIC;
+ signal SPI0_sck_io : STD_LOGIC;
+ signal SPI0_ss1_o  : STD_LOGIC;
+ signal SPI0_ss2_o  : STD_LOGIC;
+ signal SPI0_ss_io  : STD_LOGIC;
+ signal SPI1_io0_io : STD_LOGIC;
+ signal SPI1_io1_io : STD_LOGIC;
+ signal SPI1_sck_io : STD_LOGIC;
+ signal SPI1_ss1_o  : STD_LOGIC;
+ signal SPI1_ss2_o  : STD_LOGIC;
+ signal SPI1_ss_io  : STD_LOGIC;
 
+ signal AXI_I2C0_scl_io : STD_LOGIC;
+ signal AXI_I2C0_sda_io : STD_LOGIC;
+ signal AXI_I2C1_scl_io : STD_LOGIC;
+ signal AXI_I2C1_sda_io : STD_LOGIC;
 
   component zsys_wrapper is
   port (
     AXI_GPIO_tri_io : inout STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_SPI_io0_io : inout STD_LOGIC;
-    AXI_SPI_io1_io : inout STD_LOGIC;
-    AXI_SPI_ss_io : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI_I2C0_scl_io : inout STD_LOGIC;
+    AXI_I2C0_sda_io : inout STD_LOGIC;
+    AXI_I2C1_scl_io : inout STD_LOGIC;
+    AXI_I2C1_sda_io : inout STD_LOGIC;
+    AXI_QSPI_io0_io : inout STD_LOGIC;
+    AXI_QSPI_io1_io : inout STD_LOGIC;
+    AXI_QSPI_io2_io : inout STD_LOGIC;
+    AXI_QSPI_io3_io : inout STD_LOGIC;
+    AXI_QSPI_sck_io : inout STD_LOGIC;
+    AXI_QSPI_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -238,7 +265,19 @@ architecture Behavioral of fast_servo_top is
     PL_pin_N15 : in STD_LOGIC;
     PL_pin_N22 : out STD_LOGIC;
     PL_pin_P16 : in STD_LOGIC;
-    PL_pin_P22 : in STD_LOGIC
+    PL_pin_P22 : in STD_LOGIC;
+    SPI0_io0_io : inout STD_LOGIC;
+    SPI0_io1_io : inout STD_LOGIC;
+    SPI0_sck_io : inout STD_LOGIC;
+    SPI0_ss1_o : out STD_LOGIC;
+    SPI0_ss2_o : out STD_LOGIC;
+    SPI0_ss_io : inout STD_LOGIC;
+    SPI1_io0_io : inout STD_LOGIC;
+    SPI1_io1_io : inout STD_LOGIC;
+    SPI1_sck_io : inout STD_LOGIC;
+    SPI1_ss1_o : out STD_LOGIC;
+    SPI1_ss2_o : out STD_LOGIC;
+    SPI1_ss_io : inout STD_LOGIC
   );
 end component zsys_wrapper;
 
@@ -247,9 +286,18 @@ begin
 zsys_wrapper_i: component zsys_wrapper
      port map (
       AXI_GPIO_tri_io => AXI_GPIO_tri_io,
-      AXI_SPI_io0_io  => AXI_SPI_io0_io, 
-      AXI_SPI_io1_io  => AXI_SPI_io1_io,
-      AXI_SPI_ss_io   => AXI_SPI_ss_io,  
+
+      AXI_I2C0_scl_io => AXI_I2C0_scl_io,
+      AXI_I2C0_sda_io => AXI_I2C0_sda_io,
+      AXI_I2C1_scl_io => AXI_I2C1_scl_io,
+      AXI_I2C1_sda_io => AXI_I2C1_sda_io,
+    
+      AXI_QSPI_io0_io => AXI_QSPI_io0_io, 
+      AXI_QSPI_io1_io => AXI_QSPI_io1_io, 
+      AXI_QSPI_io2_io => AXI_QSPI_io2_io, 
+      AXI_QSPI_io3_io => AXI_QSPI_io3_io, 
+      AXI_QSPI_sck_io => AXI_QSPI_sck_io,
+      AXI_QSPI_ss_io  => AXI_QSPI_ss_io,  
 
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_ba(2 downto 0) => DDR_ba(2 downto 0),
@@ -280,7 +328,19 @@ zsys_wrapper_i: component zsys_wrapper
       PL_pin_N15 => PL_pin_N15,
       PL_pin_N22 => PL_pin_N22,
       PL_pin_P16 => PL_pin_P16,
-      PL_pin_P22 => PL_pin_P22
+      PL_pin_P22 => PL_pin_P22,
+      SPI0_io0_io => SPI0_io0_io,
+      SPI0_io1_io => SPI0_io1_io, 
+      SPI0_sck_io => SPI0_sck_io, 
+      SPI0_ss1_o  => SPI0_ss1_o, 
+      SPI0_ss2_o  => SPI0_ss2_o, 
+      SPI0_ss_io  => SPI0_ss_io, 
+      SPI1_io0_io => SPI1_io0_io, 
+      SPI1_io1_io => SPI1_io1_io, 
+      SPI1_sck_io => SPI1_sck_io, 
+      SPI1_ss1_o  => SPI1_ss1_o, 
+      SPI1_ss2_o  => SPI1_ss2_o, 
+      SPI1_ss_io  => SPI1_ss_io 
     );
 
 -- GPIOs
@@ -301,8 +361,6 @@ LED1                 <= AXI_GPIO_tri_io(13);
 LED2                 <= AXI_GPIO_tri_io(14);
 LED3                 <= AXI_GPIO_tri_io(15);
 ADC_AUX_SGL          <= AXI_GPIO_tri_io(16);
-DAC_AUX_nLDAC        <= AXI_GPIO_tri_io(17);
-DAC_AUX_nCLR         <= AXI_GPIO_tri_io(18);
 ADC_AUX_A0	         <= AXI_GPIO_tri_io(19);
 ADC_AUX_A1           <= AXI_GPIO_tri_io(20);
 ADC_AUX_A2           <= AXI_GPIO_tri_io(21);
@@ -313,41 +371,43 @@ Si5340_nLOL          <= AXI_GPIO_tri_io(25);
 SI5340_LOS_XAXBb     <= AXI_GPIO_tri_io(26);
 SI5340_nRST          <= AXI_GPIO_tri_io(27);
 SI5340_nINTR         <= AXI_GPIO_tri_io(28);
-DAC_RESET            <= AXI_GPIO_tri_io(29);
 ADC_AFE_CH1_nSHDN    <= AXI_GPIO_tri_io(30);
 ADC_AFE_CH2_nSHDN    <= AXI_GPIO_tri_io(31);
 
--- DAC_AUX_SDIN  
--- DAC_AUX_SCLK  
--- DAC_AUX_nSYNC 
+DAC_AUX_SDIN  <= SPI0_io0_io; -- MOSI
+DAC_AUX_SDO   <= SPI0_io1_io; -- MISO
+DAC_AUX_SCLK  <= SPI0_sck_io; 
+DAC_AUX_nSYNC <= SPI0_ss_io; 
+DAC_AUX_nLDAC <= AXI_GPIO_tri_io(17);
+DAC_AUX_nCLR  <= AXI_GPIO_tri_io(18);
+                  
+SPI1_MISO  <= SPI0_io1_io; 
+SPI1_MOSI  <= SPI0_io0_io; 
+SPI1_SCK   <= SPI0_sck_io; 
+SPI1_NSS   <= SPI0_ss1_o; 
 
--- SPI1 
--- SPI1_MISO 
--- SPI1_MOSI 
--- SPI1_SCK  
--- SPI1_NSS  
+QSPI_IO(0) <= AXI_QSPI_io0_io;
+QSPI_IO(1) <= AXI_QSPI_io1_io;
+QSPI_IO(2) <= AXI_QSPI_io2_io;
+QSPI_IO(3) <= AXI_QSPI_io3_io;
+QSPI_NCS   <= AXI_QSPI_ss_io;
+QSPI_CLK   <= AXI_QSPI_sck_io;
 
--- QSPI
--- QSPI_IO  
--- QSPI_NCS 
--- QSPI_CLK 
+I2C1_SDA <= AXI_I2C0_sda_io;
+I2C1_SCL <= AXI_I2C0_scl_io;
 
--- I2C1_SDA         
--- I2C1_SCL         
-
--- SI5340_SCL       
--- SI5340_SDA       
-
+SI5340_SCL <= AXI_I2C1_scl_io;
+SI5340_SDA <= AXI_I2C1_sda_io;
 
 -- ADC_AUX_DOUTA    
 -- ADC_AUX_DOUTB    
 -- ADC_AUX_nCS      
 -- ADC_AUX_SCLK     
 
--- DAC_SCLK         
--- DAC_RESET        
--- DAC_nCS          
--- DAC_SDIO         
+DAC_RESET <= AXI_GPIO_tri_io(29);
+DAC_SCLK  <= SPI0_sck_io;    
+DAC_SDIO  <= SPI0_io1_io; --MOSI     
+DAC_nCS   <= SPI0_ss2_o;    
 
 
 IBUFDS_inst : IBUFDS

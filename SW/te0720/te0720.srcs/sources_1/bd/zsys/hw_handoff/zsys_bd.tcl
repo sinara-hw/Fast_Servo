@@ -158,11 +158,19 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set AXI_GPIO [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 AXI_GPIO ]
 
-  set AXI_SPI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 AXI_SPI ]
+  set AXI_I2C0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 AXI_I2C0 ]
+
+  set AXI_I2C1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 AXI_I2C1 ]
+
+  set AXI_QSPI [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 AXI_QSPI ]
 
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
 
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
+
+  set SPI0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPI0 ]
+
+  set SPI1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPI1 ]
 
 
   # Create ports
@@ -182,14 +190,29 @@ proc create_root_design { parentCell } {
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list \
-   CONFIG.GPIO_BOARD_INTERFACE {p1a} \
+   CONFIG.C_GPIO_WIDTH {32} \
+   CONFIG.GPIO_BOARD_INTERFACE {Custom} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_0
+
+  # Create instance: axi_iic_0, and set properties
+  set axi_iic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_0 ]
+
+  # Create instance: axi_iic_1, and set properties
+  set axi_iic_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_1 ]
 
   # Create instance: axi_quad_spi_0, and set properties
   set axi_quad_spi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0 ]
   set_property -dict [ list \
-   CONFIG.C_NUM_SS_BITS {4} \
+   CONFIG.C_FIFO_DEPTH {256} \
+   CONFIG.C_NUM_SS_BITS {1} \
+   CONFIG.C_SCK_RATIO {2} \
+   CONFIG.C_SPI_MEMORY {0} \
+   CONFIG.C_SPI_MODE {2} \
+   CONFIG.C_TYPE_OF_AXI4_INTERFACE {0} \
+   CONFIG.C_USE_STARTUP {0} \
+   CONFIG.C_USE_STARTUP_INT {0} \
+   CONFIG.C_XIP_MODE {0} \
  ] $axi_quad_spi_0
 
   # Create instance: processing_system7_0, and set properties
@@ -208,7 +231,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ACT_QSPI_PERIPHERAL_FREQMHZ {200.000000} \
    CONFIG.PCW_ACT_SDIO_PERIPHERAL_FREQMHZ {100.000000} \
    CONFIG.PCW_ACT_SMC_PERIPHERAL_FREQMHZ {10.000000} \
-   CONFIG.PCW_ACT_SPI_PERIPHERAL_FREQMHZ {10.000000} \
+   CONFIG.PCW_ACT_SPI_PERIPHERAL_FREQMHZ {166.666672} \
    CONFIG.PCW_ACT_TPIU_PERIPHERAL_FREQMHZ {200.000000} \
    CONFIG.PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ {111.111115} \
    CONFIG.PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ {111.111115} \
@@ -250,8 +273,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_EN_EMIO_I2C0 {1} \
    CONFIG.PCW_EN_EMIO_I2C1 {0} \
    CONFIG.PCW_EN_EMIO_SDIO1 {0} \
-   CONFIG.PCW_EN_EMIO_SPI0 {0} \
-   CONFIG.PCW_EN_EMIO_SPI1 {0} \
+   CONFIG.PCW_EN_EMIO_SPI0 {1} \
+   CONFIG.PCW_EN_EMIO_SPI1 {1} \
    CONFIG.PCW_EN_EMIO_TTC0 {1} \
    CONFIG.PCW_EN_EMIO_TTC1 {1} \
    CONFIG.PCW_EN_EMIO_UART0 {0} \
@@ -264,8 +287,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_EN_QSPI {1} \
    CONFIG.PCW_EN_SDIO0 {1} \
    CONFIG.PCW_EN_SDIO1 {0} \
-   CONFIG.PCW_EN_SPI0 {0} \
-   CONFIG.PCW_EN_SPI1 {0} \
+   CONFIG.PCW_EN_SPI0 {1} \
+   CONFIG.PCW_EN_SPI1 {1} \
    CONFIG.PCW_EN_TTC0 {1} \
    CONFIG.PCW_EN_TTC1 {1} \
    CONFIG.PCW_EN_UART0 {1} \
@@ -557,16 +580,25 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_SDIO_PERIPHERAL_VALID {1} \
    CONFIG.PCW_SINGLE_QSPI_DATA_MODE {x4} \
    CONFIG.PCW_SMC_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_SPI0_GRP_SS0_ENABLE {0} \
-   CONFIG.PCW_SPI0_GRP_SS1_ENABLE {0} \
-   CONFIG.PCW_SPI0_GRP_SS2_ENABLE {0} \
-   CONFIG.PCW_SPI0_PERIPHERAL_ENABLE {0} \
-   CONFIG.PCW_SPI1_GRP_SS0_ENABLE {0} \
-   CONFIG.PCW_SPI1_GRP_SS1_ENABLE {0} \
-   CONFIG.PCW_SPI1_GRP_SS2_ENABLE {0} \
-   CONFIG.PCW_SPI1_PERIPHERAL_ENABLE {0} \
-   CONFIG.PCW_SPI_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_SPI_PERIPHERAL_VALID {0} \
+   CONFIG.PCW_SPI0_GRP_SS0_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS0_IO {EMIO} \
+   CONFIG.PCW_SPI0_GRP_SS1_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS1_IO {EMIO} \
+   CONFIG.PCW_SPI0_GRP_SS2_ENABLE {1} \
+   CONFIG.PCW_SPI0_GRP_SS2_IO {EMIO} \
+   CONFIG.PCW_SPI0_PERIPHERAL_ENABLE {1} \
+   CONFIG.PCW_SPI0_SPI0_IO {EMIO} \
+   CONFIG.PCW_SPI1_GRP_SS0_ENABLE {1} \
+   CONFIG.PCW_SPI1_GRP_SS0_IO {EMIO} \
+   CONFIG.PCW_SPI1_GRP_SS1_ENABLE {1} \
+   CONFIG.PCW_SPI1_GRP_SS1_IO {EMIO} \
+   CONFIG.PCW_SPI1_GRP_SS2_ENABLE {1} \
+   CONFIG.PCW_SPI1_GRP_SS2_IO {EMIO} \
+   CONFIG.PCW_SPI1_PERIPHERAL_ENABLE {1} \
+   CONFIG.PCW_SPI1_SPI1_IO {EMIO} \
+   CONFIG.PCW_SPI_PERIPHERAL_DIVISOR0 {6} \
+   CONFIG.PCW_SPI_PERIPHERAL_FREQMHZ {166.666666} \
+   CONFIG.PCW_SPI_PERIPHERAL_VALID {1} \
    CONFIG.PCW_TPIU_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_TTC0_CLK0_PERIPHERAL_FREQMHZ {133.333333} \
    CONFIG.PCW_TTC0_CLK1_PERIPHERAL_FREQMHZ {133.333333} \
@@ -621,7 +653,7 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {4} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_100M, and set properties
@@ -641,13 +673,19 @@ proc create_root_design { parentCell } {
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports AXI_GPIO] [get_bd_intf_pins axi_gpio_0/GPIO]
-  connect_bd_intf_net -intf_net axi_quad_spi_0_SPI_0 [get_bd_intf_ports AXI_SPI] [get_bd_intf_pins axi_quad_spi_0/SPI_0]
+  connect_bd_intf_net -intf_net axi_iic_0_IIC [get_bd_intf_ports AXI_I2C0] [get_bd_intf_pins axi_iic_0/IIC]
+  connect_bd_intf_net -intf_net axi_iic_1_IIC [get_bd_intf_ports AXI_I2C1] [get_bd_intf_pins axi_iic_1/IIC]
+  connect_bd_intf_net -intf_net axi_quad_spi_0_SPI_0 [get_bd_intf_ports AXI_QSPI] [get_bd_intf_pins axi_quad_spi_0/SPI_0]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_IIC_0 [get_bd_intf_pins SC0720_0/EMIO_I2C1] [get_bd_intf_pins processing_system7_0/IIC_0]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
+  connect_bd_intf_net -intf_net processing_system7_0_SPI_0 [get_bd_intf_ports SPI0] [get_bd_intf_pins processing_system7_0/SPI_0]
+  connect_bd_intf_net -intf_net processing_system7_0_SPI_1 [get_bd_intf_ports SPI1] [get_bd_intf_pins processing_system7_0/SPI_1]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins axi_quad_spi_0/AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_iic_0/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins axi_iic_1/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
 
   # Create port connections
   connect_bd_net -net PHY_LEDs [get_bd_pins vio_0/probe_in0] [get_bd_pins xlconcat_0/dout]
@@ -663,12 +701,14 @@ proc create_root_design { parentCell } {
   connect_bd_net -net SC0720_0_PL_pin_K20 [get_bd_ports PL_pin_K20] [get_bd_pins SC0720_0/PL_pin_K20]
   connect_bd_net -net SC0720_0_PL_pin_L16 [get_bd_ports PL_pin_L16] [get_bd_pins SC0720_0/PL_pin_L16]
   connect_bd_net -net SC0720_0_PL_pin_N22 [get_bd_ports PL_pin_N22] [get_bd_pins SC0720_0/PL_pin_N22]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_quad_spi_0/ext_spi_clk] [get_bd_pins axi_quad_spi_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_iic_0/s_axi_aclk] [get_bd_pins axi_iic_1/s_axi_aclk] [get_bd_pins axi_quad_spi_0/ext_spi_clk] [get_bd_pins axi_quad_spi_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins vio_0/clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_0/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_iic_0/s_axi_aresetn] [get_bd_pins axi_iic_1/s_axi_aresetn] [get_bd_pins axi_quad_spi_0/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
 
   # Create address segments
   assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
+  assign_bd_address -offset 0x41600000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_iic_0/S_AXI/Reg] -force
+  assign_bd_address -offset 0x41610000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_iic_1/S_AXI/Reg] -force
   assign_bd_address -offset 0x41E00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_quad_spi_0/AXI_LITE/Reg] -force
 
 

@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Nov 10 01:17:34 2020
+--Date        : Thu Nov 12 00:15:05 2020
 --Host        : LAPTOP-AOF2DR8H running 64-bit major release  (build 9200)
 --Command     : generate_target zsys_wrapper.bd
 --Design      : zsys_wrapper
@@ -14,10 +14,15 @@ use UNISIM.VCOMPONENTS.ALL;
 entity zsys_wrapper is
   port (
     AXI_GPIO_tri_io : inout STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI_I2C0_scl_io : inout STD_LOGIC;
+    AXI_I2C0_sda_io : inout STD_LOGIC;
+    AXI_I2C1_scl_io : inout STD_LOGIC;
+    AXI_I2C1_sda_io : inout STD_LOGIC;
     AXI_QSPI_io0_io : inout STD_LOGIC;
     AXI_QSPI_io1_io : inout STD_LOGIC;
     AXI_QSPI_io2_io : inout STD_LOGIC;
     AXI_QSPI_io3_io : inout STD_LOGIC;
+    AXI_QSPI_sck_io : inout STD_LOGIC;
     AXI_QSPI_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -142,7 +147,22 @@ architecture STRUCTURE of zsys_wrapper is
     AXI_QSPI_io2_t : out STD_LOGIC;
     AXI_QSPI_io3_i : in STD_LOGIC;
     AXI_QSPI_io3_o : out STD_LOGIC;
-    AXI_QSPI_io3_t : out STD_LOGIC
+    AXI_QSPI_io3_t : out STD_LOGIC;
+    AXI_QSPI_sck_i : in STD_LOGIC;
+    AXI_QSPI_sck_o : out STD_LOGIC;
+    AXI_QSPI_sck_t : out STD_LOGIC;
+    AXI_I2C0_scl_i : in STD_LOGIC;
+    AXI_I2C0_scl_o : out STD_LOGIC;
+    AXI_I2C0_scl_t : out STD_LOGIC;
+    AXI_I2C0_sda_i : in STD_LOGIC;
+    AXI_I2C0_sda_o : out STD_LOGIC;
+    AXI_I2C0_sda_t : out STD_LOGIC;
+    AXI_I2C1_scl_i : in STD_LOGIC;
+    AXI_I2C1_scl_o : out STD_LOGIC;
+    AXI_I2C1_scl_t : out STD_LOGIC;
+    AXI_I2C1_sda_i : in STD_LOGIC;
+    AXI_I2C1_sda_o : out STD_LOGIC;
+    AXI_I2C1_sda_t : out STD_LOGIC
   );
   end component zsys;
   component IOBUF is
@@ -281,6 +301,18 @@ architecture STRUCTURE of zsys_wrapper is
   signal AXI_GPIO_tri_t_7 : STD_LOGIC_VECTOR ( 7 to 7 );
   signal AXI_GPIO_tri_t_8 : STD_LOGIC_VECTOR ( 8 to 8 );
   signal AXI_GPIO_tri_t_9 : STD_LOGIC_VECTOR ( 9 to 9 );
+  signal AXI_I2C0_scl_i : STD_LOGIC;
+  signal AXI_I2C0_scl_o : STD_LOGIC;
+  signal AXI_I2C0_scl_t : STD_LOGIC;
+  signal AXI_I2C0_sda_i : STD_LOGIC;
+  signal AXI_I2C0_sda_o : STD_LOGIC;
+  signal AXI_I2C0_sda_t : STD_LOGIC;
+  signal AXI_I2C1_scl_i : STD_LOGIC;
+  signal AXI_I2C1_scl_o : STD_LOGIC;
+  signal AXI_I2C1_scl_t : STD_LOGIC;
+  signal AXI_I2C1_sda_i : STD_LOGIC;
+  signal AXI_I2C1_sda_o : STD_LOGIC;
+  signal AXI_I2C1_sda_t : STD_LOGIC;
   signal AXI_QSPI_io0_i : STD_LOGIC;
   signal AXI_QSPI_io0_o : STD_LOGIC;
   signal AXI_QSPI_io0_t : STD_LOGIC;
@@ -293,6 +325,9 @@ architecture STRUCTURE of zsys_wrapper is
   signal AXI_QSPI_io3_i : STD_LOGIC;
   signal AXI_QSPI_io3_o : STD_LOGIC;
   signal AXI_QSPI_io3_t : STD_LOGIC;
+  signal AXI_QSPI_sck_i : STD_LOGIC;
+  signal AXI_QSPI_sck_o : STD_LOGIC;
+  signal AXI_QSPI_sck_t : STD_LOGIC;
   signal AXI_QSPI_ss_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal AXI_QSPI_ss_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal AXI_QSPI_ss_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -546,6 +581,34 @@ AXI_GPIO_tri_iobuf_9: component IOBUF
       O => AXI_GPIO_tri_i_9(9),
       T => AXI_GPIO_tri_t_9(9)
     );
+AXI_I2C0_scl_iobuf: component IOBUF
+     port map (
+      I => AXI_I2C0_scl_o,
+      IO => AXI_I2C0_scl_io,
+      O => AXI_I2C0_scl_i,
+      T => AXI_I2C0_scl_t
+    );
+AXI_I2C0_sda_iobuf: component IOBUF
+     port map (
+      I => AXI_I2C0_sda_o,
+      IO => AXI_I2C0_sda_io,
+      O => AXI_I2C0_sda_i,
+      T => AXI_I2C0_sda_t
+    );
+AXI_I2C1_scl_iobuf: component IOBUF
+     port map (
+      I => AXI_I2C1_scl_o,
+      IO => AXI_I2C1_scl_io,
+      O => AXI_I2C1_scl_i,
+      T => AXI_I2C1_scl_t
+    );
+AXI_I2C1_sda_iobuf: component IOBUF
+     port map (
+      I => AXI_I2C1_sda_o,
+      IO => AXI_I2C1_sda_io,
+      O => AXI_I2C1_sda_i,
+      T => AXI_I2C1_sda_t
+    );
 AXI_QSPI_io0_iobuf: component IOBUF
      port map (
       I => AXI_QSPI_io0_o,
@@ -573,6 +636,13 @@ AXI_QSPI_io3_iobuf: component IOBUF
       IO => AXI_QSPI_io3_io,
       O => AXI_QSPI_io3_i,
       T => AXI_QSPI_io3_t
+    );
+AXI_QSPI_sck_iobuf: component IOBUF
+     port map (
+      I => AXI_QSPI_sck_o,
+      IO => AXI_QSPI_sck_io,
+      O => AXI_QSPI_sck_i,
+      T => AXI_QSPI_sck_t
     );
 AXI_QSPI_ss_iobuf_0: component IOBUF
      port map (
@@ -735,6 +805,18 @@ zsys_i: component zsys
       AXI_GPIO_tri_t(2) => AXI_GPIO_tri_t_2(2),
       AXI_GPIO_tri_t(1) => AXI_GPIO_tri_t_1(1),
       AXI_GPIO_tri_t(0) => AXI_GPIO_tri_t_0(0),
+      AXI_I2C0_scl_i => AXI_I2C0_scl_i,
+      AXI_I2C0_scl_o => AXI_I2C0_scl_o,
+      AXI_I2C0_scl_t => AXI_I2C0_scl_t,
+      AXI_I2C0_sda_i => AXI_I2C0_sda_i,
+      AXI_I2C0_sda_o => AXI_I2C0_sda_o,
+      AXI_I2C0_sda_t => AXI_I2C0_sda_t,
+      AXI_I2C1_scl_i => AXI_I2C1_scl_i,
+      AXI_I2C1_scl_o => AXI_I2C1_scl_o,
+      AXI_I2C1_scl_t => AXI_I2C1_scl_t,
+      AXI_I2C1_sda_i => AXI_I2C1_sda_i,
+      AXI_I2C1_sda_o => AXI_I2C1_sda_o,
+      AXI_I2C1_sda_t => AXI_I2C1_sda_t,
       AXI_QSPI_io0_i => AXI_QSPI_io0_i,
       AXI_QSPI_io0_o => AXI_QSPI_io0_o,
       AXI_QSPI_io0_t => AXI_QSPI_io0_t,
@@ -747,6 +829,9 @@ zsys_i: component zsys
       AXI_QSPI_io3_i => AXI_QSPI_io3_i,
       AXI_QSPI_io3_o => AXI_QSPI_io3_o,
       AXI_QSPI_io3_t => AXI_QSPI_io3_t,
+      AXI_QSPI_sck_i => AXI_QSPI_sck_i,
+      AXI_QSPI_sck_o => AXI_QSPI_sck_o,
+      AXI_QSPI_sck_t => AXI_QSPI_sck_t,
       AXI_QSPI_ss_i(0) => AXI_QSPI_ss_i_0(0),
       AXI_QSPI_ss_o(0) => AXI_QSPI_ss_o_0(0),
       AXI_QSPI_ss_t => AXI_QSPI_ss_t,

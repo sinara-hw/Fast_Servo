@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 10 00:58:39 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 12 00:15:06 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="trenz.biz:te0720_2i:part0:1.0" DEVICE="7z020" NAME="zsys" PACKAGE="clg484" SPEEDGRADE="-2"/>
 
@@ -154,64 +154,309 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DQS"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="AXI_SPI_io0_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_i">
+    <PORT DIR="I" NAME="AXI_QSPI_io0_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_i">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io0_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AXI_SPI_io0_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_o">
+    <PORT DIR="O" NAME="AXI_QSPI_io0_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io0_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AXI_SPI_io0_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_t">
+    <PORT DIR="O" NAME="AXI_QSPI_io0_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_t">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io0_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="AXI_SPI_io1_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_i">
+    <PORT DIR="I" NAME="AXI_QSPI_io1_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_i">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io1_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AXI_SPI_io1_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_o">
+    <PORT DIR="O" NAME="AXI_QSPI_io1_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io1_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AXI_SPI_io1_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_t">
+    <PORT DIR="O" NAME="AXI_QSPI_io1_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_t">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io1_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="3" NAME="AXI_SPI_ss_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_i">
+    <PORT DIR="I" LEFT="0" NAME="AXI_QSPI_ss_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_i">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="ss_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="AXI_SPI_ss_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_o">
+    <PORT DIR="O" LEFT="0" NAME="AXI_QSPI_ss_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="ss_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AXI_SPI_ss_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_t">
+    <PORT DIR="O" NAME="AXI_QSPI_ss_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_t">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_0" PORT="ss_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="21" NAME="AXI_GPIO_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
+    <PORT DIR="I" LEFT="31" NAME="AXI_GPIO_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="21" NAME="AXI_GPIO_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+    <PORT DIR="O" LEFT="31" NAME="AXI_GPIO_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="21" NAME="AXI_GPIO_tri_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_t">
+    <PORT DIR="O" LEFT="31" NAME="AXI_GPIO_tri_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_t">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI0_sck_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SCLK_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_sck_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SCLK_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_sck_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SCLK_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI0_io0_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MOSI_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_io0_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MOSI_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_io0_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MOSI_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI0_io1_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MISO_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_io1_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MISO_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_io1_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_MISO_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI0_ss_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_ss_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_ss1_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS1_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS1_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_ss2_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS2_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS2_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI0_ss_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI0_SS_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI1_sck_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SCLK_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_sck_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SCLK_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_sck_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SCLK_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI1_io0_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MOSI_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_io0_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MOSI_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_io0_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MOSI_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI1_io1_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MISO_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_io1_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MISO_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_io1_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_MISO_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SPI1_ss_i" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SS_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_ss_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SS_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_ss1_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS1_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SS1_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_ss2_o" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS2_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SS2_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SPI1_ss_t" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="processing_system7_0" PORT="SPI1_SS_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_QSPI_io2_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io2_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_io2_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io2_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_io2_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io2_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_QSPI_io3_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io3_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_io3_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io3_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_io3_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="io3_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_QSPI_sck_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="sck_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_sck_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="sck_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_QSPI_sck_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_quad_spi_0" PORT="sck_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_I2C0_scl_i" SIGIS="undef" SIGNAME="axi_iic_0_scl_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="scl_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C0_scl_o" SIGIS="undef" SIGNAME="axi_iic_0_scl_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="scl_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C0_scl_t" SIGIS="undef" SIGNAME="axi_iic_0_scl_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="scl_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_I2C0_sda_i" SIGIS="undef" SIGNAME="axi_iic_0_sda_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="sda_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C0_sda_o" SIGIS="undef" SIGNAME="axi_iic_0_sda_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="sda_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C0_sda_t" SIGIS="undef" SIGNAME="axi_iic_0_sda_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_0" PORT="sda_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_I2C1_scl_i" SIGIS="undef" SIGNAME="axi_iic_1_scl_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="scl_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C1_scl_o" SIGIS="undef" SIGNAME="axi_iic_1_scl_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="scl_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C1_scl_t" SIGIS="undef" SIGNAME="axi_iic_1_scl_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="scl_t"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_I2C1_sda_i" SIGIS="undef" SIGNAME="axi_iic_1_sda_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="sda_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C1_sda_o" SIGIS="undef" SIGNAME="axi_iic_1_sda_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="sda_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_I2C1_sda_t" SIGIS="undef" SIGNAME="axi_iic_1_sda_t">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_iic_1" PORT="sda_t"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -261,17 +506,26 @@
         <PORTMAP LOGICAL="PS_PORB" PHYSICAL="FIXED_IO_ps_porb"/>
       </PORTMAPS>
     </BUSINTERFACE>
-    <BUSINTERFACE BUSNAME="axi_quad_spi_0_SPI_0" NAME="AXI_SPI" TYPE="INITIATOR">
+    <BUSINTERFACE BUSNAME="axi_quad_spi_0_SPI_0" NAME="AXI_QSPI" TYPE="INITIATOR">
       <PORTMAPS>
-        <PORTMAP LOGICAL="IO0_I" PHYSICAL="AXI_SPI_io0_i"/>
-        <PORTMAP LOGICAL="IO0_O" PHYSICAL="AXI_SPI_io0_o"/>
-        <PORTMAP LOGICAL="IO0_T" PHYSICAL="AXI_SPI_io0_t"/>
-        <PORTMAP LOGICAL="IO1_I" PHYSICAL="AXI_SPI_io1_i"/>
-        <PORTMAP LOGICAL="IO1_O" PHYSICAL="AXI_SPI_io1_o"/>
-        <PORTMAP LOGICAL="IO1_T" PHYSICAL="AXI_SPI_io1_t"/>
-        <PORTMAP LOGICAL="SS_I" PHYSICAL="AXI_SPI_ss_i"/>
-        <PORTMAP LOGICAL="SS_O" PHYSICAL="AXI_SPI_ss_o"/>
-        <PORTMAP LOGICAL="SS_T" PHYSICAL="AXI_SPI_ss_t"/>
+        <PORTMAP LOGICAL="IO0_I" PHYSICAL="AXI_QSPI_io0_i"/>
+        <PORTMAP LOGICAL="IO0_O" PHYSICAL="AXI_QSPI_io0_o"/>
+        <PORTMAP LOGICAL="IO0_T" PHYSICAL="AXI_QSPI_io0_t"/>
+        <PORTMAP LOGICAL="IO1_I" PHYSICAL="AXI_QSPI_io1_i"/>
+        <PORTMAP LOGICAL="IO1_O" PHYSICAL="AXI_QSPI_io1_o"/>
+        <PORTMAP LOGICAL="IO1_T" PHYSICAL="AXI_QSPI_io1_t"/>
+        <PORTMAP LOGICAL="SS_I" PHYSICAL="AXI_QSPI_ss_i"/>
+        <PORTMAP LOGICAL="SS_O" PHYSICAL="AXI_QSPI_ss_o"/>
+        <PORTMAP LOGICAL="SS_T" PHYSICAL="AXI_QSPI_ss_t"/>
+        <PORTMAP LOGICAL="IO2_I" PHYSICAL="AXI_QSPI_io2_i"/>
+        <PORTMAP LOGICAL="IO2_O" PHYSICAL="AXI_QSPI_io2_o"/>
+        <PORTMAP LOGICAL="IO2_T" PHYSICAL="AXI_QSPI_io2_t"/>
+        <PORTMAP LOGICAL="IO3_I" PHYSICAL="AXI_QSPI_io3_i"/>
+        <PORTMAP LOGICAL="IO3_O" PHYSICAL="AXI_QSPI_io3_o"/>
+        <PORTMAP LOGICAL="IO3_T" PHYSICAL="AXI_QSPI_io3_t"/>
+        <PORTMAP LOGICAL="SCK_I" PHYSICAL="AXI_QSPI_sck_i"/>
+        <PORTMAP LOGICAL="SCK_O" PHYSICAL="AXI_QSPI_sck_o"/>
+        <PORTMAP LOGICAL="SCK_T" PHYSICAL="AXI_QSPI_sck_t"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="AXI_GPIO" TYPE="INITIATOR">
@@ -279,6 +533,62 @@
         <PORTMAP LOGICAL="TRI_I" PHYSICAL="AXI_GPIO_tri_i"/>
         <PORTMAP LOGICAL="TRI_O" PHYSICAL="AXI_GPIO_tri_o"/>
         <PORTMAP LOGICAL="TRI_T" PHYSICAL="AXI_GPIO_tri_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="processing_system7_0_SPI_0" NAME="SPI0" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SCK_I" PHYSICAL="SPI0_sck_i"/>
+        <PORTMAP LOGICAL="SCK_O" PHYSICAL="SPI0_sck_o"/>
+        <PORTMAP LOGICAL="SCK_T" PHYSICAL="SPI0_sck_t"/>
+        <PORTMAP LOGICAL="IO0_I" PHYSICAL="SPI0_io0_i"/>
+        <PORTMAP LOGICAL="IO0_O" PHYSICAL="SPI0_io0_o"/>
+        <PORTMAP LOGICAL="IO0_T" PHYSICAL="SPI0_io0_t"/>
+        <PORTMAP LOGICAL="IO1_I" PHYSICAL="SPI0_io1_i"/>
+        <PORTMAP LOGICAL="IO1_O" PHYSICAL="SPI0_io1_o"/>
+        <PORTMAP LOGICAL="IO1_T" PHYSICAL="SPI0_io1_t"/>
+        <PORTMAP LOGICAL="SS_I" PHYSICAL="SPI0_ss_i"/>
+        <PORTMAP LOGICAL="SS_O" PHYSICAL="SPI0_ss_o"/>
+        <PORTMAP LOGICAL="SS1_O" PHYSICAL="SPI0_ss1_o"/>
+        <PORTMAP LOGICAL="SS2_O" PHYSICAL="SPI0_ss2_o"/>
+        <PORTMAP LOGICAL="SS_T" PHYSICAL="SPI0_ss_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="processing_system7_0_SPI_1" NAME="SPI1" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SCK_I" PHYSICAL="SPI1_sck_i"/>
+        <PORTMAP LOGICAL="SCK_O" PHYSICAL="SPI1_sck_o"/>
+        <PORTMAP LOGICAL="SCK_T" PHYSICAL="SPI1_sck_t"/>
+        <PORTMAP LOGICAL="IO0_I" PHYSICAL="SPI1_io0_i"/>
+        <PORTMAP LOGICAL="IO0_O" PHYSICAL="SPI1_io0_o"/>
+        <PORTMAP LOGICAL="IO0_T" PHYSICAL="SPI1_io0_t"/>
+        <PORTMAP LOGICAL="IO1_I" PHYSICAL="SPI1_io1_i"/>
+        <PORTMAP LOGICAL="IO1_O" PHYSICAL="SPI1_io1_o"/>
+        <PORTMAP LOGICAL="IO1_T" PHYSICAL="SPI1_io1_t"/>
+        <PORTMAP LOGICAL="SS_I" PHYSICAL="SPI1_ss_i"/>
+        <PORTMAP LOGICAL="SS_O" PHYSICAL="SPI1_ss_o"/>
+        <PORTMAP LOGICAL="SS1_O" PHYSICAL="SPI1_ss1_o"/>
+        <PORTMAP LOGICAL="SS2_O" PHYSICAL="SPI1_ss2_o"/>
+        <PORTMAP LOGICAL="SS_T" PHYSICAL="SPI1_ss_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="axi_iic_0_IIC" NAME="AXI_I2C0" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SCL_I" PHYSICAL="AXI_I2C0_scl_i"/>
+        <PORTMAP LOGICAL="SCL_O" PHYSICAL="AXI_I2C0_scl_o"/>
+        <PORTMAP LOGICAL="SCL_T" PHYSICAL="AXI_I2C0_scl_t"/>
+        <PORTMAP LOGICAL="SDA_I" PHYSICAL="AXI_I2C0_sda_i"/>
+        <PORTMAP LOGICAL="SDA_O" PHYSICAL="AXI_I2C0_sda_o"/>
+        <PORTMAP LOGICAL="SDA_T" PHYSICAL="AXI_I2C0_sda_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="axi_iic_1_IIC" NAME="AXI_I2C1" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="SCL_I" PHYSICAL="AXI_I2C1_scl_i"/>
+        <PORTMAP LOGICAL="SCL_O" PHYSICAL="AXI_I2C1_scl_o"/>
+        <PORTMAP LOGICAL="SCL_T" PHYSICAL="AXI_I2C1_scl_t"/>
+        <PORTMAP LOGICAL="SDA_I" PHYSICAL="AXI_I2C1_sda_i"/>
+        <PORTMAP LOGICAL="SDA_O" PHYSICAL="AXI_I2C1_sda_o"/>
+        <PORTMAP LOGICAL="SDA_T" PHYSICAL="AXI_I2C1_sda_t"/>
       </PORTMAPS>
     </BUSINTERFACE>
   </EXTERNALINTERFACES>
@@ -423,7 +733,7 @@
             <REGISTER NAME="GPIO_DATA">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO Data register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x0"/>
-              <PROPERTY NAME="SIZE" VALUE="22"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -436,14 +746,14 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="22"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
             <REGISTER NAME="GPIO_TRI">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO 3-State Control register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x4"/>
-              <PROPERTY NAME="SIZE" VALUE="22"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -456,7 +766,7 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="22"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
@@ -587,7 +897,7 @@
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_GPIO_WIDTH" VALUE="22"/>
+        <PARAMETER NAME="C_GPIO_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_ALL_INPUTS" VALUE="0"/>
         <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="0"/>
@@ -601,7 +911,7 @@
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="Component_Name" VALUE="zsys_axi_gpio_0_0"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="true"/>
-        <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="p1a"/>
+        <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x41200000"/>
@@ -703,17 +1013,17 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="21" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
+        <PORT DIR="I" LEFT="31" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zsys_imp" PORT="AXI_GPIO_tri_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="21" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zsys_imp" PORT="AXI_GPIO_tri_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="21" NAME="gpio_io_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_t">
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zsys_imp" PORT="AXI_GPIO_tri_t"/>
           </CONNECTIONS>
@@ -777,6 +1087,1920 @@
             <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_io_i"/>
             <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_io_o"/>
             <PORTMAP LOGICAL="TRI_T" PHYSICAL="gpio_io_t"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="23" FULLNAME="/axi_iic_0" HWVERSION="2.0" INSTANCE="axi_iic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_iic" VLNV="xilinx.com:ip:axi_iic:2.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_iic;v=v2_0;d=pg090-axi-iic.pdf"/>
+      </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="read-write" INTERFACE="S_AXI" NAME="Reg" RANGE="4096" USAGE="register">
+          <REGISTERS>
+            <REGISTER NAME="GIE">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Global Interrupt Enable Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x1c"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="GIE">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Global Interrupt Enable&#xA;0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core&#xA;1 - Unmasked AXI IIC core interrupts are passed to processor&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="ISR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt Status Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x020"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0xd0"/>
+              <FIELDS>
+                <FIELD NAME="int0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt0 - Arbitration Lost&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int1">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt1 - Transmit Error/Slave Transmit Complete&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int2">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt2 - Transmit FIFO Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int3">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt3 - Recieve FIFO FULL&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int4">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt4 - IIC Bus is Not Busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int5">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt5 - Addressed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int6">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt6 - Not Addessed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int7">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt7 - Transmit FIFO Half Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="IER">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt Enable Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x028"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="int0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt0 - Arbitration Lost&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int1">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt1 - Transmit Error/Slave Transmit Complete&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int2">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt2 - Transmit FIFO Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int3">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt3 - Recieve FIFO FULL&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int4">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt4 - IIC Bus is Not Busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int5">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt5 - Addressed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int6">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt6 - Not Addessed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int7">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt7 - Transmit FIFO Half Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="SOFTR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Soft Reset Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x040"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="RKEY">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Reset Key - Firmware must write a value of 0xA to this field to&#xA;            cause a soft reset of the Interrupt registers of AXI IIC controller.&#xA;            Writing any other value results in an AXI transaction&#xA;            acknowledgement with SLVERR and no reset occurs.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="CR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Control Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x100"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="EN">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit must be set before any other CR bits have any effect&#xA;0 - resets and disables the AXI IIC controller but not the registers or FIFOs&#xA;1 - enables the AXI IIC controller&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Reset">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs&#xA;0 - transmit FIFO normal operation&#xA;1 - resets the transmit FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="MSMS">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When this bit is changed from 0 to 1, the&#xA;AXI IIC bus interface generates a START condition in master mode. When&#xA;this bit is cleared, a STOP condition is generated and the AXI IIC bus&#xA;interface switches to slave mode. When this bit is cleared by the&#xA;hardware, because arbitration for the bus has been lost, a STOP&#xA;condition is not generated&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit selects the direction of master/slave transfers.&#xA;0 - selects an AXI IIC receive&#xA;1 - selects an AXI IIC transmit&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TXAK">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit specifies the value driven onto&#xA;the sda line during acknowledge cycles for both master and slave recievers.&#xA;0 - acknowledge&#xA;1 - not-acknowledge&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Writing a 1 to this bit generates a repeated START &#xA;condition on the bus if the AXI IIC bus interface is the current bus&#xA;master. Attempting a repeated START at the wrong time, if the bus is&#xA;owned by another master, results in a loss of arbitration. This bit is reset&#xA;when the repeated start occurs. This bit must be set prior to writing the&#xA;new address to the TX_FIFO or DTR&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="GC_EN">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setting this bit High allows the AXI IIC to respond to a general call address.&#xA;0 - General Call Disabled&#xA;1 - General Call Enabled&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="SR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Status Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x104"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="ABGC">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set to 1 when another master has issued a general call and&#xA;the general call enable bit is set to 1, CR(6) = 1.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="AAS">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface&#xA;is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit&#xA;address or general call if enabled. This bit is cleared when a stop&#xA;condition is detected or a repeated start occurs.&#xA;0 - indicates not being addressed as a slave&#xA;1 - indicates being addressed as a slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="BB">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit indicates the status of the IIC bus. This bit is set&#xA;when a START condition is detected and cleared when a STOP&#xA;condition is detected.&#xA;0 - indicates the bus is idle&#xA;1 - indicates the bus is busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="ARW">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When the IIC bus interface has been addressed as a slave (AAS is set), &#xA;this bit indicates the value of the read/write bit sent by the master.&#xA;This bit is only valid when a complete transfer has occurred and&#xA;no other transfers have been initiated.&#xA;0 - indicates master writing to slave&#xA;1 - indicates master reading from slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Full">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set High when the transmit FIFO is full.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RX_FIFO_Full">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set High when the receive FIFO is full.&#xA;This bit is set only when all 16 locations in the FIFO are full,&#xA;regardless of the compare value field of the RX_FIFO_PIRQ register.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RX_FIFO_Empty">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This is set High when the receive FIFO is empty.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Empty">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This is set High when the transmit FIFO is empty.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TX_FIFO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Transmit FIFO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x108"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="D7_D0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="If the dynamic stop bit is used and the AXI IIC is a master receiver,&#xA;the value is the number of bytes to receive.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+                <FIELD NAME="Start">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The dynamic start bit can be used to send a start or repeated start sequence on the&#xA;IIC bus. A start sequence is generated if the MSMS = 0, a&#xA;repeated start sequence is generated if the MSMS = 1.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="8"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="8"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="Stop">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The dynamic stop bit can be used to send an IIC stop&#xA;sequence on the IIC bus after the last byte has been transmitted or received.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="9"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="9"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x10C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="D7_D0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="IIC Receive Data&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="ADR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Slave Address Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x110"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Slave_Address">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Address used by the IIC bus interface when in slave mode.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="7"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TX_FIFO_OCY">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Transmit FIFO Occupency Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x114"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Occupancy_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 indicates that&#xA;10 locations are full in the FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO_OCY">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Occupency Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x118"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Occupancy_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 indicates that&#xA;10 locations are full in the FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TEN_ADR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Slave Ten Bit Address Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x11C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="MSB_of_Slave_Address">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="3"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO_PIRQ">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Programmable Depth Interrupt Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x120"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Compare_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 implies that when&#xA;10 locations in the receive FIFO are filled, the receive FIFO&#xA;interrupt is set.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GPO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="General Purpose Output Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x124"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="General_Purpose_Outputs">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The LSB (Bit[0]) is the first bit populated&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUSTA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUSTA Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x128"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setup time for a repeated START condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUSTO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUSTO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x12C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUSTO">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setup time for a repeated STOP condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THDSTA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THDSTA Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x130"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THDSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Hold time for a repeated START condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUDAT">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUDAT Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x134"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUDAT">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Data Setup time&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TBUF">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TBUF Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x138"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TBUF">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bus free time between a STOP and START condition&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THIGH">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THIGH Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x13C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THIGH">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="High Period of the scl clock.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TLOW">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TLOW Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x140"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TLOW">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Low Period of scl clock.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THDDAT">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THDDAT Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x144"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THDDAT">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Data Hold time&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+          </REGISTERS>
+        </ADDRESSBLOCK>
+      </ADDRESSBLOCKS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_IIC_FREQ" VALUE="100000"/>
+        <PARAMETER NAME="C_TEN_BIT_ADR" VALUE="0"/>
+        <PARAMETER NAME="C_GPO_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_S_AXI_ACLK_FREQ_HZ" VALUE="100000000"/>
+        <PARAMETER NAME="C_SCL_INERTIAL_DELAY" VALUE="0"/>
+        <PARAMETER NAME="C_SDA_INERTIAL_DELAY" VALUE="0"/>
+        <PARAMETER NAME="C_SDA_LEVEL" VALUE="1"/>
+        <PARAMETER NAME="C_SMBUS_PMBUS_HOST" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_VALUE" VALUE="0x00"/>
+        <PARAMETER NAME="Component_Name" VALUE="zsys_axi_iic_0_0"/>
+        <PARAMETER NAME="TEN_BIT_ADR" VALUE="7_bit"/>
+        <PARAMETER NAME="AXI_ACLK_FREQ_MHZ" VALUE="100.0"/>
+        <PARAMETER NAME="IIC_FREQ_KHZ" VALUE="100"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="IIC_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x41600000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x4160FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iic2intc_irpt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sda_i" SIGIS="undef" SIGNAME="axi_iic_0_sda_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_sda_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sda_o" SIGIS="undef" SIGNAME="axi_iic_0_sda_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_sda_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sda_t" SIGIS="undef" SIGNAME="axi_iic_0_sda_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_sda_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="scl_i" SIGIS="undef" SIGNAME="axi_iic_0_scl_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_scl_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="scl_o" SIGIS="undef" SIGNAME="axi_iic_0_scl_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_scl_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="scl_t" SIGIS="undef" SIGNAME="axi_iic_0_scl_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C0_scl_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="gpo" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="zsys_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axi_iic_0_IIC" NAME="IIC" TYPE="INITIATOR" VLNV="xilinx.com:interface:iic:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SCL_I" PHYSICAL="scl_i"/>
+            <PORTMAP LOGICAL="SCL_O" PHYSICAL="scl_o"/>
+            <PORTMAP LOGICAL="SCL_T" PHYSICAL="scl_t"/>
+            <PORTMAP LOGICAL="SDA_I" PHYSICAL="sda_i"/>
+            <PORTMAP LOGICAL="SDA_O" PHYSICAL="sda_o"/>
+            <PORTMAP LOGICAL="SDA_T" PHYSICAL="sda_t"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="23" FULLNAME="/axi_iic_1" HWVERSION="2.0" INSTANCE="axi_iic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_iic" VLNV="xilinx.com:ip:axi_iic:2.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_iic;v=v2_0;d=pg090-axi-iic.pdf"/>
+      </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="read-write" INTERFACE="S_AXI" NAME="Reg" RANGE="4096" USAGE="register">
+          <REGISTERS>
+            <REGISTER NAME="GIE">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Global Interrupt Enable Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x1c"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="GIE">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Global Interrupt Enable&#xA;0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core&#xA;1 - Unmasked AXI IIC core interrupts are passed to processor&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="ISR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt Status Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x020"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0xd0"/>
+              <FIELDS>
+                <FIELD NAME="int0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt0 - Arbitration Lost&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int1">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt1 - Transmit Error/Slave Transmit Complete&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int2">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt2 - Transmit FIFO Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int3">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt3 - Recieve FIFO FULL&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int4">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt4 - IIC Bus is Not Busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int5">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt5 - Addressed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int6">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt6 - Not Addessed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int7">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt7 - Transmit FIFO Half Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="IER">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt Enable Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x028"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="int0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt0 - Arbitration Lost&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int1">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt1 - Transmit Error/Slave Transmit Complete&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int2">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt2 - Transmit FIFO Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int3">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt3 - Recieve FIFO FULL&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int4">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt4 - IIC Bus is Not Busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int5">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt5 - Addressed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int6">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt6 - Not Addessed As Slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="int7">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Interrupt7 - Transmit FIFO Half Empty&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="SOFTR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Soft Reset Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x040"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="RKEY">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Reset Key - Firmware must write a value of 0xA to this field to&#xA;            cause a soft reset of the Interrupt registers of AXI IIC controller.&#xA;            Writing any other value results in an AXI transaction&#xA;            acknowledgement with SLVERR and no reset occurs.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="CR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Control Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x100"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="EN">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit must be set before any other CR bits have any effect&#xA;0 - resets and disables the AXI IIC controller but not the registers or FIFOs&#xA;1 - enables the AXI IIC controller&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Reset">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs&#xA;0 - transmit FIFO normal operation&#xA;1 - resets the transmit FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="MSMS">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When this bit is changed from 0 to 1, the&#xA;AXI IIC bus interface generates a START condition in master mode. When&#xA;this bit is cleared, a STOP condition is generated and the AXI IIC bus&#xA;interface switches to slave mode. When this bit is cleared by the&#xA;hardware, because arbitration for the bus has been lost, a STOP&#xA;condition is not generated&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit selects the direction of master/slave transfers.&#xA;0 - selects an AXI IIC receive&#xA;1 - selects an AXI IIC transmit&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TXAK">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit specifies the value driven onto&#xA;the sda line during acknowledge cycles for both master and slave recievers.&#xA;0 - acknowledge&#xA;1 - not-acknowledge&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Writing a 1 to this bit generates a repeated START &#xA;condition on the bus if the AXI IIC bus interface is the current bus&#xA;master. Attempting a repeated START at the wrong time, if the bus is&#xA;owned by another master, results in a loss of arbitration. This bit is reset&#xA;when the repeated start occurs. This bit must be set prior to writing the&#xA;new address to the TX_FIFO or DTR&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="GC_EN">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setting this bit High allows the AXI IIC to respond to a general call address.&#xA;0 - General Call Disabled&#xA;1 - General Call Enabled&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="SR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Status Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x104"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="ABGC">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set to 1 when another master has issued a general call and&#xA;the general call enable bit is set to 1, CR(6) = 1.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="AAS">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface&#xA;is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit&#xA;address or general call if enabled. This bit is cleared when a stop&#xA;condition is detected or a repeated start occurs.&#xA;0 - indicates not being addressed as a slave&#xA;1 - indicates being addressed as a slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="BB">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit indicates the status of the IIC bus. This bit is set&#xA;when a START condition is detected and cleared when a STOP&#xA;condition is detected.&#xA;0 - indicates the bus is idle&#xA;1 - indicates the bus is busy&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="2"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="ARW">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="When the IIC bus interface has been addressed as a slave (AAS is set), &#xA;this bit indicates the value of the read/write bit sent by the master.&#xA;This bit is only valid when a complete transfer has occurred and&#xA;no other transfers have been initiated.&#xA;0 - indicates master writing to slave&#xA;1 - indicates master reading from slave&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="3"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Full">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set High when the transmit FIFO is full.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RX_FIFO_Full">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This bit is set High when the receive FIFO is full.&#xA;This bit is set only when all 16 locations in the FIFO are full,&#xA;regardless of the compare value field of the RX_FIFO_PIRQ register.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="5"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="RX_FIFO_Empty">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This is set High when the receive FIFO is empty.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="6"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="TX_FIFO_Empty">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="This is set High when the transmit FIFO is empty.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="7"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TX_FIFO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Transmit FIFO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x108"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="D7_D0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="If the dynamic stop bit is used and the AXI IIC is a master receiver,&#xA;the value is the number of bytes to receive.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+                <FIELD NAME="Start">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The dynamic start bit can be used to send a start or repeated start sequence on the&#xA;IIC bus. A start sequence is generated if the MSMS = 0, a&#xA;repeated start sequence is generated if the MSMS = 1.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="8"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="8"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="Stop">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The dynamic stop bit can be used to send an IIC stop&#xA;sequence on the IIC bus after the last byte has been transmitted or received.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="9"/>
+                  <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="9"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x10C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="D7_D0">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="IIC Receive Data&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="ADR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Slave Address Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x110"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Slave_Address">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Address used by the IIC bus interface when in slave mode.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="7"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TX_FIFO_OCY">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Transmit FIFO Occupency Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x114"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Occupancy_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 indicates that&#xA;10 locations are full in the FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO_OCY">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Occupency Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x118"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Occupancy_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 indicates that&#xA;10 locations are full in the FIFO&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-only"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TEN_ADR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Slave Ten Bit Address Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x11C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="MSB_of_Slave_Address">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="3"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="RX_FIFO_PIRQ">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Recieve FIFO Programmable Depth Interrupt Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x120"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Compare_Value">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bit[3] is the MSB. A binary value of 1001 implies that when&#xA;10 locations in the receive FIFO are filled, the receive FIFO&#xA;interrupt is set.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GPO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="General Purpose Output Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x124"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="General_Purpose_Outputs">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="The LSB (Bit[0]) is the first bit populated&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUSTA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUSTA Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x128"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setup time for a repeated START condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUSTO">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUSTO Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x12C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUSTO">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Setup time for a repeated STOP condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THDSTA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THDSTA Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x130"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THDSTA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Hold time for a repeated START condition.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TSUDAT">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TSUDAT Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x134"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TSUDAT">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Data Setup time&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TBUF">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TBUF Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x138"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TBUF">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Bus free time between a STOP and START condition&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THIGH">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THIGH Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x13C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THIGH">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="High Period of the scl clock.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="TLOW">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter TLOW Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x140"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="TLOW">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Low Period of scl clock.&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="THDDAT">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Timing Parameter THDDAT Register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x144"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="THDDAT">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Data Hold time&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+          </REGISTERS>
+        </ADDRESSBLOCK>
+      </ADDRESSBLOCKS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_IIC_FREQ" VALUE="100000"/>
+        <PARAMETER NAME="C_TEN_BIT_ADR" VALUE="0"/>
+        <PARAMETER NAME="C_GPO_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_S_AXI_ACLK_FREQ_HZ" VALUE="100000000"/>
+        <PARAMETER NAME="C_SCL_INERTIAL_DELAY" VALUE="0"/>
+        <PARAMETER NAME="C_SDA_INERTIAL_DELAY" VALUE="0"/>
+        <PARAMETER NAME="C_SDA_LEVEL" VALUE="1"/>
+        <PARAMETER NAME="C_SMBUS_PMBUS_HOST" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_VALUE" VALUE="0x00"/>
+        <PARAMETER NAME="Component_Name" VALUE="zsys_axi_iic_1_0"/>
+        <PARAMETER NAME="TEN_BIT_ADR" VALUE="7_bit"/>
+        <PARAMETER NAME="AXI_ACLK_FREQ_MHZ" VALUE="100.0"/>
+        <PARAMETER NAME="IIC_FREQ_KHZ" VALUE="100"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="IIC_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x41610000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x4161FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iic2intc_irpt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sda_i" SIGIS="undef" SIGNAME="axi_iic_1_sda_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_sda_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sda_o" SIGIS="undef" SIGNAME="axi_iic_1_sda_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_sda_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sda_t" SIGIS="undef" SIGNAME="axi_iic_1_sda_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_sda_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="scl_i" SIGIS="undef" SIGNAME="axi_iic_1_scl_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_scl_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="scl_o" SIGIS="undef" SIGNAME="axi_iic_1_scl_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_scl_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="scl_t" SIGIS="undef" SIGNAME="axi_iic_1_scl_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_I2C1_scl_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="gpo" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="zsys_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axi_iic_1_IIC" NAME="IIC" TYPE="INITIATOR" VLNV="xilinx.com:interface:iic:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SCL_I" PHYSICAL="scl_i"/>
+            <PORTMAP LOGICAL="SCL_O" PHYSICAL="scl_o"/>
+            <PORTMAP LOGICAL="SCL_T" PHYSICAL="scl_t"/>
+            <PORTMAP LOGICAL="SDA_I" PHYSICAL="sda_i"/>
+            <PORTMAP LOGICAL="SDA_O" PHYSICAL="sda_o"/>
+            <PORTMAP LOGICAL="SDA_T" PHYSICAL="sda_t"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -1144,7 +3368,7 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="4"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
@@ -1561,16 +3785,16 @@
         <PARAMETER NAME="C_TYPE_OF_AXI4_INTERFACE" VALUE="0"/>
         <PARAMETER NAME="C_XIP_MODE" VALUE="0"/>
         <PARAMETER NAME="C_UC_FAMILY" VALUE="0"/>
-        <PARAMETER NAME="C_FIFO_DEPTH" VALUE="16"/>
-        <PARAMETER NAME="C_SCK_RATIO" VALUE="16"/>
+        <PARAMETER NAME="C_FIFO_DEPTH" VALUE="256"/>
+        <PARAMETER NAME="C_SCK_RATIO" VALUE="2"/>
         <PARAMETER NAME="C_DUAL_QUAD_MODE" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_SS_BITS" VALUE="4"/>
+        <PARAMETER NAME="C_NUM_SS_BITS" VALUE="1"/>
         <PARAMETER NAME="C_NUM_TRANSFER_BITS" VALUE="8"/>
         <PARAMETER NAME="C_NEW_SEQ_EN" VALUE="1"/>
-        <PARAMETER NAME="C_SPI_MODE" VALUE="0"/>
-        <PARAMETER NAME="C_USE_STARTUP" VALUE="1"/>
+        <PARAMETER NAME="C_SPI_MODE" VALUE="2"/>
+        <PARAMETER NAME="C_USE_STARTUP" VALUE="0"/>
         <PARAMETER NAME="C_USE_STARTUP_EXT" VALUE="0"/>
-        <PARAMETER NAME="C_SPI_MEMORY" VALUE="1"/>
+        <PARAMETER NAME="C_SPI_MEMORY" VALUE="0"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXI4_ADDR_WIDTH" VALUE="24"/>
@@ -1578,7 +3802,7 @@
         <PARAMETER NAME="C_S_AXI4_ID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SHARED_STARTUP" VALUE="0"/>
         <PARAMETER NAME="C_LSB_STUP" VALUE="0"/>
-        <PARAMETER NAME="C_USE_STARTUP_INT" VALUE="1"/>
+        <PARAMETER NAME="C_USE_STARTUP_INT" VALUE="0"/>
         <PARAMETER NAME="UC_FAMILY" VALUE="0"/>
         <PARAMETER NAME="Component_Name" VALUE="zsys_axi_quad_spi_0_0"/>
         <PARAMETER NAME="Master_mode" VALUE="1"/>
@@ -1694,53 +3918,94 @@
         </PORT>
         <PORT DIR="I" NAME="io0_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io0_i"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io0_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="io0_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io0_o"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="io0_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io0_t">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io0_t"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io0_t"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="io1_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io1_i"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io1_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="io1_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io1_o"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io1_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="io1_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io1_t">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_io1_t"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io1_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="ss_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_i">
+        <PORT DIR="I" NAME="io2_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_ss_i"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io2_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="ss_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_o">
+        <PORT DIR="O" NAME="io2_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_ss_o"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io2_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io2_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io2_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io2_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="io3_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io3_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io3_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io3_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io3_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_io3_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_io3_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sck_i" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_sck_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sck_o" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_sck_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sck_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_sck_t">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_sck_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="ss_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_ss_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="ss_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_ss_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="ss_t" SIGIS="undef" SIGNAME="axi_quad_spi_0_ss_t">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_SPI_ss_t"/>
+            <CONNECTION INSTANCE="zsys_imp" PORT="AXI_QSPI_ss_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="cfgclk" SIGIS="undef"/>
-        <PORT DIR="O" NAME="cfgmclk" SIGIS="undef"/>
-        <PORT DIR="O" NAME="eos" SIGIS="undef"/>
-        <PORT DIR="O" NAME="preq" SIGIS="undef"/>
         <PORT DIR="O" NAME="ip2intc_irpt" SENSITIVITY="EDGE_RISING" SIGIS="INTERRUPT"/>
       </PORTS>
       <BUSINTERFACES>
@@ -1752,17 +4017,18 @@
             <PORTMAP LOGICAL="IO1_I" PHYSICAL="io1_i"/>
             <PORTMAP LOGICAL="IO1_O" PHYSICAL="io1_o"/>
             <PORTMAP LOGICAL="IO1_T" PHYSICAL="io1_t"/>
+            <PORTMAP LOGICAL="IO2_I" PHYSICAL="io2_i"/>
+            <PORTMAP LOGICAL="IO2_O" PHYSICAL="io2_o"/>
+            <PORTMAP LOGICAL="IO2_T" PHYSICAL="io2_t"/>
+            <PORTMAP LOGICAL="IO3_I" PHYSICAL="io3_i"/>
+            <PORTMAP LOGICAL="IO3_O" PHYSICAL="io3_o"/>
+            <PORTMAP LOGICAL="IO3_T" PHYSICAL="io3_t"/>
+            <PORTMAP LOGICAL="SCK_I" PHYSICAL="sck_i"/>
+            <PORTMAP LOGICAL="SCK_O" PHYSICAL="sck_o"/>
+            <PORTMAP LOGICAL="SCK_T" PHYSICAL="sck_t"/>
             <PORTMAP LOGICAL="SS_I" PHYSICAL="ss_i"/>
             <PORTMAP LOGICAL="SS_O" PHYSICAL="ss_o"/>
             <PORTMAP LOGICAL="SS_T" PHYSICAL="ss_t"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="STARTUP_IO" TYPE="INITIATOR" VLNV="xilinx.com:display_startup_io:startup_io:1.0">
-          <PORTMAPS>
-            <PORTMAP LOGICAL="cfgclk" PHYSICAL="cfgclk"/>
-            <PORTMAP LOGICAL="cfgmclk" PHYSICAL="cfgmclk"/>
-            <PORTMAP LOGICAL="eos" PHYSICAL="eos"/>
-            <PORTMAP LOGICAL="preq" PHYSICAL="preq"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="AXI_LITE" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -2024,7 +4290,7 @@
         <PARAMETER NAME="PCW_ACT_USB1_PERIPHERAL_FREQMHZ" VALUE="60"/>
         <PARAMETER NAME="PCW_ACT_SDIO_PERIPHERAL_FREQMHZ" VALUE="100.000000"/>
         <PARAMETER NAME="PCW_ACT_UART_PERIPHERAL_FREQMHZ" VALUE="100.000000"/>
-        <PARAMETER NAME="PCW_ACT_SPI_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
+        <PARAMETER NAME="PCW_ACT_SPI_PERIPHERAL_FREQMHZ" VALUE="166.666672"/>
         <PARAMETER NAME="PCW_ACT_CAN_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
         <PARAMETER NAME="PCW_ACT_CAN0_PERIPHERAL_FREQMHZ" VALUE="23.8095"/>
         <PARAMETER NAME="PCW_ACT_CAN1_PERIPHERAL_FREQMHZ" VALUE="23.8095"/>
@@ -2054,7 +4320,7 @@
         <PARAMETER NAME="PCW_QSPI_PERIPHERAL_DIVISOR0" VALUE="5"/>
         <PARAMETER NAME="PCW_SDIO_PERIPHERAL_DIVISOR0" VALUE="10"/>
         <PARAMETER NAME="PCW_UART_PERIPHERAL_DIVISOR0" VALUE="10"/>
-        <PARAMETER NAME="PCW_SPI_PERIPHERAL_DIVISOR0" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI_PERIPHERAL_DIVISOR0" VALUE="6"/>
         <PARAMETER NAME="PCW_CAN_PERIPHERAL_DIVISOR0" VALUE="1"/>
         <PARAMETER NAME="PCW_CAN_PERIPHERAL_DIVISOR1" VALUE="1"/>
         <PARAMETER NAME="PCW_FCLK0_PERIPHERAL_DIVISOR0" VALUE="5"/>
@@ -2088,7 +4354,7 @@
         <PARAMETER NAME="PCW_DDR_DDR_PLL_FREQMHZ" VALUE="1066.667"/>
         <PARAMETER NAME="PCW_SMC_PERIPHERAL_VALID" VALUE="0"/>
         <PARAMETER NAME="PCW_SDIO_PERIPHERAL_VALID" VALUE="1"/>
-        <PARAMETER NAME="PCW_SPI_PERIPHERAL_VALID" VALUE="0"/>
+        <PARAMETER NAME="PCW_SPI_PERIPHERAL_VALID" VALUE="1"/>
         <PARAMETER NAME="PCW_CAN_PERIPHERAL_VALID" VALUE="0"/>
         <PARAMETER NAME="PCW_UART_PERIPHERAL_VALID" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_EMIO_CAN0" VALUE="0"/>
@@ -2107,8 +4373,8 @@
         <PARAMETER NAME="PCW_EN_EMIO_SDIO1" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_EMIO_CD_SDIO1" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_EMIO_WP_SDIO1" VALUE="0"/>
-        <PARAMETER NAME="PCW_EN_EMIO_SPI0" VALUE="0"/>
-        <PARAMETER NAME="PCW_EN_EMIO_SPI1" VALUE="0"/>
+        <PARAMETER NAME="PCW_EN_EMIO_SPI0" VALUE="1"/>
+        <PARAMETER NAME="PCW_EN_EMIO_SPI1" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_EMIO_UART0" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_EMIO_UART1" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_EMIO_MODEM_UART0" VALUE="0"/>
@@ -2212,8 +4478,8 @@
         <PARAMETER NAME="PCW_EN_PJTAG" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_SDIO0" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_SDIO1" VALUE="0"/>
-        <PARAMETER NAME="PCW_EN_SPI0" VALUE="0"/>
-        <PARAMETER NAME="PCW_EN_SPI1" VALUE="0"/>
+        <PARAMETER NAME="PCW_EN_SPI0" VALUE="1"/>
+        <PARAMETER NAME="PCW_EN_SPI1" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_UART0" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_UART1" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_MODEM_UART0" VALUE="0"/>
@@ -2382,22 +4648,22 @@
         <PARAMETER NAME="PCW_UART1_UART1_IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PCW_UART1_GRP_FULL_ENABLE" VALUE="0"/>
         <PARAMETER NAME="PCW_UART1_GRP_FULL_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI0_PERIPHERAL_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI0_SPI0_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS0_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS0_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS1_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS1_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS2_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI0_GRP_SS2_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI1_PERIPHERAL_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI1_SPI1_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS0_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS0_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS1_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS1_IO" VALUE="&lt;Select>"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS2_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="PCW_SPI1_GRP_SS2_IO" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_SPI0_PERIPHERAL_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI0_SPI0_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS0_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS0_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS1_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS1_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS2_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI0_GRP_SS2_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI1_PERIPHERAL_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI1_SPI1_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS0_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS0_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS1_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS1_IO" VALUE="EMIO"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS2_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="PCW_SPI1_GRP_SS2_IO" VALUE="EMIO"/>
         <PARAMETER NAME="PCW_CAN0_PERIPHERAL_ENABLE" VALUE="0"/>
         <PARAMETER NAME="PCW_CAN0_CAN0_IO" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PCW_CAN0_GRP_CLK_ENABLE" VALUE="0"/>
@@ -2791,6 +5057,146 @@
             <CONNECTION INSTANCE="SC0720_0" PORT="scl_t"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="SPI0_SCLK_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_sck_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SCLK_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_sck_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SCLK_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SCLK_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_sck_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI0_MOSI_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io0_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_MOSI_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io0_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_MOSI_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MOSI_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI0_MISO_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io1_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_MISO_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_MISO_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_MISO_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_io1_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI0_SS_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_ss_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SS_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_ss_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SS1_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS1_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_ss1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SS2_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS2_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_ss2_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI0_SS_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI0_SS_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI0_ss_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI1_SCLK_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_sck_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SCLK_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_sck_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SCLK_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SCLK_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_sck_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI1_MOSI_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io0_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_MOSI_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io0_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_MOSI_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MOSI_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io0_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI1_MISO_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io1_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_MISO_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_MISO_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_MISO_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_io1_t"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SPI1_SS_I" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_ss_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SS_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_ss_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SS1_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS1_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_ss1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SS2_O" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS2_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_ss2_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SPI1_SS_T" SIGIS="undef" SIGNAME="processing_system7_0_SPI1_SS_T">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zsys_imp" PORT="SPI1_ss_t"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="TTC0_WAVE0_OUT" SIGIS="undef"/>
         <PORT DIR="O" NAME="TTC0_WAVE1_OUT" SIGIS="undef"/>
         <PORT DIR="O" NAME="TTC0_WAVE2_OUT" SIGIS="undef"/>
@@ -3008,6 +5414,10 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="axi_quad_spi_0" PORT="ext_spi_clk"/>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -3176,6 +5586,42 @@
             <PORTMAP LOGICAL="SCL_T" PHYSICAL="I2C0_SCL_T"/>
           </PORTMAPS>
         </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="processing_system7_0_SPI_0" NAME="SPI_0" TYPE="INITIATOR" VLNV="xilinx.com:interface:spi:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SCK_I" PHYSICAL="SPI0_SCLK_I"/>
+            <PORTMAP LOGICAL="SCK_O" PHYSICAL="SPI0_SCLK_O"/>
+            <PORTMAP LOGICAL="SCK_T" PHYSICAL="SPI0_SCLK_T"/>
+            <PORTMAP LOGICAL="IO0_I" PHYSICAL="SPI0_MOSI_I"/>
+            <PORTMAP LOGICAL="IO0_O" PHYSICAL="SPI0_MOSI_O"/>
+            <PORTMAP LOGICAL="IO0_T" PHYSICAL="SPI0_MOSI_T"/>
+            <PORTMAP LOGICAL="IO1_I" PHYSICAL="SPI0_MISO_I"/>
+            <PORTMAP LOGICAL="IO1_O" PHYSICAL="SPI0_MISO_O"/>
+            <PORTMAP LOGICAL="IO1_T" PHYSICAL="SPI0_MISO_T"/>
+            <PORTMAP LOGICAL="SS_I" PHYSICAL="SPI0_SS_I"/>
+            <PORTMAP LOGICAL="SS_O" PHYSICAL="SPI0_SS_O"/>
+            <PORTMAP LOGICAL="SS1_O" PHYSICAL="SPI0_SS1_O"/>
+            <PORTMAP LOGICAL="SS2_O" PHYSICAL="SPI0_SS2_O"/>
+            <PORTMAP LOGICAL="SS_T" PHYSICAL="SPI0_SS_T"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="processing_system7_0_SPI_1" NAME="SPI_1" TYPE="INITIATOR" VLNV="xilinx.com:interface:spi:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="SCK_I" PHYSICAL="SPI1_SCLK_I"/>
+            <PORTMAP LOGICAL="SCK_O" PHYSICAL="SPI1_SCLK_O"/>
+            <PORTMAP LOGICAL="SCK_T" PHYSICAL="SPI1_SCLK_T"/>
+            <PORTMAP LOGICAL="IO0_I" PHYSICAL="SPI1_MOSI_I"/>
+            <PORTMAP LOGICAL="IO0_O" PHYSICAL="SPI1_MOSI_O"/>
+            <PORTMAP LOGICAL="IO0_T" PHYSICAL="SPI1_MOSI_T"/>
+            <PORTMAP LOGICAL="IO1_I" PHYSICAL="SPI1_MISO_I"/>
+            <PORTMAP LOGICAL="IO1_O" PHYSICAL="SPI1_MISO_O"/>
+            <PORTMAP LOGICAL="IO1_T" PHYSICAL="SPI1_MISO_T"/>
+            <PORTMAP LOGICAL="SS_I" PHYSICAL="SPI1_SS_I"/>
+            <PORTMAP LOGICAL="SS_O" PHYSICAL="SPI1_SS_O"/>
+            <PORTMAP LOGICAL="SS1_O" PHYSICAL="SPI1_SS1_O"/>
+            <PORTMAP LOGICAL="SS2_O" PHYSICAL="SPI1_SS2_O"/>
+            <PORTMAP LOGICAL="SS_T" PHYSICAL="SPI1_SS_T"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="USBIND_0" TYPE="INITIATOR" VLNV="xilinx.com:display_processing_system7:usbctrl:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="PORT_INDCTL" PHYSICAL="USB0_PORT_INDCTL"/>
@@ -3259,10 +5705,14 @@
       </BUSINTERFACES>
       <MEMORYMAP>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="axi_gpio_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41600000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4160FFFF" INSTANCE="axi_iic_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41610000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4161FFFF" INSTANCE="axi_iic_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41E00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x41E0FFFF" INSTANCE="axi_quad_spi_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="AXI_LITE"/>
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="axi_gpio_0"/>
+        <PERIPHERAL INSTANCE="axi_iic_0"/>
+        <PERIPHERAL INSTANCE="axi_iic_1"/>
         <PERIPHERAL INSTANCE="axi_quad_spi_0"/>
         <PERIPHERAL INSTANCE="SC0720_0"/>
       </PERIPHERALS>
@@ -3273,7 +5723,7 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="2"/>
+        <PARAMETER NAME="NUM_MI" VALUE="4"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -3994,6 +6444,200 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="axi_iic_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="axi_iic_1_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="processing_system7_0_M_AXI_GP0" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -4084,6 +6728,52 @@
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="M02_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M02_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M02_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M02_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M02_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M02_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M02_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M02_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M02_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M02_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M02_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M02_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M02_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M02_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M02_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M02_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M02_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M02_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M02_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M02_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="M03_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M03_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M03_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M03_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M03_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M03_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M03_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M03_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M03_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M03_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M03_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M03_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M03_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M03_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M03_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M03_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M03_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M03_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M03_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M03_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
     <MODULE COREREVISION="13" FULLNAME="/rst_ps7_0_100M" HWVERSION="5.0" INSTANCE="rst_ps7_0_100M" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset" VLNV="xilinx.com:ip:proc_sys_reset:5.0">
@@ -4131,6 +6821,10 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ARESETN"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
+            <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
+            <CONNECTION INSTANCE="axi_iic_1" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

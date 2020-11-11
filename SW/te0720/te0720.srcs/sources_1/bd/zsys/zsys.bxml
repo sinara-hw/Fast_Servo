@@ -2,14 +2,14 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="zsys" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1604967452"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1604967452"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1604967452"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1604967452"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1605136507"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1605136507"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1605136507"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1605136507"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\zsys_SC0720_0_0\zsys_SC0720_0_0.xci" Type="IP">
         <Instance HierarchyPath="SC0720_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1603216774" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -17,7 +17,7 @@
       </File>
       <File Name="ip\zsys_processing_system7_0_0\zsys_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1604967440" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -25,7 +25,7 @@
       </File>
       <File Name="ip\zsys_vio_0_0\zsys_vio_0_0.xci" Type="IP">
         <Instance HierarchyPath="vio_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1603216774" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -33,7 +33,7 @@
       </File>
       <File Name="ip\zsys_xlconcat_0_0\zsys_xlconcat_0_0.xci" Type="IP">
         <Instance HierarchyPath="xlconcat_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1603216774" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -51,7 +51,7 @@
       </File>
       <File Name="ip\zsys_axi_quad_spi_0_0\zsys_axi_quad_spi_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_quad_spi_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1604967440" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -59,7 +59,7 @@
       </File>
       <File Name="ip\zsys_xbar_0\zsys_xbar_0.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1604882246" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -67,7 +67,7 @@
       </File>
       <File Name="ip\zsys_ps7_0_axi_periph_0\zsys_ps7_0_axi_periph_0.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1604103857" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -75,7 +75,7 @@
       </File>
       <File Name="ip\zsys_rst_ps7_0_100M_0\zsys_rst_ps7_0_100M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_ps7_0_100M"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1604243550" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -83,11 +83,42 @@
       </File>
       <File Name="ip\zsys_axi_gpio_0_0\zsys_axi_gpio_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1604966616" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\zsys_axi_iic_0_0\zsys_axi_iic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_iic_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\zsys_axi_iic_1_0\zsys_axi_iic_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_iic_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\zsys_auto_pc_0\zsys_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="zsys_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
       </File>
       <File Name="hw_handoff\zsys.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -107,21 +138,6 @@
       <File Name="sim\zsys.protoinst">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="zsys_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="ip\zsys_auto_pc_0_2\zsys_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
