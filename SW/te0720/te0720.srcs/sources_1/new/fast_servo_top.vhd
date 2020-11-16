@@ -135,22 +135,8 @@ entity fast_servo_top is
     AT_EVENT                : out STD_LOGIC;        
     DAC_AFE_CH1_nPD         : out STD_LOGIC;       
     DAC_AFE_CH2_nPD         : out STD_LOGIC;       
-	LVDS7_P                 : in STD_LOGIC; 
-	LVDS7_N                 : in STD_LOGIC; 
-	LVDS6_P                 : in STD_LOGIC; 
-	LVDS6_N                 : in STD_LOGIC; 
-	LVDS5_P                 : in STD_LOGIC; 
-	LVDS5_N                 : in STD_LOGIC; 
-	LVDS4_P                 : in STD_LOGIC; 
-	LVDS4_N                 : in STD_LOGIC; 
-	LVDS3_P                 : in STD_LOGIC; 
-	LVDS3_N                 : in STD_LOGIC; 
-	LVDS2_P                 : in STD_LOGIC; 
-	LVDS2_N                 : in STD_LOGIC; 
-	LVDS1_P                 : in STD_LOGIC; 
-	LVDS1_N                 : in STD_LOGIC; 
-	LVDS0_P                 : in STD_LOGIC; 
-	LVDS0_N                 : in STD_LOGIC;    
+	LVDS_P                  : in STD_LOGIC_VECTOR(7 downto 0);   
+	LVDS_N                  : in STD_LOGIC_VECTOR(7 downto 0);    
     CLK2_P                  : in STD_LOGIC;           
     CLK2_N                  : in STD_LOGIC;                    
     SI5340_SCL              : inout STD_LOGIC;                 
@@ -175,14 +161,7 @@ end fast_servo_top;
 architecture Behavioral of fast_servo_top is
 
   
- signal LVDS7: STD_LOGIC;
- signal LVDS6: STD_LOGIC; 
- signal LVDS5: STD_LOGIC; 
- signal LVDS4: STD_LOGIC; 
- signal LVDS3: STD_LOGIC; 
- signal LVDS2: STD_LOGIC; 
- signal LVDS1: STD_LOGIC; 
- signal LVDS0: STD_LOGIC; 
+ signal LVDS: STD_LOGIC_VECTOR(7 downto 0); 
  signal OUT1A: STD_LOGIC; 
  signal OUT1B: STD_LOGIC; 
  signal OUT1C: STD_LOGIC; 
@@ -399,104 +378,30 @@ I2C1_SCL <= AXI_I2C0_scl_io;
 SI5340_SCL <= AXI_I2C1_scl_io;
 SI5340_SDA <= AXI_I2C1_sda_io;
 
--- ADC_AUX_DOUTA    
--- ADC_AUX_DOUTB    
--- ADC_AUX_nCS      
--- ADC_AUX_SCLK     
+--data on ADC AUX can be read from one DOUT channel
+ADC_AUX_DOUTA <= SPI1_io1_io; -- MISO 1 
+--ADC_AUX_DOUTB SPI0_io1_io; -- MISO 2   
+ADC_AUX_nCS  <= SPI1_ss_io;      
+ADC_AUX_SCLK <= SPI1_sck_io;
 
 DAC_RESET <= AXI_GPIO_tri_io(29);
 DAC_SCLK  <= SPI0_sck_io;    
-DAC_SDIO  <= SPI0_io1_io; --MOSI     
+DAC_SDIO  <= SPI0_io1_io; -- MISO   
 DAC_nCS   <= SPI0_ss2_o;    
 
-
-IBUFDS_inst : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS7,  -- Buffer output
-        I => LVDS7_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS7_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst2 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS6,  -- Buffer output
-        I => LVDS6_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS6_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst3 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS5,  -- Buffer output
-        I => LVDS5_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS5_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst4 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS4,  -- Buffer output
-        I => LVDS4_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS4_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst5 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS3,  -- Buffer output
-        I => LVDS3_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS3_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst6 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS2,  -- Buffer output
-        I => LVDS2_N,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS2_P -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst7 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS1,  -- Buffer output
-        I => LVDS1_P,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS1_N -- Diff_n buffer input (connect directly to top-level port)
-        );
-
-IBUFDS_inst8 : IBUFDS
-generic map (
-        DIFF_TERM => FALSE, -- Differential Termination 
-        IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
-        IOSTANDARD => "DEFAULT")
-port map (
-        O => LVDS0,  -- Buffer output
-        I => LVDS0_P,  -- Diff_p buffer input (connect directly to top-level port)
-        IB => LVDS0_N -- Diff_n buffer input (connect directly to top-level port)
-        );
+GEN_IBUFDS:
+for I in 0 to 7 generate 
+    IBUFDS_inst : IBUFDS
+    generic map (
+            DIFF_TERM => FALSE, -- Differential Termination 
+            IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
+            IOSTANDARD => "DEFAULT")
+    port map (
+            O => LVDS(I),  -- Buffer output
+            I => LVDS_N(I),  -- Diff_p buffer input (connect directly to top-level port)
+            IB => LVDS_P(I) -- Diff_n buffer input (connect directly to top-level port)
+            );
+end generate GEN_IBUFDS;
 
 IBUFDS_inst9 : IBUFDS
 generic map (

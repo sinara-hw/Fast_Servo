@@ -1,4 +1,4 @@
--- JM1
+# JM1
 
 set_property PACKAGE_PIN C22  [get_ports HRTIM_CHA1             ]
 set_property PACKAGE_PIN H22  [get_ports HRTIM_CHE1             ]
@@ -98,7 +98,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports ETH_LED2            ]
 set_property IOSTANDARD LVCMOS33 [get_ports ADC_AFE_CH2_GAIN_X10]      
 set_property IOSTANDARD LVCMOS33 [get_ports ADC_AFE_CH1_GAIN_X10]      
 
--- JM2
+# JM2
 
 set_property PACKAGE_PIN   AA22   [get_ports DAC_nCS            ]
 set_property PACKAGE_PIN   W20    [get_ports SI5340_SCL         ]
