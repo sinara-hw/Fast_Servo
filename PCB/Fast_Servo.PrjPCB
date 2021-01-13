@@ -4763,9 +4763,9 @@ ComponentIsDeviceSheet146=0
 [NetInfos]
 Net1=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
 Net2=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
-Net3=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
-Net4=NetName=BIN|NetColor=$00FFFF6E
-Net5=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net3=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net4=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net5=NetName=BIN|NetColor=$00FFFF6E
 Net6=NetName=UART_RX|NetColor=$00FFFF6E
 Net7=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
 Net8=NetName=DAC_AUX_BIN|NetColor=$00FFFF6E
@@ -4894,8 +4894,8 @@ Net130=NetName=LVDS6_P|NetColor=$006EFF6E
 Net131=NetName=ADC_AFE_CH1_nSHDN|NetColor=$006EFF6E
 Net132=NetName=DAC_AUX_nSYNC|NetColor=$00FFFF6E
 Net133=NetName=ENC_P|NetColor=$006EFF6E
-Net134=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
-Net135=NetName=LVDS5_N|NetColor=$006EFF6E
+Net134=NetName=LVDS5_N|NetColor=$006EFF6E
+Net135=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
 Net136=NetName=SCLK|NetColor=$00FF6E6E
 Net137=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
 Net138=NetName=CLK2_N|NetColor=$006EFF6E
@@ -5070,7 +5070,7 @@ Net306=NetName=ADC_CS|NetColor=$00FF6E6E
 Net307=NetName=SD_DAT0|NetColor=$00FF6E6E
 Net308=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
 Net309=NetName=DAC_AUX_nLDAC|NetColor=$00FFFF6E
-Net310=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net310=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
