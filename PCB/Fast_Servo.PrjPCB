@@ -1,4 +1,4 @@
-[Design]
+ï»¿[Design]
 Version=1.0
 HierarchyMode=0
 ChannelRoomNamingStyle=0
@@ -23,11 +23,13 @@ DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=1
 PowerPortNamesTakePriority=1
+AutoSheetNumbering=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
+IsProjectConflictPreventionWarningsEnabled=1
 OutputPath=Project Outputs for Zotino
 LogFolderPath=
 ManagedProjectGUID=
@@ -1135,7 +1137,7 @@ UniqueID=AEF0D782-7EA2-47B9-BB0A-8D27F87774DE
 Description=Fast_Servo_Default
 AllowFabrication=0
 ParameterCount=0
-VariationCount=15
+VariationCount=19
 Variation1=Designator=J10|UniqueId=\AFCMNNQW\FAHBSEOH|Kind=1|AlternatePart= 
 Variation2=Designator=R147|UniqueId=\AFCMNNQW\TBEWDHQG\FUAUEUFU|Kind=1|AlternatePart= 
 Variation3=Designator=R176|UniqueId=\AFCMNNQW\KUCLKANW\RKPSIAHK|Kind=1|AlternatePart= 
@@ -1151,6 +1153,10 @@ Variation12=Designator=R185|UniqueId=\JLIIRCBK\AXBDUWGU\JOVNGQNT|Kind=1|Alternat
 Variation13=Designator=R156|UniqueId=\JLIIRCBK\AXBDUWGU\VATYSOQR|Kind=1|AlternatePart= 
 Variation14=Designator=R19|UniqueId=\EVPFTZYQ\XQPORLDN|Kind=1|AlternatePart= 
 Variation15=Designator=R5|UniqueId=\RZIXQALB\PLGJPAYI|Kind=1|AlternatePart= 
+Variation16=Designator=R123|UniqueId=\DVCLOAIS\ULQKALAF|Kind=1|AlternatePart= 
+Variation17=Designator=R124|UniqueId=\DVCLOAIS\ZLQEZZQB|Kind=1|AlternatePart= 
+Variation18=Designator=R2|UniqueId=\JLIIRCBK\AXBDUWGU\UCTKBCQF|Kind=1|AlternatePart= 
+Variation19=Designator=R3|UniqueId=\JLIIRCBK\AXBDUWGU\OUWYLHSZ|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Configuration1]
@@ -1315,7 +1321,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Brother DCP-L2540DN series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -1383,6 +1389,12 @@ OutputDocumentPath10=
 OutputVariantName10=[No Variations]
 OutputDefault10=0
 PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType11=PDF3D MBA
+OutputName11=PDF3D MBA
+OutputDocumentPath11=
+OutputVariantName11=
+OutputDefault11=0
+PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -1528,6 +1540,18 @@ OutputName6=Report Project Hierarchy
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
+OutputType7=BOM_ReportCompare
+OutputName7=BOM Compare
+OutputDocumentPath7=
+OutputVariantName7=[No Variations]
+OutputDefault7=0
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType8=Export Comments
+OutputName8=Export Comments
+OutputDocumentPath8=
+OutputVariantName8=[No Variations]
+OutputDefault8=0
+PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup7]
 Name=Other Outputs
@@ -1636,78 +1660,6 @@ OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
 PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType18=Text Print
-OutputName18=Text Print
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType19=Text Print
-OutputName19=Text Print
-OutputDocumentPath19=
-OutputVariantName19=
-OutputDefault19=0
-PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType20=Text Print
-OutputName20=Text Print
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
-PageOptions20=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType21=Text Print
-OutputName21=Text Print
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-PageOptions21=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType22=Text Print
-OutputName22=Text Print
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-PageOptions22=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType23=Text Print
-OutputName23=Text Print
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
-PageOptions23=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType24=Text Print
-OutputName24=Text Print
-OutputDocumentPath24=
-OutputVariantName24=
-OutputDefault24=0
-PageOptions24=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType25=Text Print
-OutputName25=Text Print
-OutputDocumentPath25=
-OutputVariantName25=
-OutputDefault25=0
-PageOptions25=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType26=Text Print
-OutputName26=Text Print
-OutputDocumentPath26=
-OutputVariantName26=
-OutputDefault26=0
-PageOptions26=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType27=Text Print
-OutputName27=Text Print
-OutputDocumentPath27=
-OutputVariantName27=
-OutputDefault27=0
-PageOptions27=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType28=Text Print
-OutputName28=Text Print
-OutputDocumentPath28=
-OutputVariantName28=
-OutputDefault28=0
-PageOptions28=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType29=Text Print
-OutputName29=Text Print
-OutputDocumentPath29=
-OutputVariantName29=
-OutputDefault29=0
-PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup8]
 Name=Validation Outputs
@@ -1943,6 +1895,8 @@ Type114=1
 Type115=1
 Type116=1
 Type117=1
+Type118=1
+Type119=1
 
 [Difference Levels]
 Type1=1
@@ -2011,6 +1965,8 @@ Type63=1
 Type64=1
 Type65=1
 Type66=1
+Type67=1
+Type68=1
 
 [Electrical Rules Check]
 Type1=1
@@ -2135,6 +2091,9 @@ Type119=3
 MultiChannelAlternate=2
 AlternateItemFail=3
 Type122=2
+Type123=1
+Type124=1
+Type125=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -2158,6 +2117,7 @@ L17=WNNNNNNNWNNNWWWWN
 [Annotate]
 SortOrder=3
 SortLocation=0
+ReplaceSubparts=0
 MatchParameter1=Comment
 MatchStrictly1=1
 PhysicalNamingFormat=$Component_$RoomName
@@ -2304,6 +2264,7 @@ NetClassSeparateForBusSections=0
 [LibraryUpdateOptions]
 SelectedOnly=0
 UpdateVariants=1
+UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Capacitors.DbLib/Capacitors SMD
@@ -2883,8 +2844,8 @@ ComponentUpdate95=1
 ComponentIsDeviceSheet95=0
 ComponentLibIdentifierKind96=Library Name And Type
 ComponentLibraryIdentifier96=MB963_1.SCHLIB
-ComponentDesignItemID96=CAP SMD 0603  X5R 1µF 25V 10%
-ComponentSymbolReference96=CAP SMD 0603  X5R 1µF 25V 10%
+ComponentDesignItemID96=CAP SMD 0603  X5R 1ÂµF 25V 10%
+ComponentSymbolReference96=CAP SMD 0603  X5R 1ÂµF 25V 10%
 ComponentUpdate96=1
 ComponentIsDeviceSheet96=0
 ComponentLibIdentifierKind97=Library Name And Type
@@ -3876,6 +3837,7 @@ ModelUpdate105=1
 [DatabaseUpdateOptions]
 SelectedOnly=0
 UpdateVariants=1
+UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Any
 ComponentLibraryIdentifier0=
@@ -4761,324 +4723,324 @@ ComponentUpdate146=1
 ComponentIsDeviceSheet146=0
 
 [NetInfos]
-Net1=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
-Net2=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
-Net3=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
-Net4=NetName=ENC.CLK_P|NetColor=$006EFF6E
-Net5=NetName=BIN|NetColor=$00FFFF6E
-Net6=NetName=UART_RX|NetColor=$00FFFF6E
-Net7=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
-Net8=NetName=DAC_AUX_BIN|NetColor=$00FFFF6E
-Net9=NetName=DAC_CTRL.RESET|NetColor=$00FF6E6E
-Net10=NetName=ENC.CLK_N|NetColor=$006EFF6E
-Net11=NetName=ADC_CH1_DATA.OUTD_P|NetColor=$00FF6E6E
-Net12=NetName=ADC_SCK|NetColor=$00FF6E6E
-Net13=NetName=CH1_DATA.OUTD_N|NetColor=$00FF6E6E
-Net14=NetName=ADC_CH1_DATA.OUTC_P|NetColor=$00FF6E6E
-Net15=NetName=DAC_DATA7|NetColor=$00FF6E6E
-Net16=NetName=HRTIM_CHE1|NetColor=$00FFFF6E
-Net17=NetName=AFE_GAIN_X10|NetColor=$00FFFF6E
-Net18=NetName=AUX_DAC_SPI.SCLK|NetColor=$00FFFF6E
-Net19=NetName=DOUTB|NetColor=$00FFFF6E
-Net20=NetName=GPIO.SPI1_MOSI|NetColor=$00FFFF6E
-Net21=NetName=QSPI_IO2|NetColor=$00FFFF6E
-Net22=NetName=GPIO.QSPI_NCS|NetColor=$00FFFF6E
-Net23=NetName=EEM.LVDS0_N|NetColor=$006EFF6E
-Net24=NetName=TERM_IND|NetColor=$006EFF6E
-Net25=NetName=OUT2B_N|NetColor=$006EFF6E
-Net26=NetName=AUX_DAC_CTRL.BIN|NetColor=$00FFFF6E
-Net27=NetName=FPGA_CLK1.CLK_N|NetColor=$00FF6E6E
-Net28=NetName=OUT1D_N|NetColor=$006EFF6E
-Net29=NetName=ADC_SDO|NetColor=$00FF6E6E
-Net30=NetName=I2C_SDA|NetColor=$00FFFF6E
-Net31=NetName=DAC_nCS|NetColor=$00FF6E6E
-Net32=NetName=CH2_DATA.OUTD_N|NetColor=$00FF6E6E
-Net33=NetName=Si5340_nLOL|NetColor=$00FF6E6E
-Net34=NetName=HRTIM_CHE2|NetColor=$00FFFF6E
-Net35=NetName=ADC_SPI.ADC_CS|NetColor=$00FF6E6E
-Net36=NetName=USB.VBUS_V_EN|NetColor=$00FFFF6E
-Net37=NetName=eSD_DAT0|NetColor=$00FFFF6E
-Net38=NetName=QSPI_IO1|NetColor=$00FFFF6E
-Net39=NetName=SI5340_I2C.SDA|NetColor=$00FF6E6E
-Net40=NetName=CH2_DATA.OUTC_N|NetColor=$00FF6E6E
-Net41=NetName=DAC_AFE_CH2_nPD|NetColor=$00FF6E6E
-Net42=NetName=SI5340_I2C.SCL|NetColor=$00FF6E6E
-Net43=NetName=LVDS3_N|NetColor=$006EFF6E
-Net44=NetName=LVDS5_P|NetColor=$006EFF6E
-Net45=NetName=DAC_DATA2|NetColor=$00FF6E6E
-Net46=NetName=SI5340_nINTR|NetColor=$00FF6E6E
-Net47=NetName=SPI1_MOSI|NetColor=$00FFFF6E
-Net48=NetName=nSHDN|NetColor=$00FF6E6E
-Net49=NetName=CH2_DATA.OUTB_P|NetColor=$00FF6E6E
-Net50=NetName=nCS|NetColor=$00FF6E6E
-Net51=NetName=CH1_DATA.OUTA_P|NetColor=$00FF6E6E
-Net52=NetName=nCS_ADC_AUX|NetColor=$00FFFF6E
-Net53=NetName=EEM_I2C.I2C_SCL|NetColor=$00FFFF6E
-Net54=NetName=SI5340_CTRL.LOS_XAXBb|NetColor=$00FF6E6E
-Net55=NetName=QSPI_IO3|NetColor=$00FFFF6E
-Net56=NetName=OTG-D_P|NetColor=$00FFFF6E
-Net57=NetName=CLK1_P|NetColor=$00FF6E6E
-Net58=NetName=eSD_DAT2|NetColor=$00FFFF6E
-Net59=NetName=LVDS7_P|NetColor=$006EFF6E
-Net60=NetName=CLKIN|NetColor=$00FF6E6E
-Net61=NetName=AD5722_SDO|NetColor=$00FFFF6E
-Net62=NetName=QSPI_IO0|NetColor=$00FFFF6E
-Net63=NetName=GPIO.I2C1_SCL|NetColor=$00FFFF6E
-Net64=NetName=LVDS7_N|NetColor=$006EFF6E
-Net65=NetName=OUT2A_P|NetColor=$006EFF6E
-Net66=NetName=DAC_AFE_CH1_nPD|NetColor=$00FF6E6E
-Net67=NetName=ADC_AUX.SGL|NetColor=$00FFFF6E
-Net68=NetName=DCO_N|NetColor=$006EFF6E
-Net69=NetName=DAC_DATA11|NetColor=$00FF6E6E
-Net70=NetName=EEM.LVDS2_P|NetColor=$006EFF6E
-Net71=NetName=EEM.LVDS7_N|NetColor=$006EFF6E
-Net72=NetName=EEM.LVDS0_P|NetColor=$006EFF6E
-Net73=NetName=ADC_AUX_DOUTA|NetColor=$00FFFF6E
-Net74=NetName=DAC_DATA13|NetColor=$00FF6E6E
-Net75=NetName=eSD_DAT3|NetColor=$00FFFF6E
-Net76=NetName=I2C1_SDA|NetColor=$00FFFF6E
-Net77=NetName=LED2|NetColor=$00FFFF6E
-Net78=NetName=ADC_AFE_CH2_GAIN_X10|NetColor=$00FFFF6E
-Net79=NetName=GPIO.HRTIM_CHA1|NetColor=$00FFFF6E
-Net80=NetName=ADC_AUX_SGL|NetColor=$00FFFF6E
-Net81=NetName=SCLK_ADC_AUX|NetColor=$00FFFF6E
-Net82=NetName=ADC_AUX.RANGE|NetColor=$00FFFF6E
-Net83=NetName=ADC_ENC.CLK_N|NetColor=$006EFF6E
-Net84=NetName=QSPI_CLK|NetColor=$00FFFF6E
-Net85=NetName=ADC_CTRL.DCO_N|NetColor=$006EFF6E
-Net86=NetName=SD_CARD.SD_DAT1|NetColor=$00FF6E6E
-Net87=NetName=ADC_CH2_DATA.OUTA_N|NetColor=$00FF6E6E
-Net88=NetName=SD_CARD.SD_CMD|NetColor=$00FF6E6E
-Net89=NetName=ADC_AUX_DOUTB|NetColor=$00FFFF6E
-Net90=NetName=AT_EVENT|NetColor=$00FF6E6E
-Net91=NetName=LEDs.FP_LED_1|NetColor=$006EFF6E
-Net92=NetName=DOUTA|NetColor=$00FFFF6E
-Net93=NetName=OUT2A_N|NetColor=$006EFF6E
-Net94=NetName=SPI.ADC_CS|NetColor=$00FF6E6E
-Net95=NetName=DAC_SCLK|NetColor=$00FF6E6E
-Net96=NetName=SPI.ADC_SDO|NetColor=$00FF6E6E
-Net97=NetName=SD_DAT3|NetColor=$00FF6E6E
-Net98=NetName=OTG-ID|NetColor=$00FFFF6E
-Net99=NetName=nLDAC|NetColor=$00FFFF6E
-Net100=NetName=DAC_DATA0|NetColor=$00FF6E6E
-Net101=NetName=DCLKIO|NetColor=$00FF6E6E
-Net102=NetName=EEM.LVDS5_P|NetColor=$006EFF6E
-Net103=NetName=ADC_CH2_DATA.OUTD_P|NetColor=$00FF6E6E
-Net104=NetName=ADC_CH1_DATA.OUTA_P|NetColor=$00FF6E6E
-Net105=NetName=CH1_DATA.OUTB_N|NetColor=$00FF6E6E
-Net106=NetName=FP_LED_3|NetColor=$00FFFF6E
-Net107=NetName=VBUS_V_EN|NetColor=$00FFFF6E
-Net108=NetName=EEM.LVDS3_N|NetColor=$006EFF6E
-Net109=NetName=EEM.LVDS6_N|NetColor=$006EFF6E
-Net110=NetName=ADC_CTRL.FR_P|NetColor=$006EFF6E
-Net111=NetName=AUX_DAC_CTRL.nLDAC|NetColor=$00FFFF6E
-Net112=NetName=CLK2_P|NetColor=$006EFF6E
-Net113=NetName=LVDS6_N|NetColor=$006EFF6E
-Net114=NetName=AD5722_nSYNC|NetColor=$00FFFF6E
-Net115=NetName=GPIO.HRTIM_CHA2|NetColor=$00FFFF6E
-Net116=NetName=FR_P|NetColor=$006EFF6E
-Net117=NetName=SGL|NetColor=$00FFFF6E
-Net118=NetName=DI1|NetColor=$00FFFF6E
-Net119=NetName=ADC_SPI.ADC_SCK|NetColor=$00FF6E6E
-Net120=NetName=ADC_CH1_DATA.OUTB_P|NetColor=$00FF6E6E
-Net121=NetName=OUT1B_N|NetColor=$006EFF6E
-Net122=NetName=DAC_SPI.nCS|NetColor=$00FF6E6E
-Net123=NetName=ADC_CTRL.DCO_P|NetColor=$00FF6E6E
-Net124=NetName=GPIO.LPTIM2_OUT|NetColor=$00FFFF6E
-Net125=NetName=EEM.LVDS5_N|NetColor=$006EFF6E
-Net126=NetName=SD_DAT1|NetColor=$00FF6E6E
-Net127=NetName=DAC_CLKIN|NetColor=$00FF6E6E
-Net128=NetName=AUX_DAC_SPI.SDO|NetColor=$00FFFF6E
-Net129=NetName=ADC_CH2_DATA.OUTA_P|NetColor=$00FF6E6E
-Net130=NetName=LVDS6_P|NetColor=$006EFF6E
-Net131=NetName=ADC_AFE_CH1_nSHDN|NetColor=$006EFF6E
-Net132=NetName=DAC_AUX_nSYNC|NetColor=$00FFFF6E
-Net133=NetName=ENC_P|NetColor=$006EFF6E
-Net134=NetName=LVDS5_N|NetColor=$006EFF6E
-Net135=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
-Net136=NetName=SCLK|NetColor=$00FF6E6E
-Net137=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
-Net138=NetName=CLK2_N|NetColor=$006EFF6E
-Net139=NetName=GPIO.QSPI_IO0|NetColor=$00FFFF6E
-Net140=NetName=EEM.LVDS3_P|NetColor=$006EFF6E
-Net141=NetName=DAC_DATA|NetColor=$00FF6E6E
-Net142=NetName=ETH_LED2|NetColor=$00FFFF6E
-Net143=NetName=DAC_SPI.SDIO|NetColor=$00FF6E6E
-Net144=NetName=ETH_LED1|NetColor=$00FFFF6E
-Net145=NetName=DAC_SDIO|NetColor=$00FF6E6E
-Net146=NetName=OTG-D_N|NetColor=$00FFFF6E
-Net147=NetName=USB-VBUS|NetColor=$00FFFF6E
-Net148=NetName=CH2_nPD|NetColor=$00FF6E6E
-Net149=NetName=EEM_I2C.I2C_SDA|NetColor=$00FFFF6E
-Net150=NetName=GPIO.UART4_TX|NetColor=$00FFFF6E
-Net151=NetName=EEM.LVDS7_P|NetColor=$006EFF6E
-Net152=NetName=SPI1_SCK|NetColor=$00FFFF6E
-Net153=NetName=HRTIM_CHA2|NetColor=$00FFFF6E
-Net154=NetName=OUT2C_N|NetColor=$006EFF6E
-Net155=NetName=ADC_CH2_DATA.OUTB_N|NetColor=$00FF6E6E
-Net156=NetName=ADC_CTRL.FR_N|NetColor=$00FF6E6E
-Net157=NetName=LEDs.FP_LED_3|NetColor=$006EFF6E
-Net158=NetName=FPGA_CLK2.CLK_P|NetColor=$006EFF6E
-Net159=NetName=LVDS4_P|NetColor=$006EFF6E
-Net160=NetName=AD5722_SDIN|NetColor=$00FFFF6E
-Net161=NetName=ADC_AFE_CH2_nSHDN|NetColor=$006EFF6E
-Net162=NetName=ADC_CH2_DATA.OUTC_P|NetColor=$00FF6E6E
-Net163=NetName=ADC_AUX_A2|NetColor=$00FFFF6E
-Net164=NetName=A0|NetColor=$00FFFF6E
-Net165=NetName=DI0|NetColor=$00FFFF6E
-Net166=NetName=FP_LED_0|NetColor=$00FFFF6E
-Net167=NetName=ADC_AUX_RANGE|NetColor=$00FFFF6E
-Net168=NetName=GPIO.SPI1_NSS|NetColor=$00FFFF6E
-Net169=NetName=SI5340_SCL|NetColor=$00FF6E6E
-Net170=NetName=DAC_CTRL.DCLKIO|NetColor=$00FF6E6E
-Net171=NetName=ADC_CH1_DATA.OUTC_N|NetColor=$00FF6E6E
-Net172=NetName=SI5340_LOS_XAXBb|NetColor=$00FF6E6E
-Net173=NetName=EEM.LVDS4_P|NetColor=$006EFF6E
-Net174=NetName=SD_DAT2|NetColor=$00FF6E6E
-Net175=NetName=A1|NetColor=$00FFFF6E
-Net176=NetName=OUT1C_P|NetColor=$006EFF6E
-Net177=NetName=OUT1A_P|NetColor=$006EFF6E
-Net178=NetName=OUT1A_N|NetColor=$006EFF6E
-Net179=NetName=DCO_P|NetColor=$006EFF6E
-Net180=NetName=SD_CARD.SD_DAT2|NetColor=$00FF6E6E
-Net181=NetName=I2C1_SCL|NetColor=$00FFFF6E
-Net182=NetName=DAC_DATA5|NetColor=$00FF6E6E
-Net183=NetName=SD_CMD|NetColor=$00FF6E6E
-Net184=NetName=DAC_DATA6|NetColor=$00FF6E6E
-Net185=NetName=USB.USB-VBUS|NetColor=$00FFFF6E
-Net186=NetName=DAC_DATA8|NetColor=$00FF6E6E
-Net187=NetName=SD_CARD.SD_DAT0|NetColor=$00FF6E6E
-Net188=NetName=eSD_DAT1|NetColor=$00FFFF6E
-Net189=NetName=FPGA_CLK2.CLK_N|NetColor=$006EFF6E
-Net190=NetName=LVDS0_N|NetColor=$006EFF6E
-Net191=NetName=EEM.LVDS4_N|NetColor=$006EFF6E
-Net192=NetName=TERM_STAT0|NetColor=$006EFF6E
-Net193=NetName=FP_LED_2|NetColor=$00FFFF6E
-Net194=NetName=ETH.ETH_LED1|NetColor=$00FFFF6E
-Net195=NetName=DAC_AUX_nCLR|NetColor=$00FFFF6E
-Net196=NetName=ADC_ENC.CLK_P|NetColor=$006EFF6E
-Net197=NetName=SPI1_MISO|NetColor=$00FFFF6E
-Net198=NetName=ADC_AFE_CH1_GAIN_X10|NetColor=$00FFFF6E
-Net199=NetName=DAC_DATA10|NetColor=$00FF6E6E
-Net200=NetName=DAC_DATA4|NetColor=$00FF6E6E
-Net201=NetName=OUT1B_P|NetColor=$006EFF6E
-Net202=NetName=LEDs.FP_LED_0|NetColor=$006EFF6E
-Net203=NetName=ADC_AUX.DOUTA|NetColor=$00FFFF6E
-Net204=NetName=ADC_AUX.A0|NetColor=$00FFFF6E
-Net205=NetName=CH1_nPD|NetColor=$00FF6E6E
-Net206=NetName=ADC_AUX.A2|NetColor=$00FFFF6E
-Net207=NetName=LED3|NetColor=$00FFFF6E
-Net208=NetName=LVDS2_N|NetColor=$006EFF6E
-Net209=NetName=ADC_CH1_DATA.OUTB_N|NetColor=$00FF6E6E
-Net210=NetName=AUX_DAC_SPI.SDIN|NetColor=$00FFFF6E
-Net211=NetName=DAC_AUX_SDO|NetColor=$00FFFF6E
-Net212=NetName=GPIO.SPI1_SCK|NetColor=$00FFFF6E
-Net213=NetName=GPIO.HRTIM_CHE1|NetColor=$00FFFF6E
-Net214=NetName=ADC_AUX_A0|NetColor=$00FFFF6E
-Net215=NetName=ADC_AUX.DOUTB|NetColor=$00FFFF6E
-Net216=NetName=CH2_DATA.OUTA_P|NetColor=$00FF6E6E
-Net217=NetName=SD_CLK|NetColor=$00FF6E6E
-Net218=NetName=ADC_CH2_DATA.OUTB_P|NetColor=$00FF6E6E
-Net219=NetName=ADC_SPI.ADC_SDI|NetColor=$00FF6E6E
-Net220=NetName=SI5340_SDA|NetColor=$00FF6E6E
-Net221=NetName=LVDS1_P|NetColor=$006EFF6E
-Net222=NetName=DAC_DATA1|NetColor=$00FF6E6E
-Net223=NetName=eSD_CMD|NetColor=$00FFFF6E
-Net224=NetName=ADC_SDI|NetColor=$00FF6E6E
-Net225=NetName=CH1_DATA.OUTB_P|NetColor=$00FF6E6E
-Net226=NetName=ADC_CH1_DATA.OUTA_N|NetColor=$00FF6E6E
-Net227=NetName=CH1_DATA.OUTA_N|NetColor=$00FF6E6E
-Net228=NetName=ADC_AUX.SCLK|NetColor=$00FFFF6E
-Net229=NetName=TERM_STAT1|NetColor=$006EFF6E
-Net230=NetName=ADC_SPI.ADC_SDO|NetColor=$00FF6E6E
-Net231=NetName=USB.OTG-D_N|NetColor=$00FFFF6E
-Net232=NetName=GPIO.QSPI_CLK|NetColor=$00FFFF6E
-Net233=NetName=USB.OTG-ID|NetColor=$00FFFF6E
-Net234=NetName=EEM.LVDS1_N|NetColor=$006EFF6E
-Net235=NetName=LVDS1_N|NetColor=$006EFF6E
-Net236=NetName=EEM.LVDS2_N|NetColor=$006EFF6E
-Net237=NetName=DAC_DATA9|NetColor=$00FF6E6E
-Net238=NetName=SI5340_CTRL.nLOL|NetColor=$00FF6E6E
-Net239=NetName=GPIO.I2C1_SDA|NetColor=$00FFFF6E
-Net240=NetName=SDIO|NetColor=$00FF6E6E
-Net241=NetName=CH2_DATA.OUTB_N|NetColor=$00FF6E6E
-Net242=NetName=ENC_N|NetColor=$006EFF6E
-Net243=NetName=LVDS3_P|NetColor=$006EFF6E
-Net244=NetName=ADC_AUX_SCLK|NetColor=$00FFFF6E
-Net245=NetName=GPIO.QSPI_IO3|NetColor=$00FFFF6E
-Net246=NetName=UART4_TX|NetColor=$00FFFF6E
-Net247=NetName=I2C_SCL|NetColor=$00FFFF6E
-Net248=NetName=FPGA_CLK1.CLK_P|NetColor=$00FF6E6E
-Net249=NetName=ADC_CH2_DATA.OUTD_N|NetColor=$00FF6E6E
-Net250=NetName=DAC_AUX_SDIN|NetColor=$00FFFF6E
-Net251=NetName=UART.RX|NetColor=$00FFFF6E
-Net252=NetName=DAC_DATA12|NetColor=$00FF6E6E
-Net253=NetName=OUT1D_P|NetColor=$006EFF6E
-Net254=NetName=A2|NetColor=$00FFFF6E
-Net255=NetName=SD_CARD.SD_DAT3|NetColor=$00FF6E6E
-Net256=NetName=RANGE|NetColor=$00FFFF6E
-Net257=NetName=CH2_DATA.OUTC_P|NetColor=$00FF6E6E
-Net258=NetName=ADC_CH1_DATA.OUTD_N|NetColor=$00FF6E6E
-Net259=NetName=eSD_CLK|NetColor=$00FFFF6E
-Net260=NetName=LPTIM2_OUT|NetColor=$00FFFF6E
-Net261=NetName=SPI.ADC_SDI|NetColor=$00FF6E6E
-Net262=NetName=GPIO.QSPI_IO1|NetColor=$00FFFF6E
-Net263=NetName=OUT2B_P|NetColor=$006EFF6E
-Net264=NetName=CH1_DATA.OUTC_N|NetColor=$00FF6E6E
-Net265=NetName=OUT1C_N|NetColor=$006EFF6E
-Net266=NetName=AUX_DAC_CTRL.nCLR|NetColor=$00FFFF6E
-Net267=NetName=UART.TX|NetColor=$00FFFF6E
-Net268=NetName=LVDS0_P|NetColor=$006EFF6E
-Net269=NetName=SPI.ADC_SCK|NetColor=$00FF6E6E
-Net270=NetName=AUX_DAC_SPI.nSYNC|NetColor=$00FFFF6E
-Net271=NetName=SD_CARD.SD_CLK|NetColor=$00FF6E6E
-Net272=NetName=OUT2D_P|NetColor=$006EFF6E
-Net273=NetName=GPIO.HRTIM_CHE2|NetColor=$00FFFF6E
-Net274=NetName=EEM.LVDS1_P|NetColor=$006EFF6E
-Net275=NetName=ADC_AUX_nCS|NetColor=$00FFFF6E
-Net276=NetName=LED1|NetColor=$00FFFF6E
-Net277=NetName=ETH.ETH_LED2|NetColor=$00FFFF6E
-Net278=NetName=CLK_100M|NetColor=$00FFFF6E
-Net279=NetName=RESIN|NetColor=$00FF6E6E
-Net280=NetName=ADC_AUX.nCS|NetColor=$00FFFF6E
-Net281=NetName=CH1_DATA.OUTD_P|NetColor=$00FF6E6E
-Net282=NetName=ADC_AUX.A1|NetColor=$00FFFF6E
-Net283=NetName=LEDs.FP_LED_2|NetColor=$006EFF6E
-Net284=NetName=ADC_AUX_A1|NetColor=$00FFFF6E
-Net285=NetName=UART_TX|NetColor=$00FFFF6E
-Net286=NetName=LVDS2_P|NetColor=$006EFF6E
-Net287=NetName=AD5722_SCLK|NetColor=$00FFFF6E
-Net288=NetName=FR_N|NetColor=$006EFF6E
-Net289=NetName=LVDS4_N|NetColor=$006EFF6E
-Net290=NetName=OUT2C_P|NetColor=$006EFF6E
-Net291=NetName=DAC_DATA[0..13]|NetColor=$00FF6E6E
-Net292=NetName=RESET|NetColor=$00FF6E6E
-Net293=NetName=SI5340_nRST|NetColor=$00FF6E6E
-Net294=NetName=OUT2D_N|NetColor=$006EFF6E
-Net295=NetName=CLK1_N|NetColor=$00FF6E6E
-Net296=NetName=SPI1_NSS|NetColor=$00FFFF6E
-Net297=NetName=GPIO.QSPI_IO2|NetColor=$00FFFF6E
-Net298=NetName=nCLR|NetColor=$00FFFF6E
-Net299=NetName=QSPI_NCS|NetColor=$00FFFF6E
-Net300=NetName=FP_LED_1|NetColor=$00FFFF6E
-Net301=NetName=DAC_AUX_SCLK|NetColor=$00FFFF6E
-Net302=NetName=DAC_DATA3|NetColor=$00FF6E6E
-Net303=NetName=CH2_DATA.OUTD_P|NetColor=$00FF6E6E
-Net304=NetName=CH2_DATA.OUTA_N|NetColor=$00FF6E6E
-Net305=NetName=HRTIM_CHA1|NetColor=$00FFFF6E
-Net306=NetName=ADC_CS|NetColor=$00FF6E6E
-Net307=NetName=SD_DAT0|NetColor=$00FF6E6E
-Net308=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
-Net309=NetName=DAC_AUX_nLDAC|NetColor=$00FFFF6E
-Net310=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
+Net1=NetName=A0|NetColor=$00FFFF6E
+Net2=NetName=A1|NetColor=$00FFFF6E
+Net3=NetName=A2|NetColor=$00FFFF6E
+Net4=NetName=AD5722_nSYNC|NetColor=$00FFFF6E
+Net5=NetName=AD5722_SCLK|NetColor=$00FFFF6E
+Net6=NetName=AD5722_SDIN|NetColor=$00FFFF6E
+Net7=NetName=AD5722_SDO|NetColor=$00FFFF6E
+Net8=NetName=ADC_AFE_CH1_GAIN_X10|NetColor=$00FFFF6E
+Net9=NetName=ADC_AFE_CH1_nSHDN|NetColor=$006EFF6E
+Net10=NetName=ADC_AFE_CH2_GAIN_X10|NetColor=$00FFFF6E
+Net11=NetName=ADC_AFE_CH2_nSHDN|NetColor=$006EFF6E
+Net12=NetName=ADC_AUX.A0|NetColor=$00FFFF6E
+Net13=NetName=ADC_AUX.A1|NetColor=$00FFFF6E
+Net14=NetName=ADC_AUX.A2|NetColor=$00FFFF6E
+Net15=NetName=ADC_AUX.DOUTA|NetColor=$00FFFF6E
+Net16=NetName=ADC_AUX.DOUTB|NetColor=$00FFFF6E
+Net17=NetName=ADC_AUX.nCS|NetColor=$00FFFF6E
+Net18=NetName=ADC_AUX.RANGE|NetColor=$00FFFF6E
+Net19=NetName=ADC_AUX.SCLK|NetColor=$00FFFF6E
+Net20=NetName=ADC_AUX.SGL|NetColor=$00FFFF6E
+Net21=NetName=ADC_AUX_A0|NetColor=$00FFFF6E
+Net22=NetName=ADC_AUX_A1|NetColor=$00FFFF6E
+Net23=NetName=ADC_AUX_A2|NetColor=$00FFFF6E
+Net24=NetName=ADC_AUX_DOUTA|NetColor=$00FFFF6E
+Net25=NetName=ADC_AUX_DOUTB|NetColor=$00FFFF6E
+Net26=NetName=ADC_AUX_nCS|NetColor=$00FFFF6E
+Net27=NetName=ADC_AUX_RANGE|NetColor=$00FFFF6E
+Net28=NetName=ADC_AUX_SCLK|NetColor=$00FFFF6E
+Net29=NetName=ADC_AUX_SGL|NetColor=$00FFFF6E
+Net30=NetName=ADC_CH1_DATA.OUTA_N|NetColor=$00FF6E6E
+Net31=NetName=ADC_CH1_DATA.OUTA_P|NetColor=$00FF6E6E
+Net32=NetName=ADC_CH1_DATA.OUTB_N|NetColor=$00FF6E6E
+Net33=NetName=ADC_CH1_DATA.OUTB_P|NetColor=$00FF6E6E
+Net34=NetName=ADC_CH1_DATA.OUTC_N|NetColor=$00FF6E6E
+Net35=NetName=ADC_CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net36=NetName=ADC_CH1_DATA.OUTD_N|NetColor=$00FF6E6E
+Net37=NetName=ADC_CH1_DATA.OUTD_P|NetColor=$00FF6E6E
+Net38=NetName=ADC_CH2_DATA.OUTA_N|NetColor=$00FF6E6E
+Net39=NetName=ADC_CH2_DATA.OUTA_P|NetColor=$00FF6E6E
+Net40=NetName=ADC_CH2_DATA.OUTB_N|NetColor=$00FF6E6E
+Net41=NetName=ADC_CH2_DATA.OUTB_P|NetColor=$00FF6E6E
+Net42=NetName=ADC_CH2_DATA.OUTC_N|NetColor=$00FF6E6E
+Net43=NetName=ADC_CH2_DATA.OUTC_P|NetColor=$00FF6E6E
+Net44=NetName=ADC_CH2_DATA.OUTD_N|NetColor=$00FF6E6E
+Net45=NetName=ADC_CH2_DATA.OUTD_P|NetColor=$00FF6E6E
+Net46=NetName=ADC_CS|NetColor=$00FF6E6E
+Net47=NetName=ADC_CTRL.DCO_N|NetColor=$006EFF6E
+Net48=NetName=ADC_CTRL.DCO_P|NetColor=$00FF6E6E
+Net49=NetName=ADC_CTRL.FR_N|NetColor=$00FF6E6E
+Net50=NetName=ADC_CTRL.FR_P|NetColor=$006EFF6E
+Net51=NetName=ADC_ENC.CLK_N|NetColor=$006EFF6E
+Net52=NetName=ADC_ENC.CLK_P|NetColor=$006EFF6E
+Net53=NetName=ADC_SCK|NetColor=$00FF6E6E
+Net54=NetName=ADC_SDI|NetColor=$00FF6E6E
+Net55=NetName=ADC_SDO|NetColor=$00FF6E6E
+Net56=NetName=ADC_SPI.ADC_CS|NetColor=$00FF6E6E
+Net57=NetName=ADC_SPI.ADC_SCK|NetColor=$00FF6E6E
+Net58=NetName=ADC_SPI.ADC_SDI|NetColor=$00FF6E6E
+Net59=NetName=ADC_SPI.ADC_SDO|NetColor=$00FF6E6E
+Net60=NetName=AFE_GAIN_X10|NetColor=$00FFFF6E
+Net61=NetName=AT_EVENT|NetColor=$00FF6E6E
+Net62=NetName=AUX_DAC_CTRL.BIN|NetColor=$00FFFF6E
+Net63=NetName=AUX_DAC_CTRL.nCLR|NetColor=$00FFFF6E
+Net64=NetName=AUX_DAC_CTRL.nLDAC|NetColor=$00FFFF6E
+Net65=NetName=AUX_DAC_SPI.nSYNC|NetColor=$00FFFF6E
+Net66=NetName=AUX_DAC_SPI.SCLK|NetColor=$00FFFF6E
+Net67=NetName=AUX_DAC_SPI.SDIN|NetColor=$00FFFF6E
+Net68=NetName=AUX_DAC_SPI.SDO|NetColor=$00FFFF6E
+Net69=NetName=BIN|NetColor=$00FFFF6E
+Net70=NetName=CH1_DATA.OUTA_N|NetColor=$00FF6E6E
+Net71=NetName=CH1_DATA.OUTA_P|NetColor=$00FF6E6E
+Net72=NetName=CH1_DATA.OUTB_N|NetColor=$00FF6E6E
+Net73=NetName=CH1_DATA.OUTB_P|NetColor=$00FF6E6E
+Net74=NetName=CH1_DATA.OUTC_N|NetColor=$00FF6E6E
+Net75=NetName=CH1_DATA.OUTC_P|NetColor=$00FF6E6E
+Net76=NetName=CH1_DATA.OUTD_N|NetColor=$00FF6E6E
+Net77=NetName=CH1_DATA.OUTD_P|NetColor=$00FF6E6E
+Net78=NetName=CH1_nPD|NetColor=$00FF6E6E
+Net79=NetName=CH2_DATA.OUTA_N|NetColor=$00FF6E6E
+Net80=NetName=CH2_DATA.OUTA_P|NetColor=$00FF6E6E
+Net81=NetName=CH2_DATA.OUTB_N|NetColor=$00FF6E6E
+Net82=NetName=CH2_DATA.OUTB_P|NetColor=$00FF6E6E
+Net83=NetName=CH2_DATA.OUTC_N|NetColor=$00FF6E6E
+Net84=NetName=CH2_DATA.OUTC_P|NetColor=$00FF6E6E
+Net85=NetName=CH2_DATA.OUTD_N|NetColor=$00FF6E6E
+Net86=NetName=CH2_DATA.OUTD_P|NetColor=$00FF6E6E
+Net87=NetName=CH2_nPD|NetColor=$00FF6E6E
+Net88=NetName=CLK_100M|NetColor=$00FFFF6E
+Net89=NetName=CLK1_N|NetColor=$00FF6E6E
+Net90=NetName=CLK1_P|NetColor=$00FF6E6E
+Net91=NetName=CLK2_N|NetColor=$006EFF6E
+Net92=NetName=CLK2_P|NetColor=$006EFF6E
+Net93=NetName=CLKIN|NetColor=$00FF6E6E
+Net94=NetName=DAC_AFE_CH1_nPD|NetColor=$00FF6E6E
+Net95=NetName=DAC_AFE_CH2_nPD|NetColor=$00FF6E6E
+Net96=NetName=DAC_AUX_BIN|NetColor=$00FFFF6E
+Net97=NetName=DAC_AUX_nCLR|NetColor=$00FFFF6E
+Net98=NetName=DAC_AUX_nLDAC|NetColor=$00FFFF6E
+Net99=NetName=DAC_AUX_nSYNC|NetColor=$00FFFF6E
+Net100=NetName=DAC_AUX_SCLK|NetColor=$00FFFF6E
+Net101=NetName=DAC_AUX_SDIN|NetColor=$00FFFF6E
+Net102=NetName=DAC_AUX_SDO|NetColor=$00FFFF6E
+Net103=NetName=DAC_CLKIN|NetColor=$00FF6E6E
+Net104=NetName=DAC_CTRL.DCLKIO|NetColor=$00FF6E6E
+Net105=NetName=DAC_CTRL.RESET|NetColor=$00FF6E6E
+Net106=NetName=DAC_DATA|NetColor=$00FF6E6E
+Net107=NetName=DAC_DATA[0..13]|NetColor=$00FF6E6E
+Net108=NetName=DAC_DATA0|NetColor=$00FF6E6E
+Net109=NetName=DAC_DATA1|NetColor=$00FF6E6E
+Net110=NetName=DAC_DATA10|NetColor=$00FF6E6E
+Net111=NetName=DAC_DATA11|NetColor=$00FF6E6E
+Net112=NetName=DAC_DATA12|NetColor=$00FF6E6E
+Net113=NetName=DAC_DATA13|NetColor=$00FF6E6E
+Net114=NetName=DAC_DATA2|NetColor=$00FF6E6E
+Net115=NetName=DAC_DATA3|NetColor=$00FF6E6E
+Net116=NetName=DAC_DATA4|NetColor=$00FF6E6E
+Net117=NetName=DAC_DATA5|NetColor=$00FF6E6E
+Net118=NetName=DAC_DATA6|NetColor=$00FF6E6E
+Net119=NetName=DAC_DATA7|NetColor=$00FF6E6E
+Net120=NetName=DAC_DATA8|NetColor=$00FF6E6E
+Net121=NetName=DAC_DATA9|NetColor=$00FF6E6E
+Net122=NetName=DAC_nCS|NetColor=$00FF6E6E
+Net123=NetName=DAC_SCLK|NetColor=$00FF6E6E
+Net124=NetName=DAC_SDIO|NetColor=$00FF6E6E
+Net125=NetName=DAC_SPI.nCS|NetColor=$00FF6E6E
+Net126=NetName=DAC_SPI.SCLK|NetColor=$00FF6E6E
+Net127=NetName=DAC_SPI.SDIO|NetColor=$00FF6E6E
+Net128=NetName=DCLKIO|NetColor=$00FF6E6E
+Net129=NetName=DCO_N|NetColor=$006EFF6E
+Net130=NetName=DCO_P|NetColor=$006EFF6E
+Net131=NetName=DI0|NetColor=$00FFFF6E
+Net132=NetName=DI1|NetColor=$00FFFF6E
+Net133=NetName=DOUTA|NetColor=$00FFFF6E
+Net134=NetName=DOUTB|NetColor=$00FFFF6E
+Net135=NetName=EEM.LVDS0_N|NetColor=$006EFF6E
+Net136=NetName=EEM.LVDS0_P|NetColor=$006EFF6E
+Net137=NetName=EEM.LVDS1_N|NetColor=$006EFF6E
+Net138=NetName=EEM.LVDS1_P|NetColor=$006EFF6E
+Net139=NetName=EEM.LVDS2_N|NetColor=$006EFF6E
+Net140=NetName=EEM.LVDS2_P|NetColor=$006EFF6E
+Net141=NetName=EEM.LVDS3_N|NetColor=$006EFF6E
+Net142=NetName=EEM.LVDS3_P|NetColor=$006EFF6E
+Net143=NetName=EEM.LVDS4_N|NetColor=$006EFF6E
+Net144=NetName=EEM.LVDS4_P|NetColor=$006EFF6E
+Net145=NetName=EEM.LVDS5_N|NetColor=$006EFF6E
+Net146=NetName=EEM.LVDS5_P|NetColor=$006EFF6E
+Net147=NetName=EEM.LVDS6_N|NetColor=$006EFF6E
+Net148=NetName=EEM.LVDS6_P|NetColor=$006EFF6E
+Net149=NetName=EEM.LVDS7_N|NetColor=$006EFF6E
+Net150=NetName=EEM.LVDS7_P|NetColor=$006EFF6E
+Net151=NetName=EEM_I2C.I2C_SCL|NetColor=$00FFFF6E
+Net152=NetName=EEM_I2C.I2C_SDA|NetColor=$00FFFF6E
+Net153=NetName=ENC.CLK_N|NetColor=$006EFF6E
+Net154=NetName=ENC.CLK_P|NetColor=$006EFF6E
+Net155=NetName=ENC_N|NetColor=$006EFF6E
+Net156=NetName=ENC_P|NetColor=$006EFF6E
+Net157=NetName=eSD_CLK|NetColor=$00FFFF6E
+Net158=NetName=eSD_CMD|NetColor=$00FFFF6E
+Net159=NetName=eSD_DAT0|NetColor=$00FFFF6E
+Net160=NetName=eSD_DAT1|NetColor=$00FFFF6E
+Net161=NetName=eSD_DAT2|NetColor=$00FFFF6E
+Net162=NetName=eSD_DAT3|NetColor=$00FFFF6E
+Net163=NetName=ETH.ETH_LED1|NetColor=$00FFFF6E
+Net164=NetName=ETH.ETH_LED2|NetColor=$00FFFF6E
+Net165=NetName=ETH_LED1|NetColor=$00FFFF6E
+Net166=NetName=ETH_LED2|NetColor=$00FFFF6E
+Net167=NetName=FP_LED_0|NetColor=$00FFFF6E
+Net168=NetName=FP_LED_1|NetColor=$00FFFF6E
+Net169=NetName=FP_LED_2|NetColor=$00FFFF6E
+Net170=NetName=FP_LED_3|NetColor=$00FFFF6E
+Net171=NetName=FPGA_CLK1.CLK_N|NetColor=$00FF6E6E
+Net172=NetName=FPGA_CLK1.CLK_P|NetColor=$00FF6E6E
+Net173=NetName=FPGA_CLK2.CLK_N|NetColor=$006EFF6E
+Net174=NetName=FPGA_CLK2.CLK_P|NetColor=$006EFF6E
+Net175=NetName=FR_N|NetColor=$006EFF6E
+Net176=NetName=FR_P|NetColor=$006EFF6E
+Net177=NetName=GPIO.HRTIM_CHA1|NetColor=$00FFFF6E
+Net178=NetName=GPIO.HRTIM_CHA2|NetColor=$00FFFF6E
+Net179=NetName=GPIO.HRTIM_CHE1|NetColor=$00FFFF6E
+Net180=NetName=GPIO.HRTIM_CHE2|NetColor=$00FFFF6E
+Net181=NetName=GPIO.I2C1_SCL|NetColor=$00FFFF6E
+Net182=NetName=GPIO.I2C1_SDA|NetColor=$00FFFF6E
+Net183=NetName=GPIO.LPTIM2_OUT|NetColor=$00FFFF6E
+Net184=NetName=GPIO.QSPI_CLK|NetColor=$00FFFF6E
+Net185=NetName=GPIO.QSPI_IO0|NetColor=$00FFFF6E
+Net186=NetName=GPIO.QSPI_IO1|NetColor=$00FFFF6E
+Net187=NetName=GPIO.QSPI_IO2|NetColor=$00FFFF6E
+Net188=NetName=GPIO.QSPI_IO3|NetColor=$00FFFF6E
+Net189=NetName=GPIO.QSPI_NCS|NetColor=$00FFFF6E
+Net190=NetName=GPIO.SPI1_MISO|NetColor=$00FFFF6E
+Net191=NetName=GPIO.SPI1_MOSI|NetColor=$00FFFF6E
+Net192=NetName=GPIO.SPI1_NSS|NetColor=$00FFFF6E
+Net193=NetName=GPIO.SPI1_SCK|NetColor=$00FFFF6E
+Net194=NetName=GPIO.UART4_TX|NetColor=$00FFFF6E
+Net195=NetName=HRTIM_CHA1|NetColor=$00FFFF6E
+Net196=NetName=HRTIM_CHA2|NetColor=$00FFFF6E
+Net197=NetName=HRTIM_CHE1|NetColor=$00FFFF6E
+Net198=NetName=HRTIM_CHE2|NetColor=$00FFFF6E
+Net199=NetName=I2C_SCL|NetColor=$00FFFF6E
+Net200=NetName=I2C_SDA|NetColor=$00FFFF6E
+Net201=NetName=I2C1_SCL|NetColor=$00FFFF6E
+Net202=NetName=I2C1_SDA|NetColor=$00FFFF6E
+Net203=NetName=LED1|NetColor=$00FFFF6E
+Net204=NetName=LED2|NetColor=$00FFFF6E
+Net205=NetName=LED3|NetColor=$00FFFF6E
+Net206=NetName=LEDs.FP_LED_0|NetColor=$006EFF6E
+Net207=NetName=LEDs.FP_LED_1|NetColor=$006EFF6E
+Net208=NetName=LEDs.FP_LED_2|NetColor=$006EFF6E
+Net209=NetName=LEDs.FP_LED_3|NetColor=$006EFF6E
+Net210=NetName=LPTIM2_OUT|NetColor=$00FFFF6E
+Net211=NetName=LVDS0_N|NetColor=$006EFF6E
+Net212=NetName=LVDS0_P|NetColor=$006EFF6E
+Net213=NetName=LVDS1_N|NetColor=$006EFF6E
+Net214=NetName=LVDS1_P|NetColor=$006EFF6E
+Net215=NetName=LVDS2_N|NetColor=$006EFF6E
+Net216=NetName=LVDS2_P|NetColor=$006EFF6E
+Net217=NetName=LVDS3_N|NetColor=$006EFF6E
+Net218=NetName=LVDS3_P|NetColor=$006EFF6E
+Net219=NetName=LVDS4_N|NetColor=$006EFF6E
+Net220=NetName=LVDS4_P|NetColor=$006EFF6E
+Net221=NetName=LVDS5_N|NetColor=$006EFF6E
+Net222=NetName=LVDS5_P|NetColor=$006EFF6E
+Net223=NetName=LVDS6_N|NetColor=$006EFF6E
+Net224=NetName=LVDS6_P|NetColor=$006EFF6E
+Net225=NetName=LVDS7_N|NetColor=$006EFF6E
+Net226=NetName=LVDS7_P|NetColor=$006EFF6E
+Net227=NetName=nCLR|NetColor=$00FFFF6E
+Net228=NetName=nCS|NetColor=$00FF6E6E
+Net229=NetName=nCS_ADC_AUX|NetColor=$00FFFF6E
+Net230=NetName=nLDAC|NetColor=$00FFFF6E
+Net231=NetName=nSHDN|NetColor=$00FF6E6E
+Net232=NetName=OTG-D_N|NetColor=$00FFFF6E
+Net233=NetName=OTG-D_P|NetColor=$00FFFF6E
+Net234=NetName=OTG-ID|NetColor=$00FFFF6E
+Net235=NetName=OUT1A_N|NetColor=$006EFF6E
+Net236=NetName=OUT1A_P|NetColor=$006EFF6E
+Net237=NetName=OUT1B_N|NetColor=$006EFF6E
+Net238=NetName=OUT1B_P|NetColor=$006EFF6E
+Net239=NetName=OUT1C_N|NetColor=$006EFF6E
+Net240=NetName=OUT1C_P|NetColor=$006EFF6E
+Net241=NetName=OUT1D_N|NetColor=$006EFF6E
+Net242=NetName=OUT1D_P|NetColor=$006EFF6E
+Net243=NetName=OUT2A_N|NetColor=$006EFF6E
+Net244=NetName=OUT2A_P|NetColor=$006EFF6E
+Net245=NetName=OUT2B_N|NetColor=$006EFF6E
+Net246=NetName=OUT2B_P|NetColor=$006EFF6E
+Net247=NetName=OUT2C_N|NetColor=$006EFF6E
+Net248=NetName=OUT2C_P|NetColor=$006EFF6E
+Net249=NetName=OUT2D_N|NetColor=$006EFF6E
+Net250=NetName=OUT2D_P|NetColor=$006EFF6E
+Net251=NetName=QSPI_CLK|NetColor=$00FFFF6E
+Net252=NetName=QSPI_IO0|NetColor=$00FFFF6E
+Net253=NetName=QSPI_IO1|NetColor=$00FFFF6E
+Net254=NetName=QSPI_IO2|NetColor=$00FFFF6E
+Net255=NetName=QSPI_IO3|NetColor=$00FFFF6E
+Net256=NetName=QSPI_NCS|NetColor=$00FFFF6E
+Net257=NetName=RANGE|NetColor=$00FFFF6E
+Net258=NetName=RESET|NetColor=$00FF6E6E
+Net259=NetName=RESIN|NetColor=$00FF6E6E
+Net260=NetName=SCLK|NetColor=$00FF6E6E
+Net261=NetName=SCLK_ADC_AUX|NetColor=$00FFFF6E
+Net262=NetName=SD_CARD.SD_CLK|NetColor=$00FF6E6E
+Net263=NetName=SD_CARD.SD_CMD|NetColor=$00FF6E6E
+Net264=NetName=SD_CARD.SD_DAT0|NetColor=$00FF6E6E
+Net265=NetName=SD_CARD.SD_DAT1|NetColor=$00FF6E6E
+Net266=NetName=SD_CARD.SD_DAT2|NetColor=$00FF6E6E
+Net267=NetName=SD_CARD.SD_DAT3|NetColor=$00FF6E6E
+Net268=NetName=SD_CLK|NetColor=$00FF6E6E
+Net269=NetName=SD_CMD|NetColor=$00FF6E6E
+Net270=NetName=SD_DAT0|NetColor=$00FF6E6E
+Net271=NetName=SD_DAT1|NetColor=$00FF6E6E
+Net272=NetName=SD_DAT2|NetColor=$00FF6E6E
+Net273=NetName=SD_DAT3|NetColor=$00FF6E6E
+Net274=NetName=SDIO|NetColor=$00FF6E6E
+Net275=NetName=SGL|NetColor=$00FFFF6E
+Net276=NetName=SI5340_CTRL.LOS_XAXBb|NetColor=$00FF6E6E
+Net277=NetName=SI5340_CTRL.nINTR|NetColor=$00FF6E6E
+Net278=NetName=SI5340_CTRL.nLOL|NetColor=$00FF6E6E
+Net279=NetName=SI5340_CTRL.nRST|NetColor=$00FF6E6E
+Net280=NetName=SI5340_I2C.SCL|NetColor=$00FF6E6E
+Net281=NetName=SI5340_I2C.SDA|NetColor=$00FF6E6E
+Net282=NetName=SI5340_LOS_XAXBb|NetColor=$00FF6E6E
+Net283=NetName=SI5340_nINTR|NetColor=$00FF6E6E
+Net284=NetName=Si5340_nLOL|NetColor=$00FF6E6E
+Net285=NetName=SI5340_nRST|NetColor=$00FF6E6E
+Net286=NetName=SI5340_SCL|NetColor=$00FF6E6E
+Net287=NetName=SI5340_SDA|NetColor=$00FF6E6E
+Net288=NetName=SPI.ADC_CS|NetColor=$00FF6E6E
+Net289=NetName=SPI.ADC_SCK|NetColor=$00FF6E6E
+Net290=NetName=SPI.ADC_SDI|NetColor=$00FF6E6E
+Net291=NetName=SPI.ADC_SDO|NetColor=$00FF6E6E
+Net292=NetName=SPI1_MISO|NetColor=$00FFFF6E
+Net293=NetName=SPI1_MOSI|NetColor=$00FFFF6E
+Net294=NetName=SPI1_NSS|NetColor=$00FFFF6E
+Net295=NetName=SPI1_SCK|NetColor=$00FFFF6E
+Net296=NetName=TERM_IND|NetColor=$006EFF6E
+Net297=NetName=TERM_STAT0|NetColor=$006EFF6E
+Net298=NetName=TERM_STAT1|NetColor=$006EFF6E
+Net299=NetName=UART.RX|NetColor=$00FFFF6E
+Net300=NetName=UART.TX|NetColor=$00FFFF6E
+Net301=NetName=UART_RX|NetColor=$00FFFF6E
+Net302=NetName=UART_TX|NetColor=$00FFFF6E
+Net303=NetName=UART4_TX|NetColor=$00FFFF6E
+Net304=NetName=USB.OTG-D_N|NetColor=$00FFFF6E
+Net305=NetName=USB.OTG-D_P|NetColor=$00FFFF6E
+Net306=NetName=USB.OTG-ID|NetColor=$00FFFF6E
+Net307=NetName=USB.USB-VBUS|NetColor=$00FFFF6E
+Net308=NetName=USB.VBUS_V_EN|NetColor=$00FFFF6E
+Net309=NetName=USB-VBUS|NetColor=$00FFFF6E
+Net310=NetName=VBUS_V_EN|NetColor=$00FFFF6E
 
 [Comparison Options]
-ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
-ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|UseName=0|InclAllRules=0
+ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4
