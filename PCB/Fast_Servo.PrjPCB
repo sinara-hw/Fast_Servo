@@ -284,7 +284,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QSFVTDIN
 
 [Document15]
-DocumentPath=DIGITAL_INPUTS.SchDoc
+DocumentPath=DIGITAL_IOs.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -318,7 +318,7 @@ GenerateClassCluster=0
 DocumentUniqueId=CKBJTYLK
 
 [Document17]
-DocumentPath=EEPROM.SchDoc
+DocumentPath=EEPROM_Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
