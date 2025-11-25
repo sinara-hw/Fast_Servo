@@ -995,7 +995,7 @@ UniqueId=AEF0D782-7EA2-47B9-BB0A-8D27F87774DE
 Description=Fast_Servo_Default
 AllowFabrication=0
 ParameterCount=0
-VariationCount=41
+VariationCount=35
 Variation1=Designator=R147|UniqueId=\AFCMNNQW\TBEWDHQG\IKQLSPYY|Kind=1|AlternatePart=
 Variation2=Designator=R176|UniqueId=\AFCMNNQW\TBEWDHQG\RKPSIAHK|Kind=1|AlternatePart=
 Variation3=Designator=R49A|UniqueId=\ONDLHPWC\MADRHAQX|Kind=1|AlternatePart=
@@ -1026,17 +1026,11 @@ Variation27=Designator=R292|UniqueId=\NDPNCBUS\TKASSHJF|Kind=1|AlternatePart=
 Variation28=Designator=R293|UniqueId=\NDPNCBUS\VFSDGNVY|Kind=1|AlternatePart=
 Variation29=Designator=R?|UniqueId=\NDPNCBUS\LGYJIIWE|Kind=1|AlternatePart=
 Variation30=Designator=R?|UniqueId=\NDPNCBUS\MBZCANKS|Kind=1|AlternatePart=
-Variation31=Designator=IC35A|UniqueId=\ONDLHPWC\HYXEBBMW|Kind=1|AlternatePart=
-Variation32=Designator=IC35B|UniqueId=\EJSKLKKS\HYXEBBMW|Kind=1|AlternatePart=
-Variation33=Designator=R43A|UniqueId=\ONDLHPWC\GFRWIFLP|Kind=1|AlternatePart=
-Variation34=Designator=R41A|UniqueId=\ONDLHPWC\ZMVWJLKC|Kind=1|AlternatePart=
-Variation35=Designator=J16|UniqueId=\GFTAOXRA\STUXHLQZ|Kind=1|AlternatePart=
-Variation36=Designator=J3|UniqueId=\GYYWZNOV\FYRBEWLQ|Kind=1|AlternatePart=
-Variation37=Designator=J4|UniqueId=\ZXZCHTQX\NPHHEVHJ|Kind=1|AlternatePart=
-Variation38=Designator=R?|UniqueId=\WHLCFPHJ\LLPXUJCE|Kind=1|AlternatePart=
-Variation39=Designator=R?|UniqueId=\WHLCFPHJ\IPBPKDGO|Kind=1|AlternatePart=
-Variation40=Designator=R?|UniqueId=\WHLCFPHJ\QXDBNUNU|Kind=1|AlternatePart=
-Variation41=Designator=R?|UniqueId=\WHLCFPHJ\RWRPEPFF|Kind=1|AlternatePart=
+Variation31=Designator=R43A|UniqueId=\ONDLHPWC\GFRWIFLP|Kind=1|AlternatePart=
+Variation32=Designator=R41A|UniqueId=\ONDLHPWC\ZMVWJLKC|Kind=1|AlternatePart=
+Variation33=Designator=J16|UniqueId=\GFTAOXRA\STUXHLQZ|Kind=1|AlternatePart=
+Variation34=Designator=J3|UniqueId=\GYYWZNOV\FYRBEWLQ|Kind=1|AlternatePart=
+Variation35=Designator=J4|UniqueId=\ZXZCHTQX\NPHHEVHJ|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [Parameter1]
