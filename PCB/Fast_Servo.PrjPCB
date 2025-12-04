@@ -990,6 +990,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NTVWUOLB
 
+[Document56]
+DocumentPath=Fast_Servo.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueId=AEF0D782-7EA2-47B9-BB0A-8D27F87774DE
 Description=Fast_Servo_Default
