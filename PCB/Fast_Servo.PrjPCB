@@ -990,6 +990,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NTVWUOLB
 
+[Document56]
+DocumentPath=Fast_Servo.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueId=AEF0D782-7EA2-47B9-BB0A-8D27F87774DE
 Description=Fast_Servo_Default
@@ -1024,11 +1041,11 @@ Variation25=Designator=R292|UniqueId=\NDPNCBUS\TKASSHJF|Kind=1|AlternatePart=
 Variation26=Designator=R293|UniqueId=\NDPNCBUS\VFSDGNVY|Kind=1|AlternatePart=
 Variation27=Designator=R?|UniqueId=\NDPNCBUS\LGYJIIWE|Kind=1|AlternatePart=
 Variation28=Designator=R?|UniqueId=\NDPNCBUS\MBZCANKS|Kind=1|AlternatePart=
-Variation29=Designator=R43A|UniqueId=\ONDLHPWC\GFRWIFLP|Kind=1|AlternatePart=
-Variation30=Designator=R41A|UniqueId=\ONDLHPWC\ZMVWJLKC|Kind=1|AlternatePart=
-Variation31=Designator=J16|UniqueId=\GFTAOXRA\STUXHLQZ|Kind=1|AlternatePart=
-Variation32=Designator=J3|UniqueId=\GYYWZNOV\FYRBEWLQ|Kind=1|AlternatePart=
-Variation33=Designator=J4|UniqueId=\ZXZCHTQX\NPHHEVHJ|Kind=1|AlternatePart=
+Variation29=Designator=J16|UniqueId=\GFTAOXRA\STUXHLQZ|Kind=1|AlternatePart=
+Variation30=Designator=J3|UniqueId=\GYYWZNOV\FYRBEWLQ|Kind=1|AlternatePart=
+Variation31=Designator=J4|UniqueId=\ZXZCHTQX\NPHHEVHJ|Kind=1|AlternatePart=
+Variation32=Designator=C83A|UniqueId=\ONDLHPWC\GYLLIEFO|Kind=1|AlternatePart=
+Variation33=Designator=C83B|UniqueId=\EJSKLKKS\GYLLIEFO|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [Parameter1]
