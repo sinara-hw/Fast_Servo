@@ -56,23 +56,6 @@ ReleaseFolderPath=[OutputPath]
 ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
-DocumentPath=Fast_Servo.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document2]
 DocumentPath=Fast_Servo.PCBDOC
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -89,7 +72,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CEVRJCJN
 
-[Document3]
+[Document2]
 DocumentPath=SOM.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -106,7 +89,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WFAQIMCU
 
-[Document4]
+[Document3]
 DocumentPath=DAC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -123,7 +106,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFQHJTXS
 
-[Document5]
+[Document4]
 DocumentPath=DAC_AFE.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,7 +123,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AHSLSFYH
 
-[Document6]
+[Document5]
 DocumentPath=ADC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -157,7 +140,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JJLDRDAS
 
-[Document7]
+[Document6]
 DocumentPath=ADC_AFE.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +157,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AIUBREYS
 
-[Document8]
+[Document7]
 DocumentPath=ADC_AUX.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +174,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GUBUQTNC
 
-[Document9]
+[Document8]
 DocumentPath=DAC_AUX.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +191,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CDYLDKQI
 
-[Document10]
+[Document9]
 DocumentPath=USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +208,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RICXMAMD
 
-[Document11]
+[Document10]
 DocumentPath=Panel\Panel_Fast_Servo.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -242,7 +225,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NUTPSQEY
 
-[Document12]
+[Document11]
 DocumentPath=Panel\Panel_Fast_Servo.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=PWR_LDOs.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -276,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FDFXCMKS
 
-[Document14]
+[Document13]
 DocumentPath=SD_CARD.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -293,7 +276,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QSFVTDIN
 
-[Document15]
+[Document14]
 DocumentPath=DIGITAL_IOs.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -310,7 +293,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QGGHCNOY
 
-[Document16]
+[Document15]
 DocumentPath=LEDS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -327,7 +310,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CKBJTYLK
 
-[Document17]
+[Document16]
 DocumentPath=EEPROM_Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -344,7 +327,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RUJEEBWA
 
-[Document18]
+[Document17]
 DocumentPath=CLK_GEN.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -361,7 +344,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GWMBYXUB
 
-[Document19]
+[Document18]
 DocumentPath=CON_ETH.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -378,7 +361,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VRRFQNNN
 
-[Document20]
+[Document19]
 DocumentPath=CON_EEM.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -395,7 +378,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PJWOAGJC
 
-[Document21]
+[Document20]
 DocumentPath=CON_JTAG_UART.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -412,7 +395,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ICSNANRU
 
-[Document22]
+[Document21]
 DocumentPath=CON_MEZZANINE_ADC_DAC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -429,7 +412,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LMITVKAC
 
-[Document23]
+[Document22]
 DocumentPath=CON_MEZZANINE_ANALOG.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -446,7 +429,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UNCGMTMK
 
-[Document24]
+[Document23]
 DocumentPath=CON_MEZZANINE_GPIO.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -463,7 +446,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NFFPHOLS
 
-[Document25]
+[Document24]
 DocumentPath=TOP.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -480,7 +463,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HAHYSKRR
 
-[Document26]
+[Document25]
 DocumentPath=POWER_SUPPLY.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -497,7 +480,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OJTJQIRP
 
-[Document27]
+[Document26]
 DocumentPath=USB.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -514,7 +497,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document27]
 DocumentPath=Fast_Servo.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -531,7 +514,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document28]
 DocumentPath=PWR_SMPS.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -548,7 +531,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ENNVNEMU
 
-[Document30]
+[Document29]
 DocumentPath=SOM_JB1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -565,7 +548,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FTFLFFUT
 
-[Document31]
+[Document30]
 DocumentPath=SOM_JB2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -582,7 +565,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OMZOJFHB
 
-[Document32]
+[Document31]
 DocumentPath=SoM_JB2.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -599,7 +582,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document33]
+[Document32]
 DocumentPath=SOM_JB3.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -616,7 +599,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GFFSZUFL
 
-[Document34]
+[Document33]
 DocumentPath=SOM_JB3.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -633,7 +616,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document34]
 DocumentPath=DAC.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -650,7 +633,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document36]
+[Document35]
 DocumentPath=ADC_AUX.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -667,7 +650,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
+[Document36]
 DocumentPath=DAC_AUX.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -684,7 +667,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document38]
+[Document37]
 DocumentPath=AUX_CON.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -701,7 +684,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document39]
+[Document38]
 DocumentPath=SD_CARD.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -718,7 +701,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document40]
+[Document39]
 DocumentPath=EEPROM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -735,7 +718,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document41]
+[Document40]
 DocumentPath=ADC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -752,7 +735,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document42]
+[Document41]
 DocumentPath=ADC.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -769,7 +752,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document43]
+[Document42]
 DocumentPath=DAC_AFE.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -786,7 +769,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document44]
+[Document43]
 DocumentPath=CLK_GEN.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -803,7 +786,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document45]
+[Document44]
 DocumentPath=PWR_P12V0A_N12V0A.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -820,7 +803,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KYIVEFAP
 
-[Document46]
+[Document45]
 DocumentPath=CON_EEM.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -837,7 +820,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document47]
+[Document46]
 DocumentPath=CON_ETH.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -854,7 +837,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document48]
+[Document47]
 DocumentPath=CON_JTAG_UART.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -871,7 +854,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document49]
+[Document48]
 DocumentPath=CON_MEZZANINE_GPIO.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -888,7 +871,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document50]
+[Document49]
 DocumentPath=SOM_JB1.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -905,7 +888,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document51]
+[Document50]
 DocumentPath=LEDs.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -922,7 +905,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document52]
+[Document51]
 DocumentPath=EEPROM_Sensors.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -939,7 +922,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document53]
+[Document52]
 DocumentPath=CPCIS_Connectors_P1_P6.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -956,7 +939,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RMUUFYQV
 
-[Document54]
+[Document53]
 DocumentPath=CPCIS_Connectors_P1_P6.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -973,7 +956,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document55]
+[Document54]
 DocumentPath=Termination_Switch.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -990,7 +973,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NTVWUOLB
 
-[Document56]
+[Document55]
 DocumentPath=Fast_Servo.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1012,7 +995,7 @@ UniqueId=AEF0D782-7EA2-47B9-BB0A-8D27F87774DE
 Description=Fast_Servo_Default
 AllowFabrication=0
 ParameterCount=0
-VariationCount=33
+VariationCount=35
 Variation1=Designator=R147|UniqueId=\AFCMNNQW\TBEWDHQG\IKQLSPYY|Kind=1|AlternatePart=
 Variation2=Designator=R176|UniqueId=\AFCMNNQW\TBEWDHQG\RKPSIAHK|Kind=1|AlternatePart=
 Variation3=Designator=R49A|UniqueId=\ONDLHPWC\MADRHAQX|Kind=1|AlternatePart=
@@ -1046,6 +1029,8 @@ Variation30=Designator=J3|UniqueId=\GYYWZNOV\FYRBEWLQ|Kind=1|AlternatePart=
 Variation31=Designator=J4|UniqueId=\ZXZCHTQX\NPHHEVHJ|Kind=1|AlternatePart=
 Variation32=Designator=C83A|UniqueId=\ONDLHPWC\GYLLIEFO|Kind=1|AlternatePart=
 Variation33=Designator=C83B|UniqueId=\EJSKLKKS\GYLLIEFO|Kind=1|AlternatePart=
+Variation34=Designator=C83A|UniqueId=\ONDLHPWC\VFCZTUTO|Kind=1|AlternatePart=
+Variation35=Designator=C83B|UniqueId=\EJSKLKKS\VFCZTUTO|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [Parameter1]
